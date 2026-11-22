@@ -9,23 +9,24 @@ blocks:
     blocks:
       - type: text
         text: |
-          Ben legt für die Bauecke ein Quadrat aus Plättchen. Danach kannst du Quadrate und Würfel aus Plättchen als
-          Potenzen schreiben und ausrechnen.
+          Ben legt für die Bauecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht.
       - type: figure
         image: images/quadrat-vier.svg
         alt: Ein Quadrat aus Plättchen mit 4 Reihen. In jeder Reihe liegen 4 Plättchen.
-        caption: Achte auf die Reihen. Wie viele Plättchen liegen in einer Reihe, wie viele Reihen gibt es?
+        caption: Zähle die Plättchen einer Reihe und die Reihen.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: number
         id: quadrat-vier-zaehlen
-        text: Wie viele Plättchen hat Bens Quadrat?
+        text: Wie viele Plättchen hat Bens Quadrat insgesamt?
         answer: 16
         tolerance: 0
         explanation: 4 Reihen mit je 4 Plättchen sind 4 · 4 = 16 Plättchen. So rechnest du schneller als beim Abzählen.
         mistakes:
           - answer: 8
-            message: Du hast 4 + 4 gerechnet. Es sind 4 Reihen, und in jeder liegen 4 Plättchen, also wird malgenommen.
+            message: Du hast 4 + 4 gerechnet. Es sind 4 Reihen mit je 4 Plättchen. Rechne 4 · 4.
+          - answer: 4
+            message: Das ist nur eine Reihe. Das Quadrat hat 4 Reihen.
         links:
           - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
@@ -35,28 +36,27 @@ blocks:
     blocks:
       - type: text
         text: |
-          Im Quadrat sind beide Zahlen gleich: 4 Reihen mal 4 Plättchen. Statt 4 · 4 schreibst du kurz $4^2$ und
-          sprichst „4 hoch 2“. Das Ergebnis heißt Quadratzahl.
+          Faktoren sind die Zahlen, die du malnimmst. Bei 4 · 4 sind beide Faktoren gleich. Statt 4 · 4 schreibst du
+          kurz $4^2$ und sprichst „4 hoch 2“. Die Zahl 4 · 4 = 16 heißt Quadratzahl.
       - type: definition
         term: Potenz
         explanation: Eine Potenz ist ein Produkt aus gleichen Faktoren, zum Beispiel $4^2 = 4 \cdot 4$. Die untere Zahl heißt Basis, die kleine obere Zahl Exponent. Der Exponent sagt, wie oft die Basis als Faktor vorkommt.
       - type: figure
         image: images/wuerfel-drei-lagen.svg
         alt: Drei Lagen aus Plättchen nebeneinander gezeichnet, Lage 1, Lage 2 und Lage 3. Jede Lage hat 3 Reihen mit je 3 Plättchen.
-        caption: Die drei Lagen liegen im Würfel übereinander. Jede Lage ist ein Quadrat aus 3 mal 3 Plättchen.
+        caption: Hier liegen die drei Lagen nebeneinander. Im Würfel liegen sie übereinander. Jede Lage ist ein Quadrat aus 3 mal 3 Plättchen.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
         text: |
-          Legst du drei solche Quadrate übereinander, entsteht ein Würfel. Dann kommt die Basis dreimal als Faktor vor.
-          Das Ergebnis heißt Kubikzahl.
+          Stapelst du die drei Lagen übereinander, entsteht ein Würfel. Eine Lage hat 3 · 3 Plättchen, und es gibt
+          3 Lagen. Du rechnest also 3 · 3 · 3 = $3^3$. Der Exponent 3 zählt hier die Faktoren. Die Zahl heißt
+          Kubikzahl, weil sie zu einem Würfel (lateinisch cubus) gehört.
       - type: example
         title: Ein Würfel mit Kante 3
         blocks:
           - type: formula
             formula: '3^3 = 3 \cdot 3 \cdot 3 = 9 \cdot 3 = 27'
-          - type: text
-            text: Eine Lage hat 3 · 3 = 9 Plättchen. Drei Lagen haben 9 · 3 = 27 Plättchen.
   - type: section
     id: merke
     title: Das verwechseln viele
@@ -70,15 +70,23 @@ blocks:
     id: uebung
     title: Übung
     blocks:
-      - type: number
-        id: quadrat-fuenf
-        text: Ein Quadrat hat 5 Reihen mit je 5 Plättchen. Wie viele Plättchen sind das?
-        answer: 25
-        tolerance: 0
-        explanation: 5 · 5 = 25, kurz $5^2$. Die Basis 5 kommt zweimal als Faktor vor.
-        mistakes:
-          - answer: 10
-            message: Du hast 5 + 5 gerechnet. Bei Reihen mal Plättchen wird malgenommen.
+      - type: single-choice
+        id: quadrat-sechs-schreiben
+        text: Mira legt ein Quadrat mit 6 Reihen. In jeder Reihe liegen 6 Plättchen. Wie schreibst du die Anzahl kurz?
+        options:
+          - text: 6²
+            correct: true
+            info: 6 · 6 hat zwei gleiche Faktoren, also Basis 6 und Exponent 2.
+          - text: 6 · 2
+            correct: false
+            info: Das wäre 12. Der Exponent steht klein oben und sagt, wie oft 6 als Faktor vorkommt.
+          - text: 2⁶
+            correct: false
+            info: Das ist 2 · 2 · 2 · 2 · 2 · 2. Hier wurden Basis und Exponent vertauscht.
+          - text: 6 + 6
+            correct: false
+            info: Das ist 12. Bei Reihen mal Plättchen wird malgenommen, nicht addiert.
+        explanation: Die Plättchen sind 6 · 6. Die Basis 6 kommt zweimal als Faktor vor, kurz 6².
         links:
           - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
@@ -98,31 +106,35 @@ blocks:
             message: "Du hast {{b}} + {{e}} gerechnet. Eine Potenz ist ein Produkt aus gleichen Faktoren."
           - value: "pow(e, b)"
             message: "Du hast Basis und Exponent vertauscht. Die Basis ist die untere Zahl."
-        hint: "Schreibe die Potenz als Produkt: {{b}} kommt {{e}}-mal als Faktor vor."
+          - value: "pow(b, e - 1)"
+            message: "Ein Faktor fehlt: {{b}} kommt {{e}}-mal vor."
+        hint: "Schreibe die Potenz als Produkt gleicher Faktoren. Wie viele Faktoren sind es?"
         steps:
           - "Die Basis {{b}} wird {{e}}-mal als Faktor geschrieben und malgenommen."
           - "Rechne das Produkt von links nach rechts aus: Das Ergebnis ist {{answer}}."
       - type: matching
         id: potenz-und-faktoren
-        text: Ordne jeder Potenz das passende Produkt zu.
+        text: Ordne jeder Potenz das passende Produkt zu. Ein Produkt passt zu keiner Potenz.
         pairs:
           - left: Die Potenz 2³
-            right: 2 · 2 · 2 (drei Faktoren)
+            right: 2 · 2 · 2
           - left: Die Potenz 5²
-            right: 5 · 5 (zwei Faktoren)
+            right: 5 · 5
           - left: Die Potenz 3⁴
-            right: 3 · 3 · 3 · 3 (vier Faktoren)
+            right: 3 · 3 · 3 · 3
           - left: Die Potenz 10²
-            right: 10 · 10 (zwei Faktoren)
+            right: 10 · 10
+        distractors:
+          - 3 · 4
         explanation: Der Exponent sagt, wie viele gleiche Faktoren es sind. Die Basis ist der Faktor selbst.
         links:
           - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
       - type: true-false
-        id: drei-hoch-vier
-        text: "$3^4$ ist dasselbe wie 3 · 4."
+        id: zwei-hoch-fuenf
+        text: "Ben rechnet: $2^5 = 2 \\cdot 5 = 10$. Stimmt das?"
         answer: false
-        explanation: $3^4$ ist 3 · 3 · 3 · 3 = 81. Das Produkt 3 · 4 ist nur 12.
+        explanation: $2^5$ ist 2 · 2 · 2 · 2 · 2 = 32, denn fünf Faktoren 2 werden malgenommen.
         links:
           - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
@@ -131,12 +143,14 @@ blocks:
         text: Mira legt einen Würfel mit Kante 4. Er hat 4 Lagen, jede Lage ist ein Quadrat aus 4 mal 4 Plättchen. Wie viele Plättchen braucht sie?
         answer: 64
         tolerance: 0
-        explanation: Eine Lage hat 4 · 4 = 16 Plättchen. Vier Lagen sind 16 · 4 = 64, also $4^3$ ist 4 · 4 · 4 = 64.
+        explanation: Eine Lage hat 4 · 4 = 16 Plättchen, vier Lagen sind 16 · 4 = 64, also $4^3$.
         mistakes:
           - answer: 16
             message: Das ist nur eine Lage. Der Würfel hat 4 Lagen übereinander.
           - answer: 12
-            message: Du hast 4 · 3 gerechnet. Die Basis 4 kommt dreimal als Faktor vor.
+            message: Du hast 4 · 3 gerechnet. Rechne 4 · 4 · 4.
+          - answer: 8
+            message: Du hast 4 + 4 gerechnet. Rechne Lagen mal Plättchen einer Lage.
         links:
           - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
