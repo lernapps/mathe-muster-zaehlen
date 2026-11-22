@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: plan
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -120,9 +120,10 @@ Abhängigkeiten der Veröffentlichung: #385 (grundrechenarten-rechengesetze) zue
       off), and which misconception the feedback catches.
 - [x] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
       elements", never a silent "1–20"), the languages.
-- [ ] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
+- [x] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
       approach, the scope, every "(guess)", the sources and what is unchecked, the archetype and its reason. Stop and
       wait. Changes: change them, then ask again.
+      Creator: Orchestrator (in Vertretung): Recherche freigegeben; Term-Fund bestätigt (Regel in Worten mit Platzhalter, kein Termumformen); Musterseite = Quadrat- und Kubikzahlen
 
 ### Answers
 
@@ -150,17 +151,17 @@ Abhängigkeiten der Veröffentlichung: #385 (grundrechenarten-rechengesetze) zue
 
 ### Tasks
 
-- [ ] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
+- [x] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
       "Content method".
-- [ ] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
-- [ ] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
+- [x] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
+- [x] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
       opening task, the change of activity, the reward, the story.
-- [ ] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
+- [x] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
       screen, `npx --no -- lernapps plan add --at pattern "<task>"`. Then the others, one call each:
       `npx --no -- lernapps plan add --at pages "<task>"`. Each task says what it builds and what it shows.
-- [ ] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
+- [x] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
       learners see after each. Keep the files in `.vibe/sketches/`.
-- [ ] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
+- [x] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
 - [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
@@ -172,6 +173,45 @@ checks and what it cannot; how a later agent adds a chapter. It becomes the cont
 <!-- An explainer: per figure, model and component its learning action in two to four sentences
 (`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
 page, which a link. -->
+
+**Geschichte (Schüler bis Klasse 6: gezeichnete Kinder, ein Ort):** Mira (11) und Ben (10) richten die Spielecke ihrer Klasse ein und legen dafür Plättchen aus. Jede Seite löst einen Schritt: Muster für die Wandbilder, Quadrate und Würfel für die Bauecke, Zehnerpotenzen für das Zählen der Plättchendose, Outfits für das Faschingsfest. Namen frei erfunden, einmal im Content-Guide festgelegt. Kein Kindchenschema.
+
+**Seiten, Dateien, Muster (Kapitel `muster`):**
+
+| Seite | Datei | Baustein | Muster |
+|---|---|---|---|
+| Das brauchst du hier | `muster/recap` | recap natuerliche-zahlen, grundrechenarten-rechengesetze | Selbsttest im Text, keine Übung; nennt beide Bausteine mit `name.de` |
+| Muster fortsetzen | `muster/folgen` | muster-zahlenfolgen | `generated` nächstes/n-tes Folgenglied (`mistakes`: Differenz als Faktor, Bildnummer statt Anzahl); `ordering`; `true-false` mit Begründung |
+| Die Regel finden | `muster/regel` | muster-zahlenfolgen | Regel in Worten mit Platzhalter („Nummer des Bildes“, Kästchen oder n): `single-choice`, `generated` (Anzahl für Bild n), `number`. **Diese Seite führt den Platzhalter ein; kein Termumformen, keine Unbekannte** (vom Orchestrator bestätigt) |
+| Quadrat- und Kubikzahlen | `muster/quadrat-kubik` | potenzen | **Musterseite.** `image` SVG (Quadrat, Würfel aus Plättchen), `generated` (b^e mit `mistakes`: b·e, b+e), `number`, `matching` (Potenz ↔ Faktoren), `true-false` |
+| Zehnerpotenzen | `muster/zehnerpotenzen` | potenzen | `table` Stellenwerttafel, `generated` (10^n ausschreiben, Anzahl Nullen), `ordering`, `number` |
+| Zählen mit der Tabelle | `muster/tabelle` | zaehlprinzip | `image` Plättchenfeld/Tabelle, `generated` (a·b Möglichkeiten, `mistakes`: a+b), `number`, `single-choice` |
+| Zählen mit dem Baum | `muster/baum` | zaehlprinzip | `image` Baumdiagramm (SVG), `generated` 2–3 Stufen, `number`, `true-false`; Rückblick „Was du jetzt kannst“ |
+
+**Voraussetzungen, die die App nicht übt:** grundrechenarten-rechengesetze und natuerliche-zahlen → eine Sammel-Wiederholung am Kapitelanfang (kein Link je Seite). Zweite Voraussetzung von potenzen→primfaktoren liegt in #389, nicht hier.
+
+**Figuren (Lernhandlung):** Plättchenbild (SVG): Lernende zählen die Plättchen je Bild und sagen das nächste voraus; die Bildunterschrift sagt, worauf sie achten (neue Plättchen je Schritt). Quadrat/Würfel: die Kantenlänge ist gegeben, sie ermitteln die Anzahl und lesen die Potenz als gleiche Faktoren. Stellenwerttafel: jede Stelle mal zehn. Plättchenfeld/Baum: Zeilen mal Spalten bzw. Äste je Stufe; das Bild zeigt nur das Gegebene, nie die Antwort. Alle mit `alt`.
+
+**Engagement je Seite:** Einstieg = leichte Aufgabe vor der Erklärung mit Begründung; Wechsel schauen–tun–lesen, höchstens 4 Textblöcke in Folge; Belohnung = „Du kannst jetzt …“ und Ausblick; Wiederholung nur in anderer Form.
+
+**Darstellungen (regeln.md 1.5):** „Plättchenbild“ und „Rechteckmodell“ heißen überall gleich; Stellenwerttafel als `table`; Baumdiagramm ab `muster/baum`.
+
+**Komponenten:** keine (guess; kein Block fehlt, `prefer-built-in-block`).
+
+**Schreibweisen:** `·` und `:`, große Zahlen mit schmalem geschütztem Leerzeichen ab 5 Stellen, Eingaben akzeptieren Komma und Punkt, keine Brüche nötig.
+
+**Mindestens drei Aufgaben je Baustein, steigend; mindestens vier Übungen je Seite** (`explainer-interaction`).
+
+**Engagement je Seite (Einstieg · Wechsel · Belohnung · Geschichte):**
+- `recap`: Einstieg 3 Kurzfragen (Stellenwert, Klammer vor Punkt) mit Begründung · Wechsel Frage–Lösung · Belohnung „Du bist bereit für die Plättchen“ · Mira und Ben holen die Plättchendose.
+- `folgen`: Einstieg: drittes Plättchenbild der Wandreihe fortsetzen, Begründung zeigt „+3“ · schauen–zählen–vorhersagen–prüfen · Belohnung: Folge selbst fortsetzen · Wandbilder für die Spielecke.
+- `regel`: Einstieg: wie viele Plättchen hat Bild 10, ohne alle zu legen? · Bild–Regel in Worten–Platzhalter–Aufgabe · Belohnung: Regel für Bild 100 anwenden · Ben will das Wandbild größer.
+- `quadrat-kubik`: Einstieg: Quadrat mit Kante 4 legen, Plättchen zählen, Begründung 4·4 · Bild–Beispiel–Regel–Übung · Belohnung: 4³ als Würfel lesen und rechnen · Bauecke aus Quadraten und Würfeln.
+- `zehnerpotenzen`: Einstieg: wie viele Plättchen in 10 Zehnerstangen à 10 Reihen? · Tafel–Beispiel–Übung · Belohnung: 1 000 000 als 10⁶ schreiben · Zählen der Plättchendose.
+- `tabelle`: Einstieg: 3 Shirts × 2 Hosen als Plättchenfeld zählen · Feld–Tabelle–Rechnung · Belohnung: ohne Feld die Anzahl nennen · Outfits fürs Faschingsfest.
+- `baum`: Einstieg: Baum mit zwei Stufen zu Ende zeichnen/zählen · Baum–Vergleich mit Tabelle–Übung · Belohnung: Kapitelrückblick „Was du jetzt kannst“ · Fest ist geplant, die Spielecke fertig.
+
+**Ergänzen später:** Content-Guide `.agents/skills/app-content/SKILL.md`, Seiten in `src/muster/*.yaml`.
 
 ## Code
 
@@ -196,11 +236,16 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [ ] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: pattern: the one page or screen that is the pattern for the others -->
+- [ ] Musterseite muster/quadrat-kubik komplett: Einstieg, Plättchenbild-SVG mit alt, Beispiel, Aufgaben mit Rückmeldung und mistakes; Recap-Seite und Kapitel-Gerüst, app.yaml mit strand mathematik/arithmetik
+<!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-<!-- tasks: pages: the other pages or screens, after the pattern -->
+- [ ] Seiten muster/folgen und muster/regel (muster-zahlenfolgen), Platzhalter nur in Worten, kein Termumformen
+- [ ] Seite muster/zehnerpotenzen (potenzen): Stellenwerttafel, Zehnerpotenzen bis 10⁹
+- [ ] Seiten muster/tabelle und muster/baum (zaehlprinzip): Plättchenfeld, Tabelle, Baumdiagramm, Kapitelrückblick
+- [ ] Zwei Prüfer starten (Lernenden-Prüfer, Fachlicher Prüfer), Befunde in den Plan unter Review, Befunde beheben
+<!-- tasks: pages (4 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
