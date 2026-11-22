@@ -1,0 +1,133 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Die Regel finden
+description: Du beschreibst ein Muster mit einer Regel, in der die Nummer des Bildes als Platzhalter steht, und rechnest damit jedes Bild aus.
+competencies: [muster-zahlenfolgen]
+blocks:
+  - type: section
+    id: einstieg
+    title: Bild 10 ohne alle Bilder
+    blocks:
+      - type: text
+        text: Ben möchte wissen, wie viele Plättchen Bild 10 der Wandreihe hat. Er hat nicht genug Platz, alle Bilder zu legen.
+      - type: figure
+        image: images/folge-wand.svg
+        alt: Drei Plättchenbilder nebeneinander. Bild 1 hat ein hohles Anfangsplättchen und eine Spalte aus 3 Plättchen. Bild 2 hat zwei Spalten, Bild 3 hat drei Spalten.
+        caption: Dieselbe Wandreihe wie auf der Seite davor. Bild 1 hat 4 Plättchen, Bild 2 hat 7, Bild 3 hat 10.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: number
+        id: bild-zehn
+        text: Wie viele Plättchen hat Bild 10?
+        answer: 31
+        tolerance: 0
+        explanation: Von Bild 1 bis Bild 10 kommen 9 Spalten mit je 3 Plättchen dazu. Das sind 27 Plättchen mehr als bei Bild 1, also 4 + 27 = 31.
+        mistakes:
+          - answer: 30
+            message: Du hast 10 Spalten mit je 3 gezählt. Das Anfangsplättchen fehlt noch.
+          - answer: 13
+            message: Das sind die Plättchen von Bild 4. Setze die Folge bis Bild 10 fort.
+        links:
+          - title: Zahlenfolgen und Muster (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
+  - type: section
+    id: darstellung
+    title: Eine Regel mit Platzhalter
+    blocks:
+      - type: text
+        text: |
+          Jedes Bild hat ein Anfangsplättchen und so viele Spalten aus 3 Plättchen, wie seine Nummer sagt. Bild 3 hat
+          3 Spalten, Bild 10 hat 10 Spalten. Die Regel in Worten heißt: Rechne 3 mal die Nummer des Bildes und
+          addiere 1.
+      - type: text
+        text: |
+          Die Nummer des Bildes ändert sich, darum bekommt sie einen Platzhalter. Du kannst ein Kästchen schreiben,
+          oder den Buchstaben $n$. Der Platzhalter $n$ steht für die Nummer des Bildes. Du setzt eine Zahl ein und
+          rechnest aus.
+      - type: formula
+        formula: '3 \cdot n + 1'
+      - type: example
+        title: Bild 100
+        blocks:
+          - type: text
+            text: Für Bild 100 setzt du 100 ein. Dann rechnest du 100 · 3 + 1 = 301. Bild 100 hat 301 Plättchen.
+  - type: section
+    id: merke
+    title: Nummer und Anzahl
+    blocks:
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: Die Nummer des Bildes und die Anzahl der Plättchen sind zwei verschiedene Zahlen. In die Regel setzt du die Nummer ein, heraus kommt die Anzahl.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: regel-waehlen
+        text: Eine Folge hat die Glieder 5, 9, 13, 17 (Bild 1 bis Bild 4). Welche Regel in Worten passt?
+        options:
+          - text: Rechne 4 mal die Nummer des Bildes und addiere 1.
+            correct: true
+            info: Für Bild 1 gilt 4 · 1 + 1 = 5, für Bild 4 gilt 4 · 4 + 1 = 17.
+          - text: Addiere 4 zur Nummer des Bildes.
+            correct: false
+            info: Für Bild 2 ergäbe das 6, die Folge hat dort 9.
+          - text: Rechne 5 mal die Nummer des Bildes.
+            correct: false
+            info: Für Bild 2 ergäbe das 10, die Folge hat dort 9.
+          - text: Rechne 4 mal die Nummer des Bildes.
+            correct: false
+            info: Für Bild 1 ergäbe das 4, die Folge beginnt aber mit 5.
+        explanation: Der Abstand 4 sagt, womit du die Nummer malnimmst. Mit dem ersten Glied prüfst du, was noch dazukommt.
+        links:
+          - title: Zahlenfolgen und Muster (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
+      - type: generated
+        id: bild-ausrechnen
+        given:
+          a: { int: [2, 6] }
+          c: { int: [1, 5] }
+          n: { int: [5, 20] }
+        task:
+          text: "Zu einem Muster gehört die Regel: Rechne {{a}} mal die Nummer des Bildes und addiere {{c}}. Wie viele Plättchen hat Bild {{n}}?"
+        answer: { value: "a * n + c", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "a * n"
+            message: "Du hast das Addieren von {{c}} vergessen."
+          - value: "a * (n + c)"
+            message: "Du hast erst {{n}} + {{c}} gerechnet. Die Regel sagt: erst mal {{a}}, dann plus {{c}}."
+          - value: "a + n + c"
+            message: "Du hast alles addiert. Die Nummer des Bildes wird mit {{a}} malgenommen."
+        hint: "Setze {{n}} für die Nummer des Bildes ein. Was rechnest du zuerst?"
+        steps:
+          - "Setze die Nummer {{n}} ein: {{a}} mal {{n}} plus {{c}}."
+          - "Punkt vor Strich: erst das Produkt, dann plus {{c}}. Das Ergebnis ist {{answer}}."
+      - type: true-false
+        id: bild-hundert
+        text: "Mira rechnet für Bild 100 der Wandreihe: 100 · 3 = 300 Plättchen. Stimmt das?"
+        answer: false
+        explanation: Das Anfangsplättchen fehlt. Richtig ist 100 · 3 + 1 = 301.
+        links:
+          - title: Zahlenfolgen und Muster (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
+      - type: number
+        id: welches-bild
+        text: Zur Wandreihe gehört die Regel 3 mal die Nummer des Bildes plus 1. Welches Bild hat 31 Plättchen? Gib die Nummer an.
+        answer: 10
+        tolerance: 0
+        explanation: Ziehe 1 ab, das sind 30. Dann teilst du durch 3 und erhältst 10. Probe 10 · 3 + 1 = 31.
+        mistakes:
+          - answer: 31
+            message: Das ist die Anzahl der Plättchen. Gefragt ist die Nummer des Bildes.
+          - answer: 9
+            message: Mache die Probe. Bild 9 hat 9 · 3 + 1 = 28 Plättchen, nicht 31.
+        links:
+          - title: Zahlenfolgen und Muster (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
+  - type: section
+    id: weiter
+    title: Das kannst du jetzt
+    blocks:
+      - type: text
+        text: Du kannst die Regel eines Musters in Worten und mit einem Platzhalter sagen und jedes Bild ausrechnen. Als Nächstes legen Mira und Ben Quadrate und Würfel und lernen eine neue Schreibweise.

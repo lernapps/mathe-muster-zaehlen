@@ -245,10 +245,11 @@ page, which a link. -->
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [x] Musterseite muster/quadrat-kubik komplett: Einstieg, Plättchenbild-SVG mit alt, Beispiel, Aufgaben mit Rückmeldung und mistakes; Recap-Seite und Kapitel-Gerüst, app.yaml mit strand mathematik/arithmetik
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
-- [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
+- [x] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-- [ ] Seiten muster/folgen und muster/regel (muster-zahlenfolgen), Platzhalter nur in Worten, kein Termumformen
+      Creator: Orchestrator (in Vertretung): Musterseite angenommen, übrige Seiten nach diesem Muster; Stellenwerttafel als table mit E, Z, H, T
+- [x] Seiten muster/folgen und muster/regel (muster-zahlenfolgen), Platzhalter nur in Worten, kein Termumformen
 - [ ] Seite muster/zehnerpotenzen (potenzen): Stellenwerttafel, Zehnerpotenzen bis 10⁹
 - [ ] Seiten muster/tabelle und muster/baum (zaehlprinzip): Plättchenfeld, Tabelle, Baumdiagramm, Kapitelrückblick
 - [ ] Zwei Prüfer starten (Lernenden-Prüfer, Fachlicher Prüfer), Befunde in den Plan unter Review, Befunde beheben

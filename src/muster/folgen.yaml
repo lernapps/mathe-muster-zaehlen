@@ -1,0 +1,114 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Muster fortsetzen
+description: Du zählst die Plättchen in einer Reihe von Bildern, setzt die Folge fort und sagst, was sich jedes Mal ändert.
+competencies: [muster-zahlenfolgen]
+blocks:
+  - type: section
+    id: einstieg
+    title: Das nächste Bild vorhersagen
+    blocks:
+      - type: text
+        text: |
+          Mira und Ben legen für die Wand der Spielecke eine Reihe von Bildern. Jedes Bild hat ein Plättchen am Anfang
+          (hohler Kreis) und dahinter Spalten aus je 3 Plättchen.
+      - type: figure
+        image: images/folge-wand.svg
+        alt: Drei Plättchenbilder nebeneinander. Bild 1 hat ein hohles Anfangsplättchen und eine Spalte aus 3 Plättchen. Bild 2 hat zwei Spalten, Bild 3 hat drei Spalten.
+        caption: Zähle die Plättchen jedes Bildes. Was ändert sich von Bild zu Bild?
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: number
+        id: bild-vier
+        text: Mira legt Bild 4 nach demselben Muster. Wie viele Plättchen hat es?
+        answer: 13
+        tolerance: 0
+        explanation: Bild 1 hat 4 Plättchen, Bild 2 hat 7, Bild 3 hat 10. Jedes neue Bild hat 3 Plättchen mehr, also hat Bild 4 genau 10 + 3 = 13.
+        mistakes:
+          - answer: 12
+            message: Du hast 4 Spalten mit je 3 Plättchen gezählt. Das Anfangsplättchen fehlt noch.
+          - answer: 14
+            message: Von Bild 3 zu Bild 4 kommt eine Spalte aus 3 Plättchen dazu, nicht 4.
+        links:
+          - title: Zahlenfolgen und Muster (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
+  - type: section
+    id: darstellung
+    title: Aus Bildern wird eine Zahlenfolge
+    blocks:
+      - type: text
+        text: |
+          Schreibst du die Anzahl der Plättchen jedes Bildes hintereinander, entsteht eine Zahlenfolge: 4, 7, 10, 13 und
+          so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.
+      - type: definition
+        term: Zahlenfolge
+        explanation: Eine Zahlenfolge ist eine Reihe von Zahlen in fester Reihenfolge. Jede Zahl ist ein Folgenglied. Bei den Plättchenbildern gehört Bild 1 zum ersten Glied, Bild 2 zum zweiten und so weiter.
+      - type: example
+        title: Der Abstand zwischen den Gliedern
+        blocks:
+          - type: text
+            text: Von 4 zu 7 sind es 3 mehr, von 7 zu 10 wieder 3 mehr, von 10 zu 13 auch. Der Abstand bleibt gleich. Mit diesem Abstand setzt du die Folge fort.
+  - type: section
+    id: merke
+    title: Plus oder mal?
+    blocks:
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: Wenn jedes Glied um dieselbe Zahl größer wird, addierst du den Abstand. Bei 4, 7, 10 ist es plus 3, nicht mal 3.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: number
+        id: folge-fuenf
+        text: "Setze die Folge fort: 5, 9, 13, 17, ... Welche Zahl kommt als Nächstes?"
+        answer: 21
+        tolerance: 0
+        explanation: Der Abstand ist 4, denn 9 − 5 = 4 und 13 − 9 = 4. Also 17 + 4 = 21.
+        mistakes:
+          - answer: 20
+            message: Du hast 3 addiert. Rechne den Abstand zwischen zwei Gliedern aus, hier 9 − 5.
+        links:
+          - title: Zahlenfolgen und Muster (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
+      - type: ordering
+        id: folge-sechs
+        text: Bringe die Zahlen in die Reihenfolge einer Folge mit dem Abstand 6.
+        items: ["3", "9", "15", "21"]
+        explanation: Von 3 zu 9 sind es 6 mehr, von 9 zu 15 wieder 6 und von 15 zu 21 auch.
+        links:
+          - title: Zahlenfolgen und Muster (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
+      - type: generated
+        id: viertes-glied
+        given:
+          s: { int: [1, 20] }
+          d: { int: [2, 9] }
+        where: ["s != d"]
+        task:
+          text: "Eine Folge beginnt mit {{s}} und wird bei jedem Schritt um {{d}} größer. Wie heißt das vierte Glied?"
+        answer: { value: "s + 3 * d", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "s + 4 * d"
+            message: "Du hast einen Schritt zu viel gemacht. Vom ersten zum vierten Glied sind es 3 Schritte."
+          - value: "4 * d"
+            message: "Du hast den Startwert {{s}} vergessen. Das erste Glied ist {{s}}."
+        hint: "Das erste Glied ist {{s}}. Wie viele Schritte brauchst du bis zum vierten Glied?"
+        steps:
+          - "Das erste Glied ist {{s}}. Bis zum vierten Glied gehst du drei Schritte um je {{d}}."
+          - "Das vierte Glied ist {{answer}}."
+      - type: true-false
+        id: verdoppeln
+        text: "Bei der Folge 2, 4, 8, 16 wird jedes Glied um dieselbe Zahl größer."
+        answer: false
+        explanation: Die Abstände sind 2, 4 und 8. Sie sind verschieden. Bei dieser Folge wird jedes Glied verdoppelt.
+        links:
+          - title: Zahlenfolgen und Muster (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
+  - type: section
+    id: weiter
+    title: Das kannst du jetzt
+    blocks:
+      - type: text
+        text: Du kannst eine Folge fortsetzen, wenn du den Abstand findest. Für Bild 10 oder Bild 100 willst du nicht alle Bilder legen. Dafür suchen Mira und Ben auf der nächsten Seite eine Regel.
