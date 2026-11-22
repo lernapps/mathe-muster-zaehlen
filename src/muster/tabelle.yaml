@@ -41,8 +41,8 @@ blocks:
         licence: CC-BY-4.0
       - type: text
         text: |
-          Das Feld hat 3 Zeilen mit je 2 Plättchen, also 3 · 2 = 6 Plättchen. Das ist das Zählprinzip: Wählst du aus a
-          Möglichkeiten und danach aus b Möglichkeiten, gibt es a · b Möglichkeiten insgesamt.
+          Das Feld hat 3 Zeilen mit je 2 Plättchen, also 3 · 2 = 6 Plättchen. Das ist das Zählprinzip: Du nimmst die
+          Zahl der Möglichkeiten der ersten Auswahl mal die Zahl der zweiten, egal was du zuerst gewählt hast.
       - type: table
         caption: Dieselben Outfits als Tabelle
         header: ["Shirt", "Hose 1", "Hose 2"]
@@ -58,7 +58,7 @@ blocks:
         title: Merke
         blocks:
           - type: text
-            text: Jede Auswahl der ersten Stufe lässt sich mit jeder Auswahl der zweiten Stufe verbinden. Darum rechnest du a · b und nicht a + b.
+            text: Jede Auswahl der ersten Stufe lässt sich mit jeder Auswahl der zweiten Stufe verbinden. Darum nimmst du die Zahlen mal und addierst sie nicht.
   - type: section
     id: uebung
     title: Übung
@@ -88,7 +88,7 @@ blocks:
         given:
           a: { int: [2, 6] }
           b: { int: [2, 5] }
-        where: ["a != b"]
+        where: ["a != b and a + b != a * (b - 1)"]
         task:
           text: "Ben hat {{a}} Shirts und {{b}} Hosen. Wie viele verschiedene Outfits kann er zusammenstellen?"
         answer: { value: "a * b", compare: { number: { format: integer } } }
@@ -118,7 +118,7 @@ blocks:
         text: Mira kann 12 Outfits zusammenstellen. Sie hat 4 Shirts. Wie viele Hosen hat sie?
         answer: 3
         tolerance: 0
-        explanation: Es gilt 4 · □ = 12. Weil 4 · 3 = 12 ist, hat Mira 3 Hosen.
+        explanation: Gesucht ist die Zahl, die mal 4 die 12 ergibt. Weil 4 · 3 = 12 ist, hat Mira 3 Hosen.
         mistakes:
           - answer: 8
             message: "Du hast 12 − 4 gerechnet. Die 12 Outfits sind ein Produkt: Shirts mal Hosen."

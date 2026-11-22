@@ -46,9 +46,12 @@ blocks:
         rows:
           - ["Z (Zehner)", "10", "10¹"]
           - ["H (Hunderter)", "100", "10²"]
-          - ["T (Tausender)", "1 000", "10³"]
+          - ["T (Tausender)", "1000", "10³"]
           - ["ZT (Zehntausender)", "10 000", "10⁴"]
+          - ["HT (Hunderttausender)", "100 000", "10⁵"]
           - ["M (Million)", "1 000 000", "10⁶"]
+          - ["ZM (Zehnmillion)", "10 000 000", "10⁷"]
+          - ["HM (Hundertmillion)", "100 000 000", "10⁸"]
           - ["Mrd. (Milliarde)", "1 000 000 000", "10⁹"]
       - type: example
         title: Die Zehnerpotenz 10⁵
@@ -56,7 +59,7 @@ blocks:
           - type: formula
             formula: '10^5 = 10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 = 100 000'
           - type: text
-            text: Der Exponent 5 zeigt, dass fünf Faktoren 10 vorkommen. Er zeigt auch, dass hinter der 1 fünf Nullen stehen.
+            text: "Der Exponent 5 zeigt, dass fünf Faktoren 10 vorkommen. Er zeigt auch, dass hinter der 1 fünf Nullen stehen. Mit Zehnerpotenzen schreibst du große Zahlen kurz: 5000 = 5 · 1000 = 5 · 10³."
   - type: section
     id: merke
     title: Der Exponent zählt Nullen
@@ -65,7 +68,7 @@ blocks:
         title: Merke
         blocks:
           - type: text
-            text: $10^3$ ist 1 000 und nicht 30. Der Exponent sagt nicht, womit du malnimmst, sondern wie viele Nullen hinter der 1 stehen.
+            text: $10^3$ ist 1000 und nicht 30. Der Exponent sagt nicht, womit du malnimmst, sondern wie viele Nullen hinter der 1 stehen.
   - type: section
     id: uebung
     title: Übung
@@ -88,6 +91,23 @@ blocks:
         steps:
           - "Die Basis 10 kommt {{e}}-mal als Faktor vor, hinter der 1 stehen {{e}} Nullen."
           - "Die Zahl ist {{answer}}."
+      - type: generated
+        id: zahl-aus-zehnerpotenz
+        given:
+          k: { int: [2, 9] }
+          e: { int: [2, 4] }
+        task:
+          text: "Schreibe {{k}} · 10 hoch {{e}} als Zahl, ohne Lücke."
+        answer: { value: "k * pow(10, e)", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "k * e * 10"
+            message: "Du hast {{k}} · {{e}} · 10 gerechnet. Die Zehnerpotenz mit dem Exponenten {{e}} hat {{e}} Nullen, dann kommt der Faktor {{k}} davor."
+          - value: "k + pow(10, e)"
+            message: "Du hast addiert. {{k}} · 10 hoch {{e}} heißt: {{k}} mal die Zehnerpotenz."
+        hint: "Schreibe erst die Zehnerpotenz als Zahl. Dann nimmst du sie mal {{k}}."
+        steps:
+          - "10 hoch {{e}} hat {{e}} Nullen hinter der 1."
+          - "Das mal {{k}} ist {{answer}}."
       - type: number
         id: million-potenz
         text: Eine Million hat sechs Nullen. Sie ist eine Zehnerpotenz mit der Basis 10. Wie heißt der Exponent?
@@ -115,7 +135,7 @@ blocks:
         text: In der Spielecke stehen 10 Kisten. In jeder Kiste liegen 10 Beutel, in jedem Beutel 10 Plättchen. Wie viele Plättchen sind das insgesamt?
         answer: 1000
         tolerance: 0
-        explanation: Das sind 10 · 10 · 10 = $10^3$ = 1 000 Plättchen.
+        explanation: Das sind 10 · 10 · 10 = $10^3$ = 1000 Plättchen.
         mistakes:
           - answer: 30
             message: Du hast 10 + 10 + 10 gerechnet. Kisten, Beutel und Plättchen sind drei Stufen, die du malnimmst.

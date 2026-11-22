@@ -20,7 +20,7 @@ blocks:
         text: Wie viele Plättchen hat Bild 10?
         answer: 31
         tolerance: 0
-        explanation: Von Bild 1 bis Bild 10 kommen 9 Spalten mit je 3 Plättchen dazu. Das sind 27 Plättchen mehr als bei Bild 1, also 4 + 27 = 31.
+        explanation: Bis Bild 10 kommen 9 Spalten mit je 3 Plättchen dazu, das sind 4 + 27 = 31.
         mistakes:
           - answer: 30
             message: Du hast 10 Spalten mit je 3 gezählt. Das Anfangsplättchen fehlt noch.
@@ -42,14 +42,12 @@ blocks:
         text: |
           Die Nummer des Bildes ändert sich, darum bekommt sie einen Platzhalter. Du kannst ein Kästchen schreiben,
           oder den Buchstaben $n$. Der Platzhalter $n$ steht für die Nummer des Bildes. Du setzt eine Zahl ein und
-          rechnest aus.
-      - type: formula
-        formula: '3 \cdot n + 1'
+          rechnest aus. Eine Rechnung mit Platzhalter heißt Term, hier $3 \cdot n + 1$.
       - type: example
         title: Bild 100
         blocks:
           - type: text
-            text: Für Bild 100 setzt du 100 ein. Dann rechnest du 100 · 3 + 1 = 301. Bild 100 hat 301 Plättchen.
+            text: Für Bild 100 setzt du 100 ein. Dann rechnest du 3 · 100 + 1 = 301. Bild 100 hat 301 Plättchen.
   - type: section
     id: merke
     title: Nummer und Anzahl
@@ -72,14 +70,34 @@ blocks:
             info: Für Bild 1 gilt 4 · 1 + 1 = 5, für Bild 4 gilt 4 · 4 + 1 = 17.
           - text: Addiere 4 zur Nummer des Bildes.
             correct: false
-            info: Für Bild 2 ergäbe das 6, die Folge hat dort 9.
+            info: Bild 2 ergäbe 6, nicht 9.
           - text: Rechne 5 mal die Nummer des Bildes.
             correct: false
-            info: Für Bild 2 ergäbe das 10, die Folge hat dort 9.
+            info: Bild 2 ergäbe 10, nicht 9.
           - text: Rechne 4 mal die Nummer des Bildes.
             correct: false
-            info: Für Bild 1 ergäbe das 4, die Folge beginnt aber mit 5.
-        explanation: Der Abstand 4 sagt, womit du die Nummer malnimmst. Mit dem ersten Glied prüfst du, was noch dazukommt.
+            info: Bild 1 ergäbe 4, nicht 5.
+        explanation: Der Abstand 4 ist der Faktor, das erste Glied zeigt das Dazukommende.
+        links:
+          - title: Zahlenfolgen und Muster (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
+      - type: single-choice
+        id: term-waehlen
+        text: Welcher Term beschreibt die Folge 5, 9, 13, 17, wenn n die Nummer des Bildes ist?
+        options:
+          - text: 4 · n + 1
+            correct: true
+            info: Für n = 1 ergibt der Term 5, für n = 4 ergibt er 17.
+          - text: n + 4
+            correct: false
+            info: Für n = 2 ergibt der Term 6, nicht 9.
+          - text: 5 · n
+            correct: false
+            info: Für n = 2 ergibt der Term 10, nicht 9.
+          - text: 4 · n
+            correct: false
+            info: Für n = 1 ergibt der Term 4, nicht 5.
+        explanation: Der Abstand 4 steht beim Platzhalter.
         links:
           - title: Zahlenfolgen und Muster (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
@@ -89,6 +107,7 @@ blocks:
           a: { int: [2, 6] }
           c: { int: [1, 5] }
           n: { int: [5, 20] }
+        where: ["a * n != a + n + c"]
         task:
           text: "Zu einem Muster gehört die Regel: Rechne {{a}} mal die Nummer des Bildes und addiere {{c}}. Wie viele Plättchen hat Bild {{n}}?"
         answer: { value: "a * n + c", compare: { number: { format: integer } } }

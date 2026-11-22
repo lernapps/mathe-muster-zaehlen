@@ -66,6 +66,7 @@ blocks:
           a: { int: [2, 4] }
           b: { int: [2, 4] }
           c: { int: [2, 3] }
+        where: ["a * b != a + b + c"]
         task:
           text: "Zum Frühstück gibt es {{a}} Brote, {{b}} Aufstriche und {{c}} Getränke. Du wählst von jedem eines. Wie viele Möglichkeiten gibt es?"
         answer: { value: "a * b * c", compare: { number: { format: integer } } }
@@ -105,7 +106,7 @@ blocks:
         text: Ein Baum hat drei Stufen. Die erste Stufe hat 2 Äste, die dritte hat 4 Äste. Es gibt insgesamt 24 Wege. Wie viele Äste hat die zweite Stufe?
         answer: 3
         tolerance: 0
-        explanation: Es gilt 2 · □ · 4 = 24. Weil 2 · 4 = 8 und 8 · 3 = 24 ist, hat die zweite Stufe 3 Äste.
+        explanation: Die erste und die dritte Stufe geben 2 · 4 = 8. Weil 8 · 3 = 24 ist, hat die zweite Stufe 3 Äste.
         mistakes:
           - answer: 12
             message: "Du hast 24 : 2 gerechnet. Auch die dritte Stufe mit 4 Ästen gehört zur Rechnung."

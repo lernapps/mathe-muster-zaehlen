@@ -74,7 +74,7 @@ blocks:
             url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
       - type: ordering
         id: folge-sechs
-        text: Bringe die Zahlen in die Reihenfolge einer Folge mit dem Abstand 6.
+        text: Bringe die Zahlen von klein nach groß in die Reihenfolge einer Folge mit dem Abstand 6.
         items: ["3", "9", "15", "21"]
         explanation: Von 3 zu 9 sind es 6 mehr, von 9 zu 15 wieder 6 und von 15 zu 21 auch.
         links:
@@ -92,7 +92,7 @@ blocks:
         mistakes:
           - value: "s + 4 * d"
             message: "Du hast einen Schritt zu viel gemacht. Vom ersten zum vierten Glied sind es 3 Schritte."
-          - value: "4 * d"
+          - value: "3 * d"
             message: "Du hast den Startwert {{s}} vergessen. Das erste Glied ist {{s}}."
         hint: "Das erste Glied ist {{s}}. Wie viele Schritte brauchst du bis zum vierten Glied?"
         steps:

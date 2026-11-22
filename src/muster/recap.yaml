@@ -12,7 +12,7 @@ blocks:
   - type: text
     text: |
       **Natürliche Zahlen im Stellenwertsystem:** Ich kann natürliche Zahlen im Stellenwertsystem lesen, schreiben und
-      darstellen. Kannst du sagen, welchen Wert die Ziffer 4 in 2 407 hat? Sie steht an der Hunderterstelle und steht
+      darstellen. Kannst du sagen, welchen Wert die Ziffer 4 in 2407 hat? Sie steht an der Hunderterstelle und steht
       für 400.
   - type: text
     text: |

@@ -37,7 +37,7 @@ blocks:
       - type: text
         text: |
           Faktoren sind die Zahlen, die du malnimmst. Bei 4 · 4 sind beide Faktoren gleich. Statt 4 · 4 schreibst du
-          kurz $4^2$ und sprichst „4 hoch 2“. Die Zahl 4 · 4 = 16 heißt Quadratzahl.
+          kurz $4^2$ und sprichst „4 hoch 2“. Die Zahl 16 = 4 · 4 heißt Quadratzahl.
       - type: definition
         term: Potenz
         explanation: Eine Potenz ist ein Produkt aus gleichen Faktoren, zum Beispiel $4^2 = 4 \cdot 4$. Die untere Zahl heißt Basis, die kleine obere Zahl Exponent. Der Exponent sagt, wie oft die Basis als Faktor vorkommt.
