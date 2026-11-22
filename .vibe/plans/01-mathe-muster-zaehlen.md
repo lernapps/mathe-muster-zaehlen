@@ -196,6 +196,8 @@ page, which a link. -->
 
 **Darstellungen (regeln.md 1.5):** „Plättchenbild“ und „Rechteckmodell“ heißen überall gleich; Stellenwerttafel als `table`; Baumdiagramm ab `muster/baum`.
 
+**Regeländerungen (Orchestrator, regeln.md §2):** „Zahlenstrahl“ (ab 0 nach rechts) gilt, falls ein Strahl vorkommt; „Zahlengerade“ in dieser App nicht (keine negativen Zahlen); nie wechseln auf einer Seite. Brüche gesetzt, nicht `3/4` (hier nicht nötig). Stellenwerttafel: Darstellungs-Konventionen von #385 (Aufbau, Spaltenbeschriftung, Farben, Bündeln) kommen über den Orchestrator; die Seite `zehnerpotenzen` richtet sich danach.
+
 **Komponenten:** keine (guess; kein Block fehlt, `prefer-built-in-block`).
 
 **Schreibweisen:** `·` und `:`, große Zahlen mit schmalem geschütztem Leerzeichen ab 5 Stellen, Eingaben akzeptieren Komma und Punkt, keine Brüche nötig.
