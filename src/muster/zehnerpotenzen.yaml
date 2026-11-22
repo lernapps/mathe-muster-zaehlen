@@ -1,0 +1,132 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Zehnerpotenzen
+description: Du bündelst Plättchen zu Zehnern, Hundertern und Tausendern und schreibst große Zahlen als Zehnerpotenz.
+competencies: [potenzen]
+blocks:
+  - type: section
+    id: einstieg
+    title: Zehn zu einem bündeln
+    blocks:
+      - type: text
+        text: |
+          Mira und Ben zählen die Plättchen in der Dose. Sie bündeln immer zehn Plättchen einer Spalte zu einem
+          Plättchen in der Spalte links davon. Die Zahl bleibt dabei gleich. Die Spalten heißen wie in der Stellenwerttafel: E für Einer, Z für Zehner, H für Hunderter, T für Tausender.
+      - type: figure
+        image: images/buendeln.svg
+        alt: Links liegen 10 Plättchen mit dem Buchstaben E in zwei Reihen zu je 5. Ein Pfeil mit dem Wort bündeln zeigt nach rechts auf ein einzelnes Plättchen mit dem Buchstaben Z.
+        caption: Zehn Plättchen in der Spalte E werden zu einem Plättchen in der Spalte Z.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: number
+        id: zehn-zehner
+        text: Mira bündelt zehn Zehner-Plättchen zu einem Plättchen in der Spalte H. Wie viele Einer ist dieses eine Plättchen wert?
+        answer: 100
+        tolerance: 0
+        explanation: Zehn Zehner sind 10 · 10 = 100. Ein Plättchen in der Spalte H ist also 100 Einer wert.
+        mistakes:
+          - answer: 20
+            message: Du hast 10 + 10 gerechnet. Zehn Plättchen mit dem Wert 10 sind 10 · 10 wert.
+          - answer: 10
+            message: Das ist der Wert eines Zehners. Das neue Plättchen steht eine Spalte weiter links.
+        links:
+          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
+  - type: section
+    id: darstellung
+    title: Jede Spalte ist zehnmal so viel
+    blocks:
+      - type: text
+        text: |
+          Jede Spalte ist zehnmal so viel wert wie die Spalte rechts davon. Ein Plättchen in der Spalte H ist 10 · 10
+          wert, in der Spalte T ist es 10 · 10 · 10 wert. Das sind Zehnerpotenzen: Die Basis ist 10, der Exponent
+          sagt, wie oft die 10 als Faktor vorkommt.
+      - type: table
+        caption: Stellenwerttafel und Zehnerpotenzen
+        header: ["Spalte", "Wert", "Potenz"]
+        rows:
+          - ["Z (Zehner)", "10", "10¹"]
+          - ["H (Hunderter)", "100", "10²"]
+          - ["T (Tausender)", "1 000", "10³"]
+          - ["ZT (Zehntausender)", "10 000", "10⁴"]
+          - ["M (Million)", "1 000 000", "10⁶"]
+          - ["Mrd. (Milliarde)", "1 000 000 000", "10⁹"]
+      - type: example
+        title: Die Zehnerpotenz 10⁵
+        blocks:
+          - type: formula
+            formula: '10^5 = 10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 = 100 000'
+          - type: text
+            text: Der Exponent 5 zeigt, dass fünf Faktoren 10 vorkommen. Er zeigt auch, dass hinter der 1 fünf Nullen stehen.
+  - type: section
+    id: merke
+    title: Der Exponent zählt Nullen
+    blocks:
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: $10^3$ ist 1 000 und nicht 30. Der Exponent sagt nicht, womit du malnimmst, sondern wie viele Nullen hinter der 1 stehen.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: zehnerpotenz-ausschreiben
+        given:
+          e: { int: [2, 5] }
+        task:
+          text: "Schreibe die Zehnerpotenz „10 hoch {{e}}“ als Zahl, ohne Lücke."
+        answer: { value: "pow(10, e)", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "10 * e"
+            message: "Du hast 10 · {{e}} gerechnet. Der Exponent {{e}} sagt, wie viele Nullen hinter der 1 stehen."
+          - value: "pow(10, e - 1)"
+            message: "Du hast eine Null zu wenig. Hinter der 1 stehen {{e}} Nullen."
+          - value: "pow(10, e + 1)"
+            message: "Du hast eine Null zu viel. Hinter der 1 stehen genau {{e}} Nullen."
+        hint: "Wie viele Nullen stehen hinter der 1?"
+        steps:
+          - "Die Basis 10 kommt {{e}}-mal als Faktor vor, hinter der 1 stehen {{e}} Nullen."
+          - "Die Zahl ist {{answer}}."
+      - type: number
+        id: million-potenz
+        text: Eine Million hat sechs Nullen. Sie ist eine Zehnerpotenz mit der Basis 10. Wie heißt der Exponent?
+        answer: 6
+        tolerance: 0
+        explanation: Hinter der 1 stehen sechs Nullen, also sind es sechs Faktoren 10. Es gilt 1 000 000 = $10^6$.
+        mistakes:
+          - answer: 7
+            message: Du hast die Ziffern gezählt. Eine Million hat 7 Ziffern, aber hinter der 1 stehen 6 Nullen.
+          - answer: 1
+            message: Die 1 ist keine Null. Zähle die Nullen hinter der 1.
+        links:
+          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
+      - type: ordering
+        id: zehnerpotenzen-ordnen
+        text: Ordne die Zehnerpotenzen von der kleinsten zur größten Zahl.
+        items: ["10²", "10³", "10⁴", "10⁵"]
+        explanation: Mit jedem Exponenten mehr kommt eine Null hinzu und die Zahl wird zehnmal so groß.
+        links:
+          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
+      - type: number
+        id: kisten
+        text: In der Spielecke stehen 10 Kisten. In jeder Kiste liegen 10 Beutel, in jedem Beutel 10 Plättchen. Wie viele Plättchen sind das insgesamt?
+        answer: 1000
+        tolerance: 0
+        explanation: Das sind 10 · 10 · 10 = $10^3$ = 1 000 Plättchen.
+        mistakes:
+          - answer: 30
+            message: Du hast 10 + 10 + 10 gerechnet. Kisten, Beutel und Plättchen sind drei Stufen, die du malnimmst.
+          - answer: 100
+            message: Das sind nur zwei Stufen, 10 Kisten mal 10 Beutel. Jeder Beutel hat noch 10 Plättchen.
+        links:
+          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
+  - type: section
+    id: weiter
+    title: Das kannst du jetzt
+    blocks:
+      - type: text
+        text: Du kannst große Zahlen als Zehnerpotenz schreiben und lesen. Das Fest in der Spielecke rückt näher. Als Nächstes zählen Mira und Ben, wie viele Möglichkeiten es für ihre Outfits gibt.

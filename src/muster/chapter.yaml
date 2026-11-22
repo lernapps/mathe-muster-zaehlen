@@ -1,4 +1,4 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: Muster aus Plättchen
 summary: Du legst Muster aus Plättchen, setzt sie fort und findest die Regel. Du liest Potenzen als wiederholtes Malnehmen und zählst Möglichkeiten mit Tabelle und Baum.
-pages: [recap, folgen, regel, quadrat-kubik]
+pages: [recap, folgen, regel, quadrat-kubik, zehnerpotenzen]
