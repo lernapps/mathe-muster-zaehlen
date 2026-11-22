@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: {}
+failedChecks: { checks-pass: 2 }
 ---
 
 # Plan: mathe-muster-zaehlen, first version
@@ -30,6 +30,8 @@ Kinder der Stufe 5–6 legen Plättchenmuster, setzen sie fort und beschreiben d
 ## Key decisions
 
 - Archetyp `explainer` (Format 2, `strand: mathematik/arithmetik`): Seiten erklären, Übungen dazwischen; Issue verlangt es. Kein Spiel, keine Zeitnahme nötig.
+- Kein `scope` in `src/app.yaml` (guess): die App hat keine `open-task` und folgt keinem fremden Material, nur der Karte.
+- Matching-Seiten ohne `$…$` (Unicode-Hochzahlen wie 2³): der Runtime-Test der Seite ohne JavaScript vergleicht sonst den Quelltext mit dem gesetzten Text (Fund fürs Plattform-Team, nicht selbst behoben).
 - Der Auftrag (Issue #386, vom Orchestrator geliefert) ersetzt das Interview: Goal, Learners, Content, Amount stehen dort. Languages, Look, Terms, Finding (guess), siehe Answers.
 
 ## Notes
@@ -41,7 +43,7 @@ Kinder der Stufe 5–6 legen Plättchenmuster, setzen sie fort und beschreiben d
 - `potenzen` – „Ich kann Potenzen mit natürlichen Exponenten berechnen und Zehnerpotenzen zum Darstellen großer Zahlen nutzen.“ (opens 44)
 - `zaehlprinzip` – „Ich kann mit dem Zählprinzip und Baumdiagrammen die Anzahl von Möglichkeiten bestimmen.“ (opens 6)
 
-**Voraussetzungen von außen:** alle drei `requires: grundrechenarten-rechengesetze` (#385, Schritt 3, requires `schriftliche-verfahren`). Zehnerpotenzen knüpfen laut Issue an die Stellenwerttafel an (`natuerliche-zahlen`, #385). Beides wiederholt eine Sammel-Wiederholung am Kapitelanfang (`recap: [mathematik/arithmetik/natuerliche-zahlen, mathematik/arithmetik/grundrechenarten-rechengesetze]`), kompakt, ohne Übung. Keine Verlinkung in die App von #385.
+**Voraussetzungen von außen:** alle drei `requires: grundrechenarten-rechengesetze` (#385, Schritt 3, requires `schriftliche-verfahren`). Zehnerpotenzen knüpfen laut Issue an die Stellenwerttafel an (`natuerliche-zahlen`, #385). Beides wiederholt eine Sammel-Wiederholung am Kapitelanfang (`recap: [mathematik/natuerliche-zahlen, mathematik/grundrechenarten-rechengesetze]`), kompakt, ohne Übung. Keine Verlinkung in die App von #385.
 
 **Nachfolger (Abgrenzung, nicht hier):** `primfaktoren-ggt-kgv` (#389), `quadratwurzeln`, Potenzgesetze (#392), `zufall-baumdiagramm` (#401), Terme mit Variablen (#393).
 
@@ -232,14 +234,14 @@ page, which a link. -->
       `npx --no -- lernapps create --archetype explainer`.
 - [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
-- [ ] Load skill `lernapps-explainer`.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer`.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Musterseite muster/quadrat-kubik komplett: Einstieg, Plättchenbild-SVG mit alt, Beispiel, Aufgaben mit Rückmeldung und mistakes; Recap-Seite und Kapitel-Gerüst, app.yaml mit strand mathematik/arithmetik
+- [x] Musterseite muster/quadrat-kubik komplett: Einstieg, Plättchenbild-SVG mit alt, Beispiel, Aufgaben mit Rückmeldung und mistakes; Recap-Seite und Kapitel-Gerüst, app.yaml mit strand mathematik/arithmetik
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A

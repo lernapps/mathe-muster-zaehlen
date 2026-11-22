@@ -20,7 +20,7 @@ Regeln des Epics: `docs/mathe-epic/regeln.md` (Schreibweisen, Aufgaben, Quellen)
 
 Kapitel `muster` „Muster aus Plättchen“ (Seiten in dieser Reihenfolge):
 
-- `muster/recap` (recap `mathematik/arithmetik/natuerliche-zahlen`, `…/grundrechenarten-rechengesetze`): keine Übung.
+- `muster/recap` (recap `mathematik/natuerliche-zahlen`, `mathematik/grundrechenarten-rechengesetze`): keine Übung.
 - `muster-zahlenfolgen` – „Ich kann Zahlenfolgen fortsetzen und die Regel mit Worten und mit einem Term beschreiben.“
   Seiten `muster/folgen`, `muster/regel`.
 - `potenzen` – „Ich kann Potenzen mit natürlichen Exponenten berechnen und Zehnerpotenzen zum Darstellen großer Zahlen

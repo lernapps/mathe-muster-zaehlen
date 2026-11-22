@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+description: "Kurze Wiederholung: Stellenwerte lesen und Klammern vor Punkt vor Strich beachten."
+recap:
+  - mathematik/natuerliche-zahlen
+  - mathematik/grundrechenarten-rechengesetze
+blocks:
+  - type: text
+    text: |
+      Mira und Ben richten die Spielecke ihrer Klasse ein. Dafür legen sie viele Plättchen aus. Bevor du mit ihnen
+      legst, prüfe dich selbst. Antworte im Kopf.
+  - type: text
+    text: |
+      **Natürliche Zahlen im Stellenwertsystem:** Ich kann natürliche Zahlen im Stellenwertsystem lesen, schreiben und
+      darstellen. Kannst du sagen, welchen Wert die Ziffer 4 in 2 407 hat? Sie steht an der Hunderterstelle und steht
+      für 400.
+  - type: text
+    text: |
+      **Vorrangregeln und Rechengesetze:** Ich kann Klammern und Vorrangregeln beachten und Rechengesetze für
+      vorteilhaftes Rechnen nutzen. Was ergibt 3 + 4 · 2? Punkt vor Strich: erst 4 · 2 = 8, dann 3 + 8 = 11. Und
+      (3 + 4) · 2? Die Klammer zuerst: 7 · 2 = 14.
+  - type: text
+    text: Wenn dir etwas davon schwerfällt, schau auf der Lernlandkarte nach (Link oben). Sonst geht es mit den Plättchen los.
