@@ -1,0 +1,129 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Zählen mit dem Baum
+description: Du zählst Möglichkeiten mit einem Baumdiagramm, auch wenn es mehr als zwei Auswahlen gibt.
+competencies: [zaehlprinzip]
+blocks:
+  - type: section
+    id: einstieg
+    title: Vom Feld zum Baum
+    blocks:
+      - type: text
+        text: |
+          Dieselben Outfits wie auf der Seite davor, jetzt als Baum. Er beginnt links an der Wurzel. Jeder Ast ist eine
+          Auswahl, jeder Weg von links bis zu einem Ende ist ein Outfit.
+      - type: figure
+        image: images/baum-outfits.svg
+        alt: Ein Baumdiagramm von links nach rechts. Von der Wurzel gehen 3 Äste zu Shirt 1, Shirt 2 und Shirt 3. Von jedem Shirt gehen 2 Äste zu Hose 1 und Hose 2.
+        caption: Der Baum hat zwei Stufen. In der ersten wird das Shirt gewählt, in der zweiten die Hose.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: number
+        id: dritte-hose
+        text: Mira kauft eine dritte Hose. Wie viele Outfits gibt es jetzt mit ihren 3 Shirts?
+        answer: 9
+        tolerance: 0
+        explanation: An jedem der 3 Shirt-Äste hängen jetzt 3 Hosen-Äste. Das sind 3 · 3 = 9 Wege.
+        mistakes:
+          - answer: 6
+            message: Das sind die Outfits mit 2 Hosen. Die dritte Hose gibt jedem Shirt einen weiteren Ast.
+          - answer: 8
+            message: Du hast 6 + 2 gerechnet. Die neue Hose passt zu jedem der 3 Shirts, nicht nur zu zweien.
+        links:
+          - title: Zählprinzip (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
+  - type: section
+    id: darstellung
+    title: Stufe für Stufe malnehmen
+    blocks:
+      - type: definition
+        term: Baumdiagramm
+        explanation: Ein Baumdiagramm zeigt Auswahlen Stufe für Stufe. Jede Stufe hat Äste für die Möglichkeiten, jeder Weg von der Wurzel bis zu einem Ende ist eine Möglichkeit insgesamt.
+      - type: text
+        text: |
+          Bei zwei Stufen sagt das Zählprinzip: erste Stufe mal zweite Stufe. Bei drei Stufen nimmst du alle drei
+          Zahlen mal. Den Baum kannst du dir dann vorstellen, ohne ihn ganz zu zeichnen.
+      - type: example
+        title: Ein Frühstück in drei Stufen
+        blocks:
+          - type: text
+            text: Zum Frühstück gibt es 2 Brote, 3 Aufstriche und 2 Getränke. Du wählst ein Brot, einen Aufstrich und ein Getränk. Das sind 2 · 3 · 2 = 12 Möglichkeiten.
+  - type: section
+    id: merke
+    title: Keine Stufe vergessen
+    blocks:
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: Zähle bei jeder Stufe, wie viele Äste von einem Punkt ausgehen, und nimm alle Stufen mal.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: fruehstueck-ueben
+        given:
+          a: { int: [2, 4] }
+          b: { int: [2, 4] }
+          c: { int: [2, 3] }
+        task:
+          text: "Zum Frühstück gibt es {{a}} Brote, {{b}} Aufstriche und {{c}} Getränke. Du wählst von jedem eines. Wie viele Möglichkeiten gibt es?"
+        answer: { value: "a * b * c", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "a * b"
+            message: "Du hast die Getränke vergessen. Jede Stufe wird malgenommen, hier sind es drei."
+          - value: "a + b + c"
+            message: "Du hast die Auswahlen addiert. Jede Auswahl lässt sich mit allen anderen verbinden, darum wird malgenommen."
+        hint: "Wie viele Stufen hat der Baum, und wie viele Äste hat jede?"
+        steps:
+          - "Der Baum hat drei Stufen mit {{a}}, {{b}} und {{c}} Ästen."
+          - "Das sind {{a}} · {{b}} · {{c}} = {{answer}} Wege."
+      - type: number
+        id: aeste-stufe-zwei
+        text: In der ersten Stufe eines Baums gibt es 3 Äste. An jedem hängen 4 Äste. Wie viele Äste hat die zweite Stufe insgesamt?
+        answer: 12
+        tolerance: 0
+        explanation: An jedem der 3 Äste hängen 4 weitere. Das sind 3 · 4 = 12 Äste in der zweiten Stufe.
+        mistakes:
+          - answer: 7
+            message: Du hast 3 + 4 gerechnet. An jedem Ast hängen 4 weitere, darum wird malgenommen.
+          - answer: 4
+            message: Das sind die Äste an einem einzigen Ast. Es gibt 3 Äste mit je 4.
+        links:
+          - title: Zählprinzip (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
+      - type: true-false
+        id: enden-zaehlen
+        text: "Du kannst die Möglichkeiten eines Baums bestimmen, indem du seine Enden zählst."
+        answer: true
+        explanation: Jeder Weg von der Wurzel zu einem Ende ist eine Möglichkeit, und jedes Ende gehört zu genau einem Weg.
+        links:
+          - title: Zählprinzip (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
+      - type: number
+        id: mittlere-stufe
+        text: Ein Baum hat drei Stufen. Die erste Stufe hat 2 Äste, die dritte hat 4 Äste. Es gibt insgesamt 24 Wege. Wie viele Äste hat die zweite Stufe?
+        answer: 3
+        tolerance: 0
+        explanation: Es gilt 2 · □ · 4 = 24. Weil 2 · 4 = 8 und 8 · 3 = 24 ist, hat die zweite Stufe 3 Äste.
+        mistakes:
+          - answer: 12
+            message: "Du hast 24 : 2 gerechnet. Auch die dritte Stufe mit 4 Ästen gehört zur Rechnung."
+          - answer: 6
+            message: "Du hast 24 : 4 gerechnet. Auch die erste Stufe mit 2 Ästen gehört zur Rechnung."
+        links:
+          - title: Zählprinzip (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
+  - type: section
+    id: weiter
+    title: Das kannst du jetzt
+    blocks:
+      - type: text
+        text: |
+          Du kannst Möglichkeiten mit Plättchenfeld, Tabelle und Baum zählen. Das Zählprinzip heißt: Alle Stufen werden
+          malgenommen.
+      - type: text
+        text: |
+          Rückblick auf das Kapitel: Du hast Muster fortgesetzt und ihre Regel mit einem Platzhalter beschrieben. Du
+          hast Potenzen als gleiche Faktoren gelesen und Zehnerpotenzen geschrieben. Und du hast Möglichkeiten gezählt.
+          Die Spielecke ist fertig, das Fest kann beginnen.
