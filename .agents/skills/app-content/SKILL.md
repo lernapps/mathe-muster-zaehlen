@@ -95,4 +95,6 @@ der Musterlösung; kein `mistake` darf für gezogene Werte dieselbe Zahl wie die
 
 ## Rules learned from mistakes
 
-None yet.
+- Keine Wikipedia- oder anderen externen `links:` an Aufgaben (regeln.md §4, „Nachschlagen ist keine Quelle“); das Werkzeug verlangt einen Link, also zeigt er auf die Kartenseite des Bausteins (`https://lernapps.net/apps/map/mathematik/c/<baustein>/`). Fehler stammte aus der ersten Musterseite.
+- Keine `$…$`-Formeln in Seiten von `matching`: der Test ohne JavaScript vergleicht den Quelltext. Unicode-Hochzahlen (2³) verwenden.
+- Stellenwerttafel wie in #385: Spalten von rechts E, Z, H, T mit Kürzel und Namen im Kopf, Plättchen als runde Marke mit Kürzel, Bündeln = zehn Plättchen werden eines links, Zahl unter der Tafel mit schmalem Leerzeichen ab 5 Stellen.

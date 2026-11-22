@@ -27,8 +27,8 @@ blocks:
           - answer: 8
             message: Du hast 4 + 4 gerechnet. Es sind 4 Reihen, und in jeder liegen 4 Plättchen, also wird malgenommen.
         links:
-          - title: Quadratzahl (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Quadratzahl"
+          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
   - type: section
     id: darstellung
     title: Gleiche Faktoren kurz schreiben
@@ -80,8 +80,8 @@ blocks:
           - answer: 10
             message: Du hast 5 + 5 gerechnet. Bei Reihen mal Plättchen wird malgenommen.
         links:
-          - title: Quadratzahl (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Quadratzahl"
+          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
       - type: generated
         id: potenz-berechnen
         given:
@@ -116,16 +116,16 @@ blocks:
             right: 10 · 10 (zwei Faktoren)
         explanation: Der Exponent sagt, wie viele gleiche Faktoren es sind. Die Basis ist der Faktor selbst.
         links:
-          - title: Potenz (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Potenz_(Mathematik)"
+          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
       - type: true-false
         id: drei-hoch-vier
         text: "$3^4$ ist dasselbe wie 3 · 4."
         answer: false
         explanation: $3^4$ ist 3 · 3 · 3 · 3 = 81. Das Produkt 3 · 4 ist nur 12.
         links:
-          - title: Potenz (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Potenz_(Mathematik)"
+          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
       - type: number
         id: wuerfel-vier
         text: Mira legt einen Würfel mit Kante 4. Er hat 4 Lagen, jede Lage ist ein Quadrat aus 4 mal 4 Plättchen. Wie viele Plättchen braucht sie?
@@ -138,8 +138,8 @@ blocks:
           - answer: 12
             message: Du hast 4 · 3 gerechnet. Die Basis 4 kommt dreimal als Faktor vor.
         links:
-          - title: Kubikzahl (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Kubikzahl"
+          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
+            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
   - type: section
     id: weiter
     title: Das kannst du jetzt
