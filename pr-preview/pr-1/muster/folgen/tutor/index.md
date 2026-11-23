@@ -71,7 +71,7 @@ Wenn jedes Glied um dieselbe Zahl größer wird, addierst du diese Zahl immer wi
 
 - Aufgabe `folge-fuenf` (unten)
 
-- Aufgabe `folge-sechs` (unten)
+- Aufgabe `luecke-in-folge` (unten)
 
 - Aufgabe `viertes-glied` (unten)
 
@@ -103,13 +103,17 @@ Du kannst eine Folge fortsetzen, wenn du den Abstand findest. Für Bild 10 oder 
   - 20: Du hast 3 addiert. Rechne den Abstand zwischen zwei Gliedern aus, hier 9 − 5.
 - Link: [../?via=tutor#folge-fuenf](../?via=tutor#folge-fuenf)
 
-### Aufgabe folge-sechs
+### Aufgabe luecke-in-folge
 
-- Aufgabe: Bringe die Zahlen von klein nach groß in die Reihenfolge einer Folge mit dem Abstand 6.
-- Antwortformat: die Einträge in die richtige Reihenfolge bringen (die App zeigt sie gemischt)
-- Lösung: 1. 3, 2. 9, 3. 15, 4. 21
-- Erklärung: Von 3 zu 9 sind es 6 mehr, von 9 zu 15 wieder 6 und von 15 zu 21 auch.
-- Link: [../?via=tutor#folge-sechs](../?via=tutor#folge-sechs)
+- Aufgabe: In der Folge 7, 13, __, 25, 31 fehlt eine Zahl. Welche?
+- Antwortformat: eine Zahl eintippen
+- Lösung: 19
+- Erklärung: Der Abstand ist 13 − 7 = 6. Auf 13 folgt also 13 + 6 = 19, und 19 + 6 = 25 stimmt.
+- Tipp der App: Wie viel kommt von einem Glied zum nächsten dazu?
+- Typische Fehler und was die App sagt:
+  - 18: Du hast 13 + 5 gerechnet. Der Abstand ist aber 13 − 7 = 6.
+  - 20: Du hast 7 addiert, den Anfangswert. Der Abstand ist 13 − 7 = 6.
+- Link: [../?via=tutor#luecke-in-folge](../?via=tutor#luecke-in-folge)
 
 ### Aufgabe viertes-glied
 
