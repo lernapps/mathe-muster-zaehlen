@@ -22,9 +22,9 @@ Kapitel `muster` „Muster aus Plättchen“ (Seiten in dieser Reihenfolge):
 
 - `muster/recap` (recap `mathematik/natuerliche-zahlen`, `mathematik/grundrechenarten-rechengesetze`): keine Übung.
 - `muster-zahlenfolgen` – „Ich kann Zahlenfolgen fortsetzen und die Regel mit Worten und mit einem Term beschreiben.“
-  Seiten `muster/folgen`, `muster/regel`.
+  Seiten `muster/folgen` (Folgenglied, Abstand, Wandreihe aus Plättchenbildern) und `muster/regel` (Regel in Worten, Platzhalter n, Wort „Term“, Aufgaben `regel-waehlen`, `term-waehlen`, `bild-ausrechnen`, `welches-bild`).
 - `potenzen` – „Ich kann Potenzen mit natürlichen Exponenten berechnen und Zehnerpotenzen zum Darstellen großer Zahlen
-  nutzen.“ Seiten `muster/quadrat-kubik`, `muster/zehnerpotenzen`.
+  nutzen.“ Seiten `muster/quadrat-kubik`, `muster/zehnerpotenzen` (Bündeln, Stellenwerttafel als `table`, `5000 = 5 · 10³`).
 - `zaehlprinzip` – „Ich kann mit dem Zählprinzip und Baumdiagrammen die Anzahl von Möglichkeiten bestimmen.“ Seiten
   `muster/tabelle`, `muster/baum`.
 
@@ -47,7 +47,8 @@ drei mit steigender Schwierigkeit.
 
 - Wörter der Karte: „Zahlenfolgen und Muster“, „Potenzen und Zehnerpotenzen“, „Zählprinzip“. Darstellungen heißen überall
   gleich: **Plättchenbild**, **Rechteckmodell**, **Stellenwerttafel**, **Baumdiagramm**. „Zahlenstrahl“ nur falls ein
-  Strahl vorkommt (keine negativen Zahlen, also nie „Zahlengerade“); nie auf einer Seite wechseln.
+  Strahl vorkommt (keine negativen Zahlen, also nie „Zahlengerade“); nie auf einer Seite wechseln. In dieser App kommt keiner vor.
+- Wörter für Anordnungen: **Reihe** (waagerecht im Plättchenbild), **Zeile** und **Spalte** (Tabelle, Plättchenfeld, Stellenwerttafel). **Abstand** für den gleichbleibenden Unterschied bei Folgen (nicht „Differenz“).
 - Schreibweisen: `·` und `:` (nie `*`, `/`), Minus `−`, große Zahlen ab fünf Stellen mit schmalem geschütztem Leerzeichen
   (`1 000 000`), vierstellig ohne Lücke, Eingabefelder akzeptieren Komma und Punkt. Anrede „du“, kurze Sätze, kein „man“
   in Arbeitsaufträgen. Potenzen als `3^4` im Quelltext, gesetzt als 3⁴; sprich „3 hoch 4“.
@@ -58,26 +59,27 @@ drei mit steigender Schwierigkeit.
 
 | Muster | Baustein | Form | Beispiel |
 |---|---|---|---|
-| Folgenglied vorhersagen | muster-zahlenfolgen | `generated`, `given` Startwert und Differenz, `mistakes`: Differenz mit Faktor verwechselt, Bildnummer statt Anzahl | `muster/folgen` |
+| Folgenglied vorhersagen | muster-zahlenfolgen | `generated`, `given` Startwert und Differenz, `mistakes`: ein Schritt zu viel, Startwert vergessen | `muster/folgen` (`viertes-glied`) |
 | Regel in Worten | muster-zahlenfolgen | `single-choice`, `generated` (Anzahl für Bild n), `number` | `muster/regel` |
 | Potenz berechnen | potenzen | `generated`, `mistakes`: Basis·Exponent, Basis+Exponent, Exponent als Basis | `muster/quadrat-kubik` |
 | Potenz deuten | potenzen | `matching` Potenz ↔ Faktoren, `true-false` mit Begründung | `muster/quadrat-kubik` |
-| Zehnerpotenz | potenzen | `generated` (Nullen zählen, 10^n ausschreiben), `ordering` | `muster/zehnerpotenzen` |
+| Zehnerpotenz | potenzen | `generated` `zehnerpotenz-ausschreiben` (Exponent 2–9) und `zahl-aus-zehnerpotenz` (k · 10^e), `number` (Exponent aus Nullen), `ordering` | `muster/zehnerpotenzen` |
+| Term wählen | muster-zahlenfolgen | `single-choice` `term-waehlen` (Optionen als Term mit n, nur Einsetzen, kein Umformen) | `muster/regel` |
 | Möglichkeiten zählen | zaehlprinzip | `generated` (Produkt der Auswahlen, `mistakes`: addiert), `number`, `single-choice` | `muster/tabelle`, `muster/baum` |
 
-Wertebereiche: Basen 2–10, Exponenten 2–4, Zehnerpotenzen bis 10⁹; Folgen mit Differenz 2–9, Startwert 1–20, bis
+Wertebereiche: `potenz-berechnen` Basis 3–6, Exponent 2–4 (Basis ≠ Exponent, (4, 2) ausgeschlossen, damit kein `mistake` die Antwort trifft), Zehnerpotenzen bis 10⁹; Folgen mit Differenz 2–9, Startwert 1–20, bis
 Bild 10; Zählaufgaben mit 2–4 Stufen, je 2–5 Auswahlen, höchstens 60 Möglichkeiten. Jede Aufgabe hat eine Rechenprobe in
 der Musterlösung; kein `mistake` darf für gezogene Werte dieselbe Zahl wie die Antwort geben.
 
 ## Figures
 
+- Bilder in `src/images/`: `folge-wand.svg` (Bild 1–3 der Wandreihe, hohles Anfangsplättchen), `quadrat-vier.svg`, `wuerfel-drei-lagen.svg` (Lagen nebeneinander), `buendeln.svg` (10 E → 1 Z), `plaettchenfeld-outfits.svg` (3 × 2), `baum-outfits.svg` (zwei Stufen).
 - Eigene SVG als `image` (`src/images/`), Bild zeigt nur das Gegebene, nie die Antwort. Plättchen: Kreise, Quadrat- und
   Würfelmodell als Lagen; ab zwei Lagen mit Beschriftung der Lage, nie Farbe allein als Information. Baumdiagramm: Wurzel
   links, Stufen nach rechts, Äste beschriftet.
 - Jedes Bild hat `alt` (nennt Zahlen und Struktur: „4 Reihen mit je 4 Plättchen“) und eine `caption`, die sagt, worauf
   man achtet. Eigene Zeichnung, Lizenz wie die App (CC BY 4.0 für Inhalte).
-- Stellenwerttafel: Aufbau, Spaltenbeschriftung, Farben und Bündeln nach den Konventionen von #385, sobald der
-  Orchestrator sie meldet.
+- Stellenwerttafel: ein `table` (Spalte mit Kürzel und Namen, Wert, Potenz), kein eigenes Bild; Kürzel E, Z, H, T, ZT, HT, M, ZM, HM, Mrd. wie in #385; „Bündeln“ als Idee im Text und im Bild `buendeln.svg`, keine Komponente (Orchestrator bestätigt).
 
 ## Sources
 
@@ -96,5 +98,6 @@ der Musterlösung; kein `mistake` darf für gezogene Werte dieselbe Zahl wie die
 ## Rules learned from mistakes
 
 - Keine Wikipedia- oder anderen externen `links:` an Aufgaben (regeln.md §4, „Nachschlagen ist keine Quelle“); das Werkzeug verlangt einen Link, also zeigt er auf die Kartenseite des Bausteins (`https://lernapps.net/apps/map/mathematik/c/<baustein>/`). Fehler stammte aus der ersten Musterseite.
+- Keine Zahl ≥ 1000 aus `{{answer}}` in `steps` von `generated`: die Plattform setzt dort einen Tausenderpunkt (verstößt gegen regeln.md §2). Beschreibe die Zahl in Worten.
 - Keine `$…$`-Formeln in Seiten von `matching`: der Test ohne JavaScript vergleicht den Quelltext. Unicode-Hochzahlen (2³) verwenden.
 - Stellenwerttafel wie in #385: Spalten von rechts E, Z, H, T mit Kürzel und Namen im Kopf, Plättchen als runde Marke mit Kürzel, Bündeln = zehn Plättchen werden eines links, Zahl unter der Tafel mit schmalem Leerzeichen ab 5 Stellen.
