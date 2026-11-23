@@ -36,7 +36,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Faktoren sind die Zahlen, die du malnimmst. Bei 4 · 4 sind beide Faktoren gleich. Statt 4 · 4 schreibst du
+          Faktoren sind die Zahlen, die du malnimmst. Das Ergebnis heißt Produkt. Bei 4 · 4 sind beide Faktoren gleich. Statt 4 · 4 schreibst du
           kurz $4^2$ und sprichst „4 hoch 2“. Die Zahl 16 = 4 · 4 heißt Quadratzahl.
       - type: definition
         term: Potenz
@@ -44,14 +44,14 @@ blocks:
       - type: figure
         image: images/wuerfel-drei-lagen.svg
         alt: Drei Lagen aus Plättchen nebeneinander gezeichnet, Lage 1, Lage 2 und Lage 3. Jede Lage hat 3 Reihen mit je 3 Plättchen.
-        caption: Hier liegen die drei Lagen nebeneinander. Im Würfel liegen sie übereinander. Jede Lage ist ein Quadrat aus 3 mal 3 Plättchen.
+        caption: Eine Lage ist ein Quadrat aus 3 mal 3 Plättchen. Im Würfel liegen drei Lagen übereinander, hier sind sie nebeneinander gezeichnet.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: text
         text: |
           Stapelst du die drei Lagen übereinander, entsteht ein Würfel. Eine Lage hat 3 · 3 Plättchen, und es gibt
           3 Lagen. Du rechnest also 3 · 3 · 3 = $3^3$. Der Exponent 3 zählt hier die Faktoren. Die Zahl heißt
-          Kubikzahl, weil sie zu einem Würfel (lateinisch cubus) gehört.
+          Kubikzahl.
       - type: example
         title: Ein Würfel mit Kante 3
         blocks:
@@ -74,18 +74,18 @@ blocks:
         id: quadrat-sechs-schreiben
         text: Mira legt ein Quadrat mit 6 Reihen. In jeder Reihe liegen 6 Plättchen. Wie schreibst du die Anzahl kurz?
         options:
-          - text: 6²
-            correct: true
-            info: 6 · 6 hat zwei gleiche Faktoren, also Basis 6 und Exponent 2.
-          - text: 6 · 2
-            correct: false
-            info: Das wäre 12. Der Exponent steht klein oben und sagt, wie oft 6 als Faktor vorkommt.
           - text: 2⁶
             correct: false
             info: Das ist 2 · 2 · 2 · 2 · 2 · 2. Hier wurden Basis und Exponent vertauscht.
+          - text: 6²
+            correct: true
+            info: 6 · 6 hat zwei gleiche Faktoren, also Basis 6 und Exponent 2.
           - text: 6 + 6
             correct: false
             info: Das ist 12. Bei Reihen mal Plättchen wird malgenommen, nicht addiert.
+          - text: 6 · 2
+            correct: false
+            info: Das wäre 12. Der Exponent steht klein oben und sagt, wie oft 6 als Faktor vorkommt.
         explanation: Die Plättchen sind 6 · 6. Die Basis 6 kommt zweimal als Faktor vor, kurz 6².
         links:
           - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
@@ -159,4 +159,4 @@ blocks:
     title: Das kannst du jetzt
     blocks:
       - type: text
-        text: Du kannst eine Potenz als Produkt gleicher Faktoren lesen und ausrechnen. Die Bauwand der Spielecke steht. Als Nächstes zählen Mira und Ben die Plättchen in der Dose und bündeln sie.
+        text: Du kannst eine Potenz als Produkt gleicher Faktoren lesen und ausrechnen. Die Quadrate und Würfel für die Spielecke sind gelegt. Als Nächstes zählen Mira und Ben die Plättchen in ihrer Dose und bündeln sie.

@@ -68,7 +68,7 @@ blocks:
         title: Merke
         blocks:
           - type: text
-            text: $10^3$ ist 1000 und nicht 30. Der Exponent sagt nicht, womit du malnimmst, sondern wie viele Nullen hinter der 1 stehen.
+            text: $10^3$ ist 1000 und nicht 30. Bei Zehnerpotenzen sagt der Exponent auch, wie viele Nullen hinter der 1 stehen. Er ist nicht der Faktor, mit dem du malnimmst.
   - type: section
     id: uebung
     title: Übung
@@ -116,7 +116,7 @@ blocks:
         explanation: Hinter der 1 stehen zwölf Nullen, also sind es zwölf Faktoren 10.
         mistakes:
           - answer: 13
-            message: Du hast die Ziffern gezählt. Es sind 13 Ziffern, aber hinter der 1 stehen nur Nullen, die du zählst.
+            message: Du hast alle Ziffern gezählt, auch die 1. Zähle nur die Nullen hinter der 1.
           - answer: 1
             message: Die 1 ist keine Null. Zähle die Nullen hinter der 1.
         links:

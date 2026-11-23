@@ -28,6 +28,8 @@ blocks:
             message: Du hast 4 Spalten mit je 3 Plättchen gezählt. Das Anfangsplättchen fehlt noch.
           - answer: 14
             message: Von Bild 3 zu Bild 4 kommt eine Spalte aus 3 Plättchen dazu, nicht 4.
+          - answer: 10
+            message: Das sind die Plättchen von Bild 3. Du sollst Bild 4 bestimmen.
         links:
           - title: Zahlenfolgen und Muster (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
@@ -37,7 +39,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Schreibst du die Anzahl der Plättchen jedes Bildes hintereinander, entsteht eine Zahlenfolge: 4, 7, 10, 13 und
+          Schreibst du die Anzahl der Plättchen jedes Bildes hintereinander, entsteht eine Zahlenfolge: 4, 7, 10 und
           so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.
       - type: definition
         term: Zahlenfolge
@@ -46,10 +48,10 @@ blocks:
         title: Der Abstand zwischen den Gliedern
         blocks:
           - type: text
-            text: Von 4 zu 7 sind es 3 mehr, von 7 zu 10 wieder 3 mehr, von 10 zu 13 auch. Der Abstand bleibt gleich. Mit diesem Abstand setzt du die Folge fort.
+            text: Von 4 zu 7 sind es 3 mehr, von 7 zu 10 wieder 3 mehr. Der Abstand bleibt gleich. Mit diesem Abstand setzt du die Folge fort.
   - type: section
     id: merke
-    title: Plus oder mal?
+    title: Immer wieder dasselbe addieren
     blocks:
       - type: note
         title: Merke

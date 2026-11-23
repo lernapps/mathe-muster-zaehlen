@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -226,6 +226,8 @@ page, which a link. -->
 
 **Fachlicher Prüfer (Sub-Agent):** 32 Aufgaben nachgerechnet, alle Musterlösungen richtig; alle `generated` über den ganzen Wertebereich geprüft (keine Division durch 0, keine unsinnigen Größen, `where` nötig und ausreichend). Befunde und was geändert wurde: `mistake 4*d` passte nicht zur Meldung → `3*d`; doppelte `mistake`-Werte bei einzelnen Zahlenpaaren → per `where` ausgeschlossen; vierstellige Zahlen mit Lücke (`2 407`, `1 000`) → ohne Lücke; Variablen a, b in der Tabellenseite → in Worten; Wort „Term“ fehlte → auf `regel` eingeführt mit Aufgabe `term-waehlen`; Kästchen als Unbekannte (`4 · □ = 12`, `2 · □ · 4 = 24`) → in Worten; `folge-sechs` mehrdeutig → „von klein nach groß“; Tabelle sprang von 10⁴ auf 10⁶ → HT, ZM, HM ergänzt; „Zehnerpotenzen zum Darstellen großer Zahlen“ nur halb → `5000 = 5 · 10³` und Aufgabe `zahl-aus-zehnerpotenz`; Zählprinzip „egal was du zuerst gewählt hast“ ergänzt; „Quadratzahl“ klarer gefasst. Als Hinweis bewusst nicht geändert: Wörter Reihe/Zeile/Spalte.
 
+**Zweiter Lernenden-Durchgang (ganze App, nach den ersten Korrekturen), was ich geändert habe:** Antwort 13 stand im Text vor der Aufgabe (Folge nur bis 10, ohne Glied 13); Überschrift „Plus oder mal?“ → „Immer wieder dasselbe addieren“; Rückmeldungen mit „Faktor“ und „Dazukommende“ vor ihrer Einführung umformuliert; „Produkt“ erklärt, „lateinisch cubus“ gestrichen, Bildunterschrift der Lagen klarer; Schluss von `quadrat-kubik` verweist nicht mehr auf eine nie genannte Wand; Umkehraufgabe der Regelseite fragt nach Bild 40 statt 31 (Antwort stand schon im Text); Wahr-Falsch der Regelseite ist jetzt „stimmt“; richtige Option stand immer an erster Stelle → Reihenfolge in vier Fragen gemischt; Mira-Ben-Wechsel (Mira hat 3 Shirts, dann 4) → Ben; Zählprinzip-Hinweis in `baum` sprachlich korrigiert; Merke zu den Zehnerpotenzen ohne die irreführende Verallgemeinerung; Feedback „13 Ziffern“ lesbarer; Tabelle auf 360 px (Wert und Potenz in einer Spalte). Offen gelassen: Tabelle und Plättchenbild auf `tabelle`/`zehnerpotenzen` stehen nach der Einstiegsaufgabe und lassen sich beim Vorauslesen als Antwort nutzen (Erklärung braucht die Darstellung; Einstieg steht davor), Glossar mit drei Begriffen (Runtime erzeugt es aus `definition`), „Wiederholung“ im Titel der Recap-Seite fehlt (Runtime), Fehlermeldungen der Runtime ohne Grund bei Wahr/Falsch und Ordnen.
+
 **Offen (nicht geprüft):** Bildschirmleser; Hessischer Lehrplan; Prüfung der letzten Änderungen durch einen neuen Lernenden-Durchgang (nur `lernapps check` und Build liefen); das Plattformverhalten bei `{{answer}}` mit Tausenderpunkt ist ein Fund, kein behobener Fehler.
 
 ## Code
@@ -266,7 +268,7 @@ page, which a link. -->
 - [x] Run `npx --no -- lernapps check` until it passes.
 - [x] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
-- [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
+- [x] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
       fixed.
 
 ## Commit

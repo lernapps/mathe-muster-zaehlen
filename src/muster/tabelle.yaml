@@ -27,7 +27,7 @@ blocks:
             url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
   - type: section
     id: darstellung
-    title: Das Plättchenfeld
+    title: Das Plättchenfeld, das Rechteckmodell
     blocks:
       - type: text
         text: |
@@ -67,15 +67,15 @@ blocks:
         id: rechnung-waehlen
         text: Mira hat 3 Shirts und 2 Hosen. Welche Rechnung gibt die Zahl der Outfits?
         options:
-          - text: 3 · 2
-            correct: true
-            info: Jedes der 3 Shirts lässt sich mit jeder der 2 Hosen verbinden.
           - text: 3 + 2
             correct: false
             info: Das zählt nur die Kleidungsstücke, nicht die Kombinationen.
           - text: 3 · 3
             correct: false
             info: Die Zahl der Hosen ist 2, nicht 3.
+          - text: 3 · 2
+            correct: true
+            info: Jedes der 3 Shirts lässt sich mit jeder der 2 Hosen verbinden.
           - text: 2 · 2
             correct: false
             info: Die Zahl der Shirts ist 3, nicht 2.
@@ -115,11 +115,11 @@ blocks:
             url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
       - type: number
         id: hosen-gesucht
-        text: Mira kann 12 Outfits zusammenstellen. Sie hat 4 Shirts. Wie viele Hosen hat sie?
+        text: Ben kann 12 Outfits zusammenstellen. Er hat 4 Shirts. Wie viele Hosen hat er?
         answer: 3
         tolerance: 0
         hint: Welche Zahl mal 4 ergibt 12? Probiere aus.
-        explanation: Gesucht ist die Zahl, die mal 4 die 12 ergibt. Weil 4 · 3 = 12 ist, hat Mira 3 Hosen.
+        explanation: Gesucht ist die Zahl, die mal 4 die 12 ergibt. Weil 4 · 3 = 12 ist, hat Ben 3 Hosen.
         mistakes:
           - answer: 8
             message: "Du hast 12 − 4 gerechnet. Die 12 Outfits sind ein Produkt: Shirts mal Hosen."
