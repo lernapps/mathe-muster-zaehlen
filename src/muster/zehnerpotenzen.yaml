@@ -109,7 +109,7 @@ blocks:
           - "10 hoch {{e}} hat {{e}} Nullen hinter der 1."
           - "Davor kommt der Faktor {{k}}: Die Zahl besteht aus {{k}} und {{e}} Nullen."
       - type: number
-        id: million-potenz
+        id: billion-potenz
         text: Die Zahl 1 000 000 000 000 (eine Billion) ist eine Zehnerpotenz mit der Basis 10. Wie heißt der Exponent?
         answer: 12
         tolerance: 0

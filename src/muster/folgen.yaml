@@ -101,7 +101,7 @@ blocks:
           - "Das erste Glied ist {{s}}. Bis zum vierten Glied gehst du drei Schritte um je {{d}}."
           - "Das vierte Glied ist {{answer}}."
       - type: true-false
-        id: verdoppeln
+        id: gleicher-abstand
         text: "Bei der Folge 3, 7, 11, 16 wird jedes Glied um dieselbe Zahl größer."
         answer: false
         explanation: Die Abstände sind 4, 4 und 5. Der letzte Abstand ist anders. Mit demselben Abstand 4 käme nach 11 die Zahl 15.

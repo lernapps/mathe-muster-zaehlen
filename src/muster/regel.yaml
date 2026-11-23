@@ -82,7 +82,7 @@ blocks:
             url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
       - type: single-choice
         id: term-waehlen
-        text: Welcher Term beschreibt die Folge 5, 9, 13, 17, wenn n die Nummer des Bildes ist?
+        text: Welcher Term beschreibt die Folge 5, 9, 13, 17, wenn $n$ die Nummer des Bildes ist?
         options:
           - text: 5 · n
             correct: false
