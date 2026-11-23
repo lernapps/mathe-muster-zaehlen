@@ -58,7 +58,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 - A5: Aufgabe potenz-berechnen der Seite „Quadrat- und Kubikzahlen“
 - A6: Aufgabe wuerfel-vier der Seite „Quadrat- und Kubikzahlen“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
 - A7: Aufgabe zehnerpotenz-ausschreiben der Seite „Zehnerpotenzen“
-- A8: Aufgabe million-potenz der Seite „Zehnerpotenzen“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
+- A8: Aufgabe billion-potenz der Seite „Zehnerpotenzen“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
 - A9: Aufgabe outfits-ueben der Seite „Zählen mit der Tabelle“
 - A10: Aufgabe tabelle-fuenf-vier der Seite „Zählen mit der Tabelle“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
 - A11: Aufgabe fruehstueck-ueben der Seite „Zählen mit dem Baum“

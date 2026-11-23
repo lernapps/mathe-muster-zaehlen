@@ -84,7 +84,7 @@ Jede Auswahl der ersten Stufe lässt sich mit jeder Auswahl der zweiten Stufe ve
 
 ### Das kannst du jetzt
 
-Du kannst Möglichkeiten mit dem Plättchenfeld und mit a · b zählen. Wenn es mehr als zwei Auswahlen gibt, wird das Feld unübersichtlich. Dafür zeichnen Mira und Ben auf der nächsten Seite einen Baum.
+Du kannst Möglichkeiten mit dem Plättchenfeld und mit der Rechnung Zahl mal Zahl zählen. Wenn es mehr als zwei Auswahlen gibt, wird das Feld unübersichtlich. Dafür zeichnen Mira und Ben auf der nächsten Seite einen Baum.
 
 ### Aufgabe outfits-sechs
 

@@ -110,7 +110,7 @@ Du kannst die Regel eines Musters in Worten und mit einem Platzhalter sagen und 
 
 ### Aufgabe term-waehlen
 
-- Aufgabe: Welcher Term beschreibt die Folge 5, 9, 13, 17, wenn n die Nummer des Bildes ist?
+- Aufgabe: Welcher Term beschreibt die Folge 5, 9, 13, 17, wenn $n$ die Nummer des Bildes ist?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✗ 5 · n – Für n = 2 ergibt der Term 10, nicht 9.

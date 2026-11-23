@@ -86,7 +86,7 @@ $10^3$ ist 1000 und nicht 30. Bei Zehnerpotenzen sagt der Exponent auch, wie vie
 
 - Aufgabe `zahl-aus-zehnerpotenz` (unten)
 
-- Aufgabe `million-potenz` (unten)
+- Aufgabe `billion-potenz` (unten)
 
 - Aufgabe `zehnerpotenzen-ordnen` (unten)
 
@@ -176,7 +176,7 @@ Nr. | k | e | Lösung | F1 | F2
 24 | 3 | 3 | 3.000 | 90 | 1003
 ```
 
-### Aufgabe million-potenz
+### Aufgabe billion-potenz
 
 - Aufgabe: Die Zahl 1 000 000 000 000 (eine Billion) ist eine Zehnerpotenz mit der Basis 10. Wie heißt der Exponent?
 - Antwortformat: eine Zahl eintippen
@@ -185,7 +185,7 @@ Nr. | k | e | Lösung | F1 | F2
 - Typische Fehler und was die App sagt:
   - 13: Du hast alle Ziffern gezählt, auch die 1. Zähle nur die Nullen hinter der 1.
   - 1: Die 1 ist keine Null. Zähle die Nullen hinter der 1.
-- Link: [../?via=tutor#million-potenz](../?via=tutor#million-potenz)
+- Link: [../?via=tutor#billion-potenz](../?via=tutor#billion-potenz)
 
 ### Aufgabe zehnerpotenzen-ordnen
 

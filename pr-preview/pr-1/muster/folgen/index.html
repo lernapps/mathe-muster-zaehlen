@@ -27,7 +27,7 @@
 </details>
 <p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
 <p class="explainer-tutor-status" role="status" aria-live="polite"></p>
-<script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧muster/folgen/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"mathe-muster-zaehlen","page":{"id":"folgen","title":"Muster fortsetzen","exercises":[{"id":"bild-vier","section":"einstieg","numbered":false},{"id":"folge-fuenf","section":"uebung","numbered":false},{"id":"folge-sechs","section":"uebung","numbered":false},{"id":"viertes-glied","section":"uebung","numbered":true},{"id":"verdoppeln","section":"uebung","numbered":false}],"sections":["einstieg","darstellung","merke","uebung","weiter"]},"tutor":"muster/folgen/tutor/","markdown":"muster/folgen/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Lade ⟦base⟧muster/folgen/tutor/⟦query⟧ und sei mein Tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../","storage":"mathe-muster-zaehlen","page":{"id":"folgen","title":"Muster fortsetzen","exercises":[{"id":"bild-vier","section":"einstieg","numbered":false},{"id":"folge-fuenf","section":"uebung","numbered":false},{"id":"folge-sechs","section":"uebung","numbered":false},{"id":"viertes-glied","section":"uebung","numbered":true},{"id":"gleicher-abstand","section":"uebung","numbered":false}],"sections":["einstieg","darstellung","merke","uebung","weiter"]},"tutor":"muster/folgen/tutor/","markdown":"muster/folgen/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"Ich brauche Hilfe bei einer Lern-Einheit. Ich schreibe Dir gleich, worum es geht.","go":"Mit {name} lernen","done":"✓ Kopiert – jetzt in {name} einfügen","copy":"Text kopieren","copied":"Der Prompt ist kopiert. Füg ihn in den Chat deines KI-Assistenten ein.","failed":"Kopieren ging nicht. Versuch es noch einmal."}</script>
 </div>
 </div>
 
@@ -168,15 +168,15 @@ so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.</
 <script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"de","spec":{"type":"generated","id":"viertes-glied","given":{"s":{"int":[1,20]},"d":{"int":[2,9]}},"where":["s != d"],"task":{"text":"Eine Folge beginnt mit {{s}} und wird bei jedem Schritt um {{d}} größer. Wie heißt das vierte Glied?"},"answer":{"value":"s + 3 * d","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"s + 4 * d","message":"Du hast einen Schritt zu viel gemacht. Vom ersten zum vierten Glied sind es 3 Schritte."},{"value":"3 * d","message":"Du hast den Startwert {{s}} vergessen. Das erste Glied ist {{s}}."}],"hint":"Das erste Glied ist {{s}}. Wie viele Schritte brauchst du bis zum vierten Glied?","steps":["Das erste Glied ist {{s}}. Bis zum vierten Glied gehst du drei Schritte um je {{d}}.","Das vierte Glied ist {{answer}}."]},"templates":{"de":{"task":"Eine Folge beginnt mit ⟦s⟧ und wird bei jedem Schritt um ⟦d⟧ größer. Wie heißt das vierte Glied?","steps":["Das erste Glied ist ⟦s⟧. Bis zum vierten Glied gehst du drei Schritte um je ⟦d⟧.","Das vierte Glied ist ⟦answer⟧."],"hint":"Das erste Glied ist ⟦s⟧. Wie viele Schritte brauchst du bis zum vierten Glied?","messages":["Du hast einen Schritt zu viel gemacht. Vom ersten zum vierten Glied sind es 3 Schritte.","Du hast den Startwert ⟦s⟧ vergessen. Das erste Glied ist ⟦s⟧."]}},"data":{},"seeds":[1,2,3,4,5,6,7,8,9,10,12,13,14,15,17,18,20,21,22,23,24,25,26,28,30,31,33,34,35,36,37,38,39,40,41,42,45,47,50,51,52,53,55,57,58,60,61,62,63,67,68,70,73,74,75,77,78,79,80,85,86,89,90,94,95,96,98],"texts":{"newTask":"Neue Aufgabe","practice":"Übe selbst, mit immer neuen Aufgaben:","hint":"Tipp","solution":"Lösung","taskNumber":"Aufgabe Nr. {n}"}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/4" data-block-id="d47bdb27" data-block-type="true-false" data-block-order="13">
-<div class="explainer-exercise explainer-question" id="verdoppeln">
+<div class="explainer-block" data-block="uebung/4" data-block-id="3b1b55bf" data-block-type="true-false" data-block-order="13">
+<div class="explainer-exercise explainer-question" id="gleicher-abstand">
 <p class="explainer-exercise-label">Aufgabe</p>
-<div class="question" id="frage-verdoppeln" data-id="verdoppeln" data-type="true-false">
+<div class="question" id="frage-gleicher-abstand" data-id="gleicher-abstand" data-type="true-false">
 <form class="question-form" novalidate>
 <fieldset>
 <legend class="question-text">Bei der Folge 3, 7, 11, 16 wird jedes Glied um dieselbe Zahl größer.</legend>
-<label class="question-option"><input type="radio" name="frage-verdoppeln" value="true"> <span>Stimmt</span></label>
-<label class="question-option"><input type="radio" name="frage-verdoppeln" value="false"> <span>Stimmt nicht</span></label>
+<label class="question-option"><input type="radio" name="frage-gleicher-abstand" value="true"> <span>Stimmt</span></label>
+<label class="question-option"><input type="radio" name="frage-gleicher-abstand" value="false"> <span>Stimmt nicht</span></label>
 </fieldset>
 <div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
 <div class="question-reveal" hidden>
@@ -192,7 +192,7 @@ so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.</
 <p class="question-explanation">Die Abstände sind 4, 4 und 5. Der letzte Abstand ist anders. Mit demselben Abstand 4 käme nach 11 die Zahl 15.</p>
 <p class="question-more"><a class="question-more-link" href="https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/" rel="noopener" title="Zahlenfolgen und Muster (Lernlandkarte)"><svg class="question-more-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="4.75" r="1" fill="currentColor"/><path d="M8 7v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span class="question-more-text">Mehr dazu: Zahlenfolgen und Muster (Lernlandkarte)</span></a></p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"verdoppeln","text":"Bei der Folge 3, 7, 11, 16 wird jedes Glied um dieselbe Zahl größer.","explanation":"Die Abstände sind 4, 4 und 5. Der letzte Abstand ist anders. Mit demselben Abstand 4 käme nach 11 die Zahl 15.","links":[{"title":"Zahlenfolgen und Muster (Lernlandkarte)","url":"https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"}],"type":"true-false","answer":false},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"de","question":{"id":"gleicher-abstand","text":"Bei der Folge 3, 7, 11, 16 wird jedes Glied um dieselbe Zahl größer.","explanation":"Die Abstände sind 4, 4 und 5. Der letzte Abstand ist anders. Mit demselben Abstand 4 käme nach 11 die Zahl 15.","links":[{"title":"Zahlenfolgen und Muster (Lernlandkarte)","url":"https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"}],"type":"true-false","answer":false},"rendered":{}}</script>
 </div>
 </div>
 </section>
@@ -240,7 +240,7 @@ so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.</
 <span class="explainer-feedback-local">Nur in diesem Browser gespeichert</span>
 <button type="button" class="explainer-feedback-off">Beenden</button>
 </div>
-<script type="application/json" class="explainer-feedback-data">{"storage":"mathe-muster-zaehlen","app":"Muster und Zählen","root":"../../","repository":"lernapps/mathe-muster-zaehlen","revision":"c67510b","page":{"title":"Muster fortsetzen","order":1}}</script>
+<script type="application/json" class="explainer-feedback-data">{"storage":"mathe-muster-zaehlen","app":"Muster und Zählen","root":"../../","repository":"lernapps/mathe-muster-zaehlen","revision":"e1a8f9c","page":{"title":"Muster fortsetzen","order":1}}</script>
 </aside>
 </template>
 <nav class="explainer-pager" aria-label="Weiterblättern"><a rel="prev" href="../../muster/recap/">Zurück: Das brauchst du hier</a><a rel="next" href="../../muster/regel/">Weiter: Die Regel finden</a></nav>

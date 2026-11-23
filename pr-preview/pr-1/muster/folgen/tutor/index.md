@@ -75,7 +75,7 @@ Wenn jedes Glied um dieselbe Zahl größer wird, addierst du diese Zahl immer wi
 
 - Aufgabe `viertes-glied` (unten)
 
-- Aufgabe `verdoppeln` (unten)
+- Aufgabe `gleicher-abstand` (unten)
 
 ### Das kannst du jetzt
 
@@ -196,10 +196,10 @@ Nr. | s | d | Lösung | F1 | F2
 67 | 16 | 4 | 28 | 32 | 12
 ```
 
-### Aufgabe verdoppeln
+### Aufgabe gleicher-abstand
 
 - Aufgabe: Bei der Folge 3, 7, 11, 16 wird jedes Glied um dieselbe Zahl größer.
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
 - Erklärung: Die Abstände sind 4, 4 und 5. Der letzte Abstand ist anders. Mit demselben Abstand 4 käme nach 11 die Zahl 15.
-- Link: [../?via=tutor#verdoppeln](../?via=tutor#verdoppeln)
+- Link: [../?via=tutor#gleicher-abstand](../?via=tutor#gleicher-abstand)
