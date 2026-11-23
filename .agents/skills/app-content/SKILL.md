@@ -20,7 +20,7 @@ Regeln des Epics: `docs/mathe-epic/regeln.md` (Schreibweisen, Aufgaben, Quellen)
 
 Kapitel `muster` „Muster aus Plättchen“ (Seiten in dieser Reihenfolge):
 
-- `muster/recap` (recap `mathematik/natuerliche-zahlen`, `mathematik/grundrechenarten-rechengesetze`): keine Übung.
+- `muster/recap` (recap `mathematik/natuerliche-zahlen`, `mathematik/grundrechenarten-rechengesetze`), nach regeln.md §7 gebaut: Kopf, je ein Abschnitt je Baustein in der Reihenfolge der `requires` (`stellenwert`, `vorrang`), Fachbegriffe als `definition` mit Zahlenbeispiel (landen im Glossar: Ziffer, Stellenwert, Stellenwerttafel, Vorrangregel, Kommutativ-, Assoziativ-, Distributivgesetz), Beispielkasten, Unterabschnitt „Kannst du das?“ mit zwei Aufgaben und aufgedeckter Lösung samt Fehlerhinweisen, Satz mit Kartenseite, Schluss „Du bist bereit, wenn du …“. Der Block `recap` erlaubt keine Aufgaben (Build verbietet sie), darum stehen die Selbsttests als `note`-Boxen mit Lösung im selben Kasten; die Lösung lässt sich nicht einklappen.
 - `muster-zahlenfolgen` – „Ich kann Zahlenfolgen fortsetzen und die Regel mit Worten und mit einem Term beschreiben.“
   Seiten `muster/folgen` (Folgenglied, Abstand, Wandreihe aus Plättchenbildern) und `muster/regel` (Regel in Worten, Platzhalter n, Wort „Term“, Aufgaben `regel-waehlen`, `term-waehlen`, `bild-ausrechnen`, `welches-bild`).
 - `potenzen` – „Ich kann Potenzen mit natürlichen Exponenten berechnen und Zehnerpotenzen zum Darstellen großer Zahlen
@@ -92,7 +92,7 @@ der Musterlösung; kein `mistake` darf für gezogene Werte dieselbe Zahl wie die
 1. Kompetenzen aus der Karte wählen (ids, „Ich kann …“ unverändert), Reihenfolge nach `requires`.
 2. Ordner `src/<kapitel>/` mit `chapter.yaml`, Kapitel in `src/app.yaml` unter `chapters` eintragen.
 3. Pro Kompetenz eine Seite nach Abschnitts-ids oben, Bild als SVG mit `alt`, mindestens vier Übungen aus den Mustern.
-4. Voraussetzungen von außerhalb in einer Sammel-Wiederholung (`recap`) am Kapitelanfang.
+4. Voraussetzungen von außerhalb in einer Sammel-Wiederholung (`recap`) am Kapitelanfang, nach regeln.md §7 (Abschnitt je Baustein, Begriffe als `definition`, Selbsttest, Kartenlink, Checkliste).
 5. 1 bis 3 ihrer Übungen in `selfAssessment` (`src/muster/chapter.yaml`) aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt: je Seite eine `generated` oder `number`-Übung, die ohne die Seite verständlich ist.
 6. `npx vp check --fix`, `npx vp build`, `npx --no -- lernapps check`, committen.
 
