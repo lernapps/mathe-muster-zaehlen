@@ -286,7 +286,7 @@ page, which a link. -->
       decisions" why the app has none. Commit.
 - [x] Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
       every click only the creator can make, in one message.
-- [ ] Push `work`, open the preview pull request and see its checks to green, as skill `lernapps-github` says.
+- [x] Push `work`, open the preview pull request and see its checks to green, as skill `lernapps-github` says.
 - [ ] **Checkpoint:** publish. Show what the app does and the preview link from the comment "Vorschau der App". Ask
       whether it may go online. Stop and wait for the yes.
 - [ ] Load skill `lernapps-commit`. Publish as skill `lernapps-github` says: `work` into `main` as one squash commit,
@@ -315,10 +315,22 @@ page, which a link. -->
 
 <!-- Last phase completed, checkpoints passed. E.g. "commit; confirmed, published". -->
 
+Explore, Plan, Code erreicht; in Commit: Repository, Vorschau-PR #1 (alle Checks grün: app, preview; deploy übersprungen, wie bei PR). Checkpoints bestanden: Recherche, Plan, Musterseite (jeweils vom Orchestrator in Vertretung des Menschen beantwortet). Offen: Veröffentlichen, Liste (nach Freigabe).
+
 ### Creator turns after the plan
 
 <!-- Number of creator messages after the confirmation, topic of each. Target: at most 3. -->
 
+Mensch: 0. Orchestrator in Vertretung nach der Planbestätigung: 2 Nachrichten (Konventionen der Stellenwerttafel aus #385 samt Regel „keine externen Links“; Antwort auf die Musterseite). Davor, noch vor der Planbestätigung: eine Regeländerung (Zahlenstrahl/Zahlengerade).
+
 ### Where I had to guess
 
 <!-- Each gap in plan, skills, messages or answers, and your choice. "None" if none. -->
+
+- Sprache nur Deutsch (Epic nennt nichts anderes).
+- Keine Komponente (Stellenwerttafel als `table`): Plan sagte das, Orchestrator bestätigte nach Rückfrage.
+- Kein `scope`; Selbsteinschätzung mit je zwei Aufgaben je Seite, drei Schritte.
+- Interview durch den Issue-Text ersetzt (kein Gespräch möglich).
+- Prozess: Ich habe fünf Plan-Aufgaben vor ihrer Erledigung abgehakt (Archetyp-Skills, Content-Research-Skill, Interview, Content-Methode, Zeigen); danach nachgeholt oder durch den Bericht erfüllt.
+- Verwechslung bei Recap-ids: Plan nannte `mathematik/arithmetik/<id>`, richtig ist `mathematik/<id>`; vom Build gemeldet.
+- Beim Lernenden-Check habe ich Befunde zur Runtime nicht lokal umgangen (Symbol-Knopf, Standardmeldung bei Fehlern von Wahr/Falsch und Ordnen, Tausenderpunkt in `{{answer}}` der `steps`).
