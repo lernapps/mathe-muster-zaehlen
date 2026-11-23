@@ -46,16 +46,48 @@ blocks:
         id: selbsttest-stellenwert
         title: Kannst du das?
         blocks:
-          - type: note
-            title: "Aufgabe 1"
-            blocks:
-              - type: text
-                text: "Welchen Wert hat die Ziffer 7 in der Zahl 7305?  \n**Lösung:** 7000. Die 7 steht bei den Tausendern, also 7 · 1000. Hast du 7? Das ist die Ziffer, nicht ihr Wert. Hast du 700? Dann hast du die Stelle falsch gezählt, denn die 7 steht ganz links."
-          - type: note
-            title: "Aufgabe 2"
-            blocks:
-              - type: text
-                text: "Schreibe als Zahl: 3 Tausender, 0 Hunderter, 5 Zehner und 2 Einer.  \n**Lösung:** 3052. Die Null hält die Hunderterstelle frei. Hast du 352? Dann ist die Null verloren gegangen und die Ziffern rutschen an die falschen Stellen."
+          - type: vue-component
+            id: test-stellenwert-wert
+            component: Kurztest
+            props:
+              question: "Welchen Wert hat die Ziffer 7 in der Zahl 7305?"
+              options:
+                - { text: "7", correct: false, info: "Das ist die Ziffer selbst, nicht ihr Wert an dieser Stelle." }
+                - {
+                    text: "700",
+                    correct: false,
+                    info: "700 wäre der Wert bei den Hundertern. Die 7 steht aber ganz links, bei den Tausendern.",
+                  }
+                - { text: "7000", correct: true, info: "Die 7 steht bei den Tausendern, also 7 · 1000 = 7000." }
+              right: Richtig.
+              wrong: Nicht richtig.
+            nojs: |
+              Kurztest: Welchen Wert hat die Ziffer 7 in der Zahl 7305? Antwort: 7000. Die 7 steht bei den Tausendern, also 7 · 1000. Die Antwort 7 wäre die Ziffer selbst, 700 der Wert bei den Hundertern.
+          - type: vue-component
+            id: test-stellenwert-schreiben
+            component: Kurztest
+            props:
+              question: "Welche Zahl sind 3 Tausender, 0 Hunderter, 5 Zehner und 2 Einer?"
+              options:
+                - {
+                    text: "352",
+                    correct: false,
+                    info: "Hier fehlt die Null. Ohne sie rutschen die Ziffern an die falschen Stellen.",
+                  }
+                - {
+                    text: "3052",
+                    correct: true,
+                    info: "Die Null hält die Hunderterstelle frei: 3 Tausender, 0 Hunderter, 5 Zehner, 2 Einer.",
+                  }
+                - {
+                    text: "3502",
+                    correct: false,
+                    info: "Hier stehen die 5 bei den Hundertern und die 0 bei den Zehnern. Die Reihenfolge ist vertauscht.",
+                  }
+              right: Richtig.
+              wrong: Nicht richtig.
+            nojs: |
+              Kurztest: Welche Zahl sind 3 Tausender, 0 Hunderter, 5 Zehner und 2 Einer? Antwort: 3052. Die Null hält die Hunderterstelle frei. 352 hat keine Null, 3502 hat Hunderter und Zehner vertauscht.
           - type: text
             text: Nicht sicher? Lies den Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/).
   - type: section
@@ -88,16 +120,48 @@ blocks:
         id: selbsttest-vorrang
         title: Kannst du das?
         blocks:
-          - type: note
-            title: "Aufgabe 1"
-            blocks:
-              - type: text
-                text: "Berechne 5 + 3 · 4 und (5 + 3) · 4.  \n**Lösung:** 17 und 32. Im ersten Fall gilt Punkt vor Strich, 3 · 4 = 12 und 5 + 12 = 17. Im zweiten Fall steht 5 + 3 in der Klammer, 8 · 4 = 32. Hast du bei der ersten Rechnung 32? Dann hast du Punkt vor Strich nicht beachtet und einfach von links nach rechts gerechnet."
-          - type: note
-            title: "Aufgabe 2"
-            blocks:
-              - type: text
-                text: "Berechne vorteilhaft 4 · 17 · 25 und 6 · 102.  \n**Lösung:** 1700 und 612. Mit Kommutativ- und Assoziativgesetz rechnest du 4 · 25 = 100 zuerst, dann 100 · 17 = 1700. Mit dem Distributivgesetz ist 6 · 102 = 6 · 100 + 6 · 2 = 600 + 12 = 612. Hast du 117? Dann hast du 100 + 17 statt 100 · 17 gerechnet. Hast du 108? Dann hast du 6 + 102 gerechnet."
+          - type: vue-component
+            id: test-vorrang-punkt
+            component: Kurztest
+            props:
+              question: "Was ergibt 5 + 3 · 4?"
+              options:
+                - {
+                    text: "32",
+                    correct: false,
+                    info: "Das ist (5 + 3) · 4. Ohne Klammer gilt Punkt vor Strich, also wird erst 3 · 4 gerechnet.",
+                  }
+                - { text: "17", correct: true, info: "Punkt vor Strich: erst 3 · 4 = 12, dann 5 + 12 = 17." }
+                - { text: "12", correct: false, info: "Das ist nur 3 · 4. Danach kommt noch + 5." }
+              right: Richtig.
+              wrong: Nicht richtig.
+            nojs: |
+              Kurztest: Was ergibt 5 + 3 · 4? Antwort: 17. Punkt vor Strich: erst 3 · 4 = 12, dann 5 + 12 = 17. 32 wäre (5 + 3) · 4, 12 nur 3 · 4.
+          - type: vue-component
+            id: test-vorrang-verteilen
+            component: Kurztest
+            props:
+              question: "Wie rechnest du 6 · 102 mit dem Distributivgesetz?"
+              options:
+                - {
+                    text: "6 + 102 = 108",
+                    correct: false,
+                    info: "Das ist eine Addition. Bei 6 · 102 wird malgenommen.",
+                  }
+                - {
+                    text: "6 · 100 + 6 · 2 = 612",
+                    correct: true,
+                    info: "102 = 100 + 2. Der Faktor 6 wird mit beiden Summanden multipliziert: 600 + 12 = 612.",
+                  }
+                - {
+                    text: "6 · 100 · 2 = 1200",
+                    correct: false,
+                    info: "Hier wurde 100 · 2 gerechnet. Es muss 6 · 100 plus 6 · 2 heißen.",
+                  }
+              right: Richtig.
+              wrong: Nicht richtig.
+            nojs: |
+              Kurztest: Wie rechnest du 6 · 102 mit dem Distributivgesetz? Antwort: 6 · 100 + 6 · 2 = 600 + 12 = 612. Die Rechnung 6 + 102 = 108 ist eine Addition, 6 · 100 · 2 = 1200 verteilt falsch.
           - type: text
             text: Nicht sicher? Lies den Baustein „Vorrangregeln und Rechengesetze“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/).
   - type: section
