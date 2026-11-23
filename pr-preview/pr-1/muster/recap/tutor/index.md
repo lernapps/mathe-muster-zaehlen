@@ -44,18 +44,20 @@ Das brauchst du für dieses Kapitel: Stellenwerte und Vorrangregeln mit Rechenge
 ### Das brauchst du für dieses Kapitel
 
 Mira (11) und Ben (10) richten die Spielecke ihrer Klasse ein und planen ein Fest zur Eröffnung. Dafür legen sie
-viele Plättchen aus. Du brauchst Stellenwerte und die Regeln fürs Rechnen. Teste dich bei beiden: erst im Kopf rechnen, dann die Lösung lesen.
+viele Plättchen aus. Mit Stellenwerten bündelst du Plättchen zu Zehnerpotenzen, mit den Rechenregeln
+beschreibst du Muster. Teste dich in beiden Teilen: erst im Kopf rechnen, dann die Lösung lesen.
 
 ### Natürliche Zahlen im Stellenwertsystem
 
-Jede **Ziffer** einer Zahl hat einen **Stellenwert**, je nach Stelle. Die Stellen heißen Einer (E), Zehner (Z),
-Hunderter (H) und Tausender (T). Die **Stellenwerttafel** zeigt sie nebeneinander.
+Jede **Ziffer** einer Zahl hat einen **Stellenwert**. Die Stellen heißen Einer (E), Zehner (Z), Hunderter (H)
+und Tausender (T). Weiter links folgen Zehntausender, Hunderttausender und Millionen. Die
+**Stellenwerttafel** zeigt sie nebeneinander.
 
 - **Ziffer**: Ziffern sind die Zeichen 0 bis 9, aus denen Zahlen bestehen. Die Zahl 2407 hat die Ziffern 2, 4, 0 und 7.
 
-- **Stellenwert**: Der Stellenwert sagt, wie viel eine Ziffer an ihrer Stelle zählt. In 2407 steht die Ziffer 4 bei den Hundertern, ihr Wert ist 4 · 100 = 400.
+- **Stellenwert**: Der Stellenwert sagt, wie viel eine Ziffer an ihrer Stelle zählt. Jede Stelle ist zehnmal so viel wert wie die Stelle rechts davon. In 2407 steht die Ziffer 4 bei den Hundertern, ihr Wert ist 4 · 100 = 400.
 
-- **Stellenwerttafel**: Die Stellenwerttafel gibt jeder Stelle einer Zahl eine Spalte, von rechts E, Z, H, T. Beispiel 2407 steht als 2, 4, 0, 7 in den Spalten T, H, Z, E.
+- **Stellenwerttafel**: Die Stellenwerttafel gibt jeder Stelle einer Zahl eine Spalte. Von links nach rechts stehen T, H, Z, E, und 2407 steht darin als 2, 4, 0, 7.
 
 Die Zahl 2407 in der Stellenwerttafel: T Tausender, H Hunderter, Z Zehner, E Einer:
 - T | H | Z | E
@@ -70,7 +72,7 @@ Die Zahl 2407 in der Stellenwerttafel: T Tausender, H Hunderter, Z Zehner, E Ein
 **Merke: Aufgabe 1**
 
 Welchen Wert hat die Ziffer 7 in der Zahl 7305?  
-**Lösung:** 7000. Die 7 steht bei den Tausendern, also 7 · 1000. Hast du 7 oder 700? Dann hast du die Stelle falsch gezählt: Die 7 steht ganz links.
+**Lösung:** 7000. Die 7 steht bei den Tausendern, also 7 · 1000. Hast du 7? Das ist die Ziffer, nicht ihr Wert. Hast du 700? Dann hast du die Stelle falsch gezählt, denn die 7 steht ganz links.
 
 **Merke: Aufgabe 2**
 
@@ -81,33 +83,39 @@ Nicht sicher? Lies den Baustein „Natürliche Zahlen im Stellenwertsystem“ au
 
 ### Vorrangregeln und Rechengesetze
 
-Mehrere Rechenzeichen rechnest du in fester Reihenfolge. Drei Rechengesetze helfen dir, geschickt zu rechnen.
+Eine **Summe** ist das Ergebnis einer Addition, ihre Zahlen heißen Summanden. Ein **Produkt** ist das
+Ergebnis einer Multiplikation, ihre Zahlen heißen Faktoren. Beim Rechnen mit mehreren Rechenzeichen gilt
+eine feste Reihenfolge, und drei Rechengesetze helfen dir, geschickt zu rechnen.
 
-- **Vorrangregel**: Klammern werden zuerst gerechnet, danach Punkt vor Strich, also mal und geteilt vor plus und minus. Beispiel 3 + 4 · 2 = 3 + 8 = 11, aber (3 + 4) · 2 = 7 · 2 = 14.
+- **Vorrangregel**: Klammern werden zuerst gerechnet, danach mal (·) und geteilt (:) vor plus und minus, das heißt Punkt vor Strich. Gleichrangige Rechenzeichen rechnest du von links nach rechts. Beispiel 3 + 4 · 2 = 3 + 8 = 11, aber (3 + 4) · 2 = 7 · 2 = 14, und 20 − 5 − 3 = 15 − 3 = 12.
 
-- **Kommutativgesetz**: Beim Addieren und beim Multiplizieren darfst du die Zahlen tauschen. Beispiel 4 · 25 = 25 · 4 = 100.
+- **Kommutativgesetz**: Beim Addieren und beim Multiplizieren darfst du die Zahlen tauschen, beim Subtrahieren und Dividieren nicht. Beispiele 7 + 5 = 5 + 7 = 12 und 4 · 25 = 25 · 4 = 100, aber 8 − 3 = 5, während 3 − 8 keine natürliche Zahl ist.
 
-- **Assoziativgesetz**: Beim Addieren und beim Multiplizieren darfst du anders zusammenfassen. Beispiel 2 · 5 · 10 = 2 · (5 · 10) = 2 · 50 = 100.
+- **Assoziativgesetz**: Beim Addieren und beim Multiplizieren darfst du die Klammern anders setzen, die Reihenfolge der Zahlen bleibt. Beispiel (2 · 5) · 10 = 2 · (5 · 10) = 100.
 
-- **Distributivgesetz**: Ein Faktor darf auf die Summanden in der Klammer verteilt werden. Beispiel 3 · (10 + 2) = 3 · 10 + 3 · 2 = 36.
+- **Distributivgesetz**: Ein Faktor vor einer Klammer wird mit jedem Summanden in der Klammer malgenommen. Beispiel 3 · (10 + 2) = 3 · 12 = 36 und 3 · 10 + 3 · 2 = 30 + 6 = 36.
+
+**Beispiel: Mit Klammer und Punkt vor Strich**
+
+2 + 3 · (7 − 4): Die Klammer zuerst, 7 − 4 = 3. Dann Punkt vor Strich, 3 · 3 = 9. Zuletzt 2 + 9 = 11.
 
 #### Kannst du das?
 
 **Merke: Aufgabe 1**
 
-Berechne 5 + 3 · 4.  
-**Lösung:** 17. Punkt vor Strich: erst 3 · 4 = 12, dann 5 + 12 = 17. Hast du 32? Dann hast du von links nach rechts gerechnet, 5 + 3 = 8 und 8 · 4. Mal kommt vor plus.
+Berechne 5 + 3 · 4 und (5 + 3) · 4.  
+**Lösung:** 17 und 32. Im ersten Fall gilt Punkt vor Strich, 3 · 4 = 12 und 5 + 12 = 17. Im zweiten Fall steht 5 + 3 in der Klammer, 8 · 4 = 32. Hast du bei der ersten Rechnung 32? Dann hast du Punkt vor Strich nicht beachtet und einfach von links nach rechts gerechnet.
 
 **Merke: Aufgabe 2**
 
-Berechne vorteilhaft 4 · 17 · 25. Welche zwei Faktoren geben 100?  
-**Lösung:** 1700. Mit den Rechengesetzen rechnest du 4 · 25 = 100 zuerst, dann 100 · 17 = 1700. Hast du 117? Dann hast du 100 + 17 gerechnet. Nach 4 · 25 = 100 kommt noch mal 17.
+Berechne vorteilhaft 4 · 17 · 25 und 6 · 102.  
+**Lösung:** 1700 und 612. Mit Kommutativ- und Assoziativgesetz rechnest du 4 · 25 = 100 zuerst, dann 100 · 17 = 1700. Mit dem Distributivgesetz ist 6 · 102 = 6 · 100 + 6 · 2 = 600 + 12 = 612. Hast du 117? Dann hast du 100 + 17 statt 100 · 17 gerechnet. Hast du 108? Dann hast du 6 + 102 gerechnet.
 
 Nicht sicher? Lies den Baustein „Vorrangregeln und Rechengesetze“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/).
 
 ### Du bist bereit, wenn du ...
 
-- natürliche Zahlen im Stellenwertsystem lesen, schreiben und darstellen kannst,
-- Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst.
+- natürliche Zahlen im Stellenwertsystem lesen, schreiben und darstellen kannst, zum Beispiel sagst, was die 4 in 2407 wert ist,
+- Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst, zum Beispiel 5 + 3 · 4 richtig rechnest und 6 · 102 geschickt.
 
 Dann geht es los. Zuerst legen Mira und Ben Muster aus Plättchen.
