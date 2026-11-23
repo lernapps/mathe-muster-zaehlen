@@ -46,7 +46,7 @@ Du bündelst Plättchen zu Zehnern, Hundertern und Tausendern und schreibst gro�
 Mira und Ben zählen die Plättchen in der Dose. Sie bündeln immer zehn Plättchen einer Spalte zu einem
 Plättchen in der Spalte links davon. Die Zahl bleibt dabei gleich. Die Spalten heißen wie in der Stellenwerttafel: E für Einer, Z für Zehner, H für Hunderter, T für Tausender.
 
-Bild: Links liegen 10 Plättchen mit dem Buchstaben E in zwei Reihen zu je 5. Ein Pfeil mit dem Wort bündeln zeigt nach rechts auf ein einzelnes Plättchen mit dem Buchstaben Z. Bildunterschrift: Zehn Plättchen in der Spalte E werden zu einem Plättchen in der Spalte Z.
+Bild: Links liegen 10 Plättchen mit dem Buchstaben E in zwei Reihen zu je 5, von einem gestrichelten Rahmen umgeben. Ein Pfeil mit dem Wort bündeln zeigt nach rechts auf ein einzelnes Plättchen mit dem Buchstaben Z. Bildunterschrift: Der gestrichelte Rahmen fasst zehn Plättchen der Spalte E zusammen. Beim Bündeln werden sie zu einem Plättchen in der Spalte Z.
 
 - Aufgabe `zehn-zehner` (unten)
 

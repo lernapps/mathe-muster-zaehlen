@@ -44,14 +44,13 @@ Du zählst Möglichkeiten mit einem Plättchenfeld und einer Tabelle und findest
 ### Outfits zählen
 
 Für das Fest zur Eröffnung der Spielecke sucht Mira ein Outfit. Sie hat 3 Shirts (rot, blau, gelb) und 2 Hosen (schwarz,
-grün). Ein Outfit besteht aus einem Shirt und einer Hose.
+grün). Ein Outfit besteht aus einem Shirt und einer Hose. Lege für jedes Outfit ein Plättchen: eine Zeile je Shirt, eine Spalte je Hose. Das ist das Rechteckmodell.
 
 - Aufgabe `outfits-sechs` (unten)
 
-### Das Plättchenfeld, das Rechteckmodell
+### Das Plättchenfeld
 
-Lege für jedes Outfit ein Plättchen. Jede Zeile gehört zu einem Shirt, jede Spalte zu einer Hose. Das ist das
-Rechteckmodell.
+So sieht das Plättchenfeld aus, wenn du es legst.
 
 Bild: Ein Plättchenfeld mit 3 Zeilen und 2 Spalten. Die Zeilen sind mit Shirt 1 bis Shirt 3 beschriftet, die Spalten mit Hose 1 und Hose 2. Auf jedem Kreuzungspunkt liegt ein Plättchen. Bildunterschrift: Jedes Plättchen ist ein Outfit aus dem Shirt seiner Zeile und der Hose seiner Spalte.
 

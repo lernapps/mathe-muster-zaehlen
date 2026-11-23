@@ -69,9 +69,9 @@ Die Zahl 2407 in der Stellenwerttafel: T Tausender, H Hunderter, Z Zehner, E Ein
 
 #### Kannst du das?
 
-Interaktiv: Kurztest: Welchen Wert hat die Ziffer 7 in der Zahl 7305? Antwort: 7000. Die 7 steht bei den Tausendern, also 7 · 1000. Die Antwort 7 wäre die Ziffer selbst, 700 der Wert bei den Hundertern.
+Interaktiv: Kurztest: Welchen Wert hat die Ziffer 7 in der Zahl 40 705? Antwort: 700. Die 7 steht bei den Hundertern, also 7 · 100. 7 ist die Ziffer selbst, 70 und 7000 wären die Werte bei den Zehnern und den Tausendern, wo aber die 0 steht.
 
-Interaktiv: Kurztest: Welche Zahl sind 3 Tausender, 0 Hunderter, 5 Zehner und 2 Einer? Antwort: 3052. Die Null hält die Hunderterstelle frei. 352 hat keine Null, 3502 hat Hunderter und Zehner vertauscht.
+Interaktiv: Kurztest: Welche Zahl sind 5 Zehntausender, 0 Tausender, 3 Hunderter, 0 Zehner und 8 Einer? Antwort: 50 308. Die Nullen halten die Tausender- und die Zehnerstelle frei. 5 308 hat nur vier Stellen, 50 380 hat Zehner und Einer vertauscht.
 
 Nicht sicher? Lies den Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/).
 
@@ -95,7 +95,7 @@ eine feste Reihenfolge, und drei Rechengesetze helfen dir, geschickt zu rechnen.
 
 #### Kannst du das?
 
-Interaktiv: Kurztest: Was ergibt 5 + 3 · 4? Antwort: 17. Punkt vor Strich: erst 3 · 4 = 12, dann 5 + 12 = 17. 32 wäre (5 + 3) · 4, 12 nur 3 · 4.
+Interaktiv: Kurztest: Was ergibt 20 − 3 · 4 + 2? Antwort: 10. Punkt vor Strich: erst 3 · 4 = 12, dann 20 − 12 = 8 und 8 + 2 = 10. 70 rechnet nur von links nach rechts, 6 fasst 3 · 4 + 2 falsch zusammen.
 
 Interaktiv: Kurztest: Wie rechnest du 6 · 102 mit dem Distributivgesetz? Antwort: 6 · 100 + 6 · 2 = 600 + 12 = 612. Die Rechnung 6 + 102 = 108 ist eine Addition, 6 · 100 · 2 = 1200 verteilt falsch.
 
@@ -104,6 +104,6 @@ Nicht sicher? Lies den Baustein „Vorrangregeln und Rechengesetze“ auf der [L
 ### Du bist bereit, wenn du ...
 
 - natürliche Zahlen im Stellenwertsystem lesen, schreiben und darstellen kannst, zum Beispiel sagst, was die 4 in 2407 wert ist,
-- Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst, zum Beispiel 5 + 3 · 4 richtig rechnest und 6 · 102 geschickt.
+- Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst, zum Beispiel 20 − 3 · 4 + 2 richtig rechnest und 6 · 102 geschickt.
 
 Dann geht es los. Zuerst legen Mira und Ben Muster aus Plättchen.

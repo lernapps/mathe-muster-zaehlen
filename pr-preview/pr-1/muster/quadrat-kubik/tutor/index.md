@@ -43,7 +43,7 @@ Du legst Quadrate und Würfel aus Plättchen und liest die Potenz als wiederholt
 
 ### Zuerst zählen
 
-Ben legt für die Spielecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht.
+Ben legt für die Spielecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht. Die Plättchen eines Rechtecks zählst du als Anzahl der Reihen mal Anzahl der Plättchen je Reihe.
 
 Bild: Ein Quadrat aus Plättchen mit 4 Reihen. In jeder Reihe liegen 4 Plättchen. Bildunterschrift: Zähle die Plättchen einer Reihe und die Reihen.
 
