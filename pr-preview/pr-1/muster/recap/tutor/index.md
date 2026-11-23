@@ -44,7 +44,7 @@ Das brauchst du für dieses Kapitel: Stellenwerte und Vorrangregeln mit Rechenge
 ### Das brauchst du für dieses Kapitel
 
 Mira (11) und Ben (10) richten die Spielecke ihrer Klasse ein und planen ein Fest zur Eröffnung. Dafür legen sie
-viele Plättchen aus. Mit Stellenwerten bündelst du Plättchen zu Zehnerpotenzen, mit den Rechenregeln
+viele Plättchen aus. Mit Stellenwerten bündelst du Plättchen zu Zehnern, Hundertern und Tausendern, mit den Rechenregeln
 beschreibst du Muster. Teste dich in beiden Teilen: erst im Kopf rechnen, dann die Lösung lesen.
 
 ### Natürliche Zahlen im Stellenwertsystem
