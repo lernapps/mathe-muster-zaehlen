@@ -69,15 +69,9 @@ Die Zahl 2407 in der Stellenwerttafel: T Tausender, H Hunderter, Z Zehner, E Ein
 
 #### Kannst du das?
 
-**Merke: Aufgabe 1**
+Interaktiv: Kurztest: Welchen Wert hat die Ziffer 7 in der Zahl 7305? Antwort: 7000. Die 7 steht bei den Tausendern, also 7 · 1000. Die Antwort 7 wäre die Ziffer selbst, 700 der Wert bei den Hundertern.
 
-Welchen Wert hat die Ziffer 7 in der Zahl 7305?  
-**Lösung:** 7000. Die 7 steht bei den Tausendern, also 7 · 1000. Hast du 7? Das ist die Ziffer, nicht ihr Wert. Hast du 700? Dann hast du die Stelle falsch gezählt, denn die 7 steht ganz links.
-
-**Merke: Aufgabe 2**
-
-Schreibe als Zahl: 3 Tausender, 0 Hunderter, 5 Zehner und 2 Einer.  
-**Lösung:** 3052. Die Null hält die Hunderterstelle frei. Hast du 352? Dann ist die Null verloren gegangen und die Ziffern rutschen an die falschen Stellen.
+Interaktiv: Kurztest: Welche Zahl sind 3 Tausender, 0 Hunderter, 5 Zehner und 2 Einer? Antwort: 3052. Die Null hält die Hunderterstelle frei. 352 hat keine Null, 3502 hat Hunderter und Zehner vertauscht.
 
 Nicht sicher? Lies den Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/).
 
@@ -101,15 +95,9 @@ eine feste Reihenfolge, und drei Rechengesetze helfen dir, geschickt zu rechnen.
 
 #### Kannst du das?
 
-**Merke: Aufgabe 1**
+Interaktiv: Kurztest: Was ergibt 5 + 3 · 4? Antwort: 17. Punkt vor Strich: erst 3 · 4 = 12, dann 5 + 12 = 17. 32 wäre (5 + 3) · 4, 12 nur 3 · 4.
 
-Berechne 5 + 3 · 4 und (5 + 3) · 4.  
-**Lösung:** 17 und 32. Im ersten Fall gilt Punkt vor Strich, 3 · 4 = 12 und 5 + 12 = 17. Im zweiten Fall steht 5 + 3 in der Klammer, 8 · 4 = 32. Hast du bei der ersten Rechnung 32? Dann hast du Punkt vor Strich nicht beachtet und einfach von links nach rechts gerechnet.
-
-**Merke: Aufgabe 2**
-
-Berechne vorteilhaft 4 · 17 · 25 und 6 · 102.  
-**Lösung:** 1700 und 612. Mit Kommutativ- und Assoziativgesetz rechnest du 4 · 25 = 100 zuerst, dann 100 · 17 = 1700. Mit dem Distributivgesetz ist 6 · 102 = 6 · 100 + 6 · 2 = 600 + 12 = 612. Hast du 117? Dann hast du 100 + 17 statt 100 · 17 gerechnet. Hast du 108? Dann hast du 6 + 102 gerechnet.
+Interaktiv: Kurztest: Wie rechnest du 6 · 102 mit dem Distributivgesetz? Antwort: 6 · 100 + 6 · 2 = 600 + 12 = 612. Die Rechnung 6 + 102 = 108 ist eine Addition, 6 · 100 · 2 = 1200 verteilt falsch.
 
 Nicht sicher? Lies den Baustein „Vorrangregeln und Rechengesetze“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/).
 
