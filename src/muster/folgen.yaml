@@ -68,11 +68,18 @@ blocks:
         mistakes:
           - answer: 20
             message: Du hast 3 addiert. Rechne den Abstand zwischen zwei Gliedern aus, hier 9 − 5.
-      - type: ordering
-        id: folge-sechs
-        text: Bringe die Zahlen von klein nach groß in die Reihenfolge einer Folge mit dem Abstand 6.
-        items: ["3", "9", "15", "21"]
-        explanation: Von 3 zu 9 sind es 6 mehr, von 9 zu 15 wieder 6 und von 15 zu 21 auch.
+      - type: number
+        id: luecke-in-folge
+        text: "In der Folge 7, 13, __, 25, 31 fehlt eine Zahl. Welche?"
+        answer: 19
+        tolerance: 0
+        hint: Wie viel kommt von einem Glied zum nächsten dazu?
+        explanation: Der Abstand ist 13 − 7 = 6. Auf 13 folgt also 13 + 6 = 19, und 19 + 6 = 25 stimmt.
+        mistakes:
+          - answer: 18
+            message: Du hast 13 + 5 gerechnet. Der Abstand ist aber 13 − 7 = 6.
+          - answer: 20
+            message: Du hast 7 addiert, den Anfangswert. Der Abstand ist 13 − 7 = 6.
       - type: generated
         id: viertes-glied
         given:
