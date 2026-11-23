@@ -42,17 +42,17 @@ blocks:
           sagt, wie oft die 10 als Faktor vorkommt.
       - type: table
         caption: Stellenwerttafel und Zehnerpotenzen
-        header: ["Spalte", "Wert", "Potenz"]
+        header: ["Spalte", "Wert und Potenz"]
         rows:
-          - ["Z (Zehner)", "10", "10¹"]
-          - ["H (Hunderter)", "100", "10²"]
-          - ["T (Tausender)", "1000", "10³"]
-          - ["ZT (Zehntausender)", "10 000", "10⁴"]
-          - ["HT (Hunderttausender)", "100 000", "10⁵"]
-          - ["M (Million)", "1 000 000", "10⁶"]
-          - ["ZM (Zehnmillion)", "10 000 000", "10⁷"]
-          - ["HM (Hundertmillion)", "100 000 000", "10⁸"]
-          - ["Mrd. (Milliarde)", "1 000 000 000", "10⁹"]
+          - ["Z (Zehner)", "10 = 10¹"]
+          - ["H (Hunderter)", "100 = 10²"]
+          - ["T (Tausender)", "1000 = 10³"]
+          - ["ZT (Zehntausender)", "10 000 = 10⁴"]
+          - ["HT (Hunderttausender)", "100 000 = 10⁵"]
+          - ["M (Million)", "1 000 000 = 10⁶"]
+          - ["ZM (Zehnmillion)", "10 000 000 = 10⁷"]
+          - ["HM (Hundertmillion)", "100 000 000 = 10⁸"]
+          - ["Mrd. (Milliarde)", "1 000 000 000 = 10⁹"]
       - type: example
         title: Die Zehnerpotenz 10⁵
         blocks:
