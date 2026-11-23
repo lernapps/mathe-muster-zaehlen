@@ -1,23 +1,103 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: Das brauchst du hier
-description: "Kurze Wiederholung: Stellenwerte lesen und Klammern vor Punkt vor Strich beachten."
+description: "Das brauchst du für dieses Kapitel: Stellenwerte und Vorrangregeln mit Rechengesetzen, mit Begriffen, Beispielen und einem Selbsttest."
 recap:
   - mathematik/natuerliche-zahlen
   - mathematik/grundrechenarten-rechengesetze
 blocks:
-  - type: text
-    text: |
-      Mira (11) und Ben (10) richten die Spielecke ihrer Klasse ein und planen ein Fest zur Eröffnung. Dafür legen sie
-      viele Plättchen aus. Bevor du mit ihnen legst, prüfe dich selbst. Antworte im Kopf.
-  - type: text
-    text: |
-      **Natürliche Zahlen im Stellenwertsystem:** Ich kann natürliche Zahlen im Stellenwertsystem lesen, schreiben und
-      darstellen. Kannst du sagen, welchen Wert die Ziffer 4 in 2407 hat? Sie steht an der Hunderterstelle und steht
-      für 400.
-  - type: text
-    text: |
-      **Vorrangregeln und Rechengesetze:** Ich kann Klammern und Vorrangregeln beachten und Rechengesetze für
-      vorteilhaftes Rechnen nutzen. Was ergibt 3 + 4 · 2? Punkt vor Strich: erst 4 · 2 = 8, dann 3 + 8 = 11. Und
-      (3 + 4) · 2? Die Klammer zuerst: 7 · 2 = 14.
-  - type: text
-    text: "Wenn dir etwas davon schwerfällt, schau auf der Lernlandkarte nach (Link oben). Sonst geht es los: Zuerst legen Mira und Ben Muster aus Plättchen."
+  - type: section
+    id: kopf
+    title: Das brauchst du für dieses Kapitel
+    blocks:
+      - type: text
+        text: |
+          Mira (11) und Ben (10) richten die Spielecke ihrer Klasse ein und planen ein Fest zur Eröffnung. Dafür legen sie
+          viele Plättchen aus. Du brauchst Stellenwerte und die Regeln fürs Rechnen. Teste dich bei beiden: erst im Kopf rechnen, dann die Lösung lesen.
+  - type: section
+    id: stellenwert
+    title: Natürliche Zahlen im Stellenwertsystem
+    blocks:
+      - type: text
+        text: |
+          Jede **Ziffer** einer Zahl hat einen **Stellenwert**, je nach Stelle. Die Stellen heißen Einer (E), Zehner (Z),
+          Hunderter (H) und Tausender (T). Die **Stellenwerttafel** zeigt sie nebeneinander.
+      - type: definition
+        term: Ziffer
+        explanation: Ziffern sind die Zeichen 0 bis 9, aus denen Zahlen bestehen. Die Zahl 2407 hat die Ziffern 2, 4, 0 und 7.
+      - type: definition
+        term: Stellenwert
+        explanation: Der Stellenwert sagt, wie viel eine Ziffer an ihrer Stelle zählt. In 2407 steht die Ziffer 4 bei den Hundertern, ihr Wert ist 4 · 100 = 400.
+      - type: definition
+        term: Stellenwerttafel
+        explanation: Die Stellenwerttafel gibt jeder Stelle einer Zahl eine Spalte, von rechts E, Z, H, T. Beispiel 2407 steht als 2, 4, 0, 7 in den Spalten T, H, Z, E.
+      - type: table
+        caption: "Die Zahl 2407 in der Stellenwerttafel: T Tausender, H Hunderter, Z Zehner, E Einer"
+        header: ["T", "H", "Z", "E"]
+        rows:
+          - ["2", "4", "0", "7"]
+      - type: example
+        title: 2407 gelesen
+        blocks:
+          - type: text
+            text: 2407 sind 2 Tausender, 4 Hunderter, 0 Zehner und 7 Einer. Die Null hält den Platz der Zehner frei.
+      - type: section
+        id: selbsttest-stellenwert
+        title: Kannst du das?
+        blocks:
+          - type: note
+            title: "Aufgabe 1"
+            blocks:
+              - type: text
+                text: "Welchen Wert hat die Ziffer 7 in der Zahl 7305?  \n**Lösung:** 7000. Die 7 steht bei den Tausendern, also 7 · 1000. Hast du 7 oder 700? Dann hast du die Stelle falsch gezählt: Die 7 steht ganz links."
+          - type: note
+            title: "Aufgabe 2"
+            blocks:
+              - type: text
+                text: "Schreibe als Zahl: 3 Tausender, 0 Hunderter, 5 Zehner und 2 Einer.  \n**Lösung:** 3052. Die Null hält die Hunderterstelle frei. Hast du 352? Dann ist die Null verloren gegangen und die Ziffern rutschen an die falschen Stellen."
+          - type: text
+            text: Nicht sicher? Lies den Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/).
+  - type: section
+    id: vorrang
+    title: Vorrangregeln und Rechengesetze
+    blocks:
+      - type: text
+        text: |
+          Mehrere Rechenzeichen rechnest du in fester Reihenfolge. Drei Rechengesetze helfen dir, geschickt zu rechnen.
+      - type: definition
+        term: Vorrangregel
+        explanation: Klammern werden zuerst gerechnet, danach Punkt vor Strich, also mal und geteilt vor plus und minus. Beispiel 3 + 4 · 2 = 3 + 8 = 11, aber (3 + 4) · 2 = 7 · 2 = 14.
+      - type: definition
+        term: Kommutativgesetz
+        explanation: Beim Addieren und beim Multiplizieren darfst du die Zahlen tauschen. Beispiel 4 · 25 = 25 · 4 = 100.
+      - type: definition
+        term: Assoziativgesetz
+        explanation: Beim Addieren und beim Multiplizieren darfst du anders zusammenfassen. Beispiel 2 · 5 · 10 = 2 · (5 · 10) = 2 · 50 = 100.
+      - type: definition
+        term: Distributivgesetz
+        explanation: Ein Faktor darf auf die Summanden in der Klammer verteilt werden. Beispiel 3 · (10 + 2) = 3 · 10 + 3 · 2 = 36.
+      - type: section
+        id: selbsttest-vorrang
+        title: Kannst du das?
+        blocks:
+          - type: note
+            title: "Aufgabe 1"
+            blocks:
+              - type: text
+                text: "Berechne 5 + 3 · 4.  \n**Lösung:** 17. Punkt vor Strich: erst 3 · 4 = 12, dann 5 + 12 = 17. Hast du 32? Dann hast du von links nach rechts gerechnet, 5 + 3 = 8 und 8 · 4. Mal kommt vor plus."
+          - type: note
+            title: "Aufgabe 2"
+            blocks:
+              - type: text
+                text: "Berechne vorteilhaft 4 · 17 · 25. Welche zwei Faktoren geben 100?  \n**Lösung:** 1700. Mit den Rechengesetzen rechnest du 4 · 25 = 100 zuerst, dann 100 · 17 = 1700. Hast du 117? Dann hast du 100 + 17 gerechnet. Nach 4 · 25 = 100 kommt noch mal 17."
+          - type: text
+            text: Nicht sicher? Lies den Baustein „Vorrangregeln und Rechengesetze“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/).
+  - type: section
+    id: bereit
+    title: Du bist bereit, wenn du ...
+    blocks:
+      - type: text
+        text: |
+          - natürliche Zahlen im Stellenwertsystem lesen, schreiben und darstellen kannst,
+          - Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst.
+
+          Dann geht es los. Zuerst legen Mira und Ben Muster aus Plättchen.
