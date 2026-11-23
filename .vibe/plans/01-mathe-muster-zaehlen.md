@@ -220,6 +220,14 @@ page, which a link. -->
 
 **Ergänzen später:** Content-Guide `.agents/skills/app-content/SKILL.md`, Seiten in `src/muster/*.yaml`.
 
+### Review
+
+**Lernenden-Prüfer (Sub-Agent, alle 7 Seiten, 360/1280 px, Tastatur auf `baum`):** Befunde und was geändert wurde: Mira (11) und Ben (10), Spielecke und Fest erst im Recap eingeführt, „Bauecke“ zu „Spielecke“, Fest im Frühstück-Beispiel aufgegriffen; Merke „nicht mal 3“ ohne Vorwissen → umformuliert; Wahr-Falsch zu 2, 4, 8, 16 prüfte Ungelehrtes → neue Folge 3, 7, 11, 16 mit Grund; Platzhalter „Kästchen“ nie gezeigt → gestrichen; Regelseite erklärt jetzt, warum mit 3 malgenommen wird; „.:“ in Optionen entfernt; Tipps für Umkehraufgaben (`hosen-gesucht`, `welches-bild`, `mittlere-stufe`); Tabelle gab Antworten vor (Million) → Aufgabe auf 10¹² gestellt, Exponenten 2–9; „Stufe“ im Feedback der Kisten-Aufgabe ersetzt; Rückblick nennt Quadrat- und Kubikzahlen; größere Stellen (ZT, HT, M) im Text benannt. Nicht geändert (Runtime oder bewusst): leere Eingabe zeigt „Wähle, tippe oder ordne alles zu“ (Runtime); Wahr/Falsch und Ordnen melden bei Fehlern nur „Lies dazu noch einmal den Text“ (Runtime); „Aufgabe Nr.“ in der URL (Runtime); `{{answer}}` formatiert große Zahlen mit Punkt als Tausendertrenner in `steps` (verstößt gegen regeln.md §2, deshalb steht dort keine Zahl ≥ 1000 aus `{{answer}}`); Glossar nur drei Begriffe; „Abstand“ statt „Differenz“, „Rechteckmodell“ als Karten-Wort beibehalten; „Reihe/Zeile/Spalte“ in drei Bedeutungen bleibt (Reihe waagerecht im Plättchenbild, Zeile in der Tabelle, Spalte in der Stellenwerttafel; ein Hinweis steht auf der Seite `quadrat-kubik`).
+
+**Fachlicher Prüfer (Sub-Agent):** 32 Aufgaben nachgerechnet, alle Musterlösungen richtig; alle `generated` über den ganzen Wertebereich geprüft (keine Division durch 0, keine unsinnigen Größen, `where` nötig und ausreichend). Befunde und was geändert wurde: `mistake 4*d` passte nicht zur Meldung → `3*d`; doppelte `mistake`-Werte bei einzelnen Zahlenpaaren → per `where` ausgeschlossen; vierstellige Zahlen mit Lücke (`2 407`, `1 000`) → ohne Lücke; Variablen a, b in der Tabellenseite → in Worten; Wort „Term“ fehlte → auf `regel` eingeführt mit Aufgabe `term-waehlen`; Kästchen als Unbekannte (`4 · □ = 12`, `2 · □ · 4 = 24`) → in Worten; `folge-sechs` mehrdeutig → „von klein nach groß“; Tabelle sprang von 10⁴ auf 10⁶ → HT, ZM, HM ergänzt; „Zehnerpotenzen zum Darstellen großer Zahlen“ nur halb → `5000 = 5 · 10³` und Aufgabe `zahl-aus-zehnerpotenz`; Zählprinzip „egal was du zuerst gewählt hast“ ergänzt; „Quadratzahl“ klarer gefasst. Als Hinweis bewusst nicht geändert: Wörter Reihe/Zeile/Spalte.
+
+**Offen (nicht geprüft):** Bildschirmleser; Hessischer Lehrplan; Prüfung der letzten Änderungen durch einen neuen Lernenden-Durchgang (nur `lernapps check` und Build liefen); das Plattformverhalten bei `{{answer}}` mit Tausenderpunkt ist ein Fund, kein behobener Fehler.
+
 ## Code
 
 <!--
@@ -252,7 +260,7 @@ page, which a link. -->
 - [x] Seiten muster/folgen und muster/regel (muster-zahlenfolgen), Platzhalter nur in Worten, kein Termumformen
 - [x] Seite muster/zehnerpotenzen (potenzen): Stellenwerttafel, Zehnerpotenzen bis 10⁹
 - [x] Seiten muster/tabelle und muster/baum (zaehlprinzip): Plättchenfeld, Tabelle, Baumdiagramm, Kapitelrückblick
-- [ ] Zwei Prüfer starten (Lernenden-Prüfer, Fachlicher Prüfer), Befunde in den Plan unter Review, Befunde beheben
+- [x] Zwei Prüfer starten (Lernenden-Prüfer, Fachlicher Prüfer), Befunde in den Plan unter Review, Befunde beheben
 <!-- tasks: pages (4 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.

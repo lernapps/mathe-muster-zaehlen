@@ -41,7 +41,7 @@ blocks:
           so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.
       - type: definition
         term: Zahlenfolge
-        explanation: Eine Zahlenfolge ist eine Reihe von Zahlen in fester Reihenfolge. Jede Zahl ist ein Folgenglied. Bei den Plättchenbildern gehört Bild 1 zum ersten Glied, Bild 2 zum zweiten und so weiter.
+        explanation: Eine Zahlenfolge ist eine Reihe von Zahlen in fester Reihenfolge. Jede Zahl ist ein Folgenglied. Bei der Wandreihe gehört Bild 1 zum ersten Glied, Bild 2 zum zweiten und so weiter.
       - type: example
         title: Der Abstand zwischen den Gliedern
         blocks:
@@ -55,7 +55,7 @@ blocks:
         title: Merke
         blocks:
           - type: text
-            text: Wenn jedes Glied um dieselbe Zahl größer wird, addierst du den Abstand. Bei 4, 7, 10 ist es plus 3, nicht mal 3.
+            text: Wenn jedes Glied um dieselbe Zahl größer wird, addierst du diese Zahl immer wieder. Bei 4, 7, 10 ist es jedes Mal plus 3.
   - type: section
     id: uebung
     title: Übung
@@ -100,9 +100,9 @@ blocks:
           - "Das vierte Glied ist {{answer}}."
       - type: true-false
         id: verdoppeln
-        text: "Bei der Folge 2, 4, 8, 16 wird jedes Glied um dieselbe Zahl größer."
+        text: "Bei der Folge 3, 7, 11, 16 wird jedes Glied um dieselbe Zahl größer."
         answer: false
-        explanation: Die Abstände sind 2, 4 und 8. Sie sind verschieden. Bei dieser Folge wird jedes Glied verdoppelt.
+        explanation: Die Abstände sind 4, 4 und 5. Der letzte Abstand ist anders. Mit demselben Abstand 4 käme nach 11 die Zahl 15.
         links:
           - title: Zahlenfolgen und Muster (Lernlandkarte)
             url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"

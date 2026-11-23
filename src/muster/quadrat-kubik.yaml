@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Ben legt für die Bauecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht.
+          Ben legt für die Spielecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht.
       - type: figure
         image: images/quadrat-vier.svg
         alt: Ein Quadrat aus Plättchen mit 4 Reihen. In jeder Reihe liegen 4 Plättchen.
@@ -159,4 +159,4 @@ blocks:
     title: Das kannst du jetzt
     blocks:
       - type: text
-        text: Du kannst eine Potenz als Produkt gleicher Faktoren lesen und ausrechnen. Die Bauecke steht. Als Nächstes zählen Mira und Ben mit Zehnerpotenzen die Plättchen in der Dose.
+        text: Du kannst eine Potenz als Produkt gleicher Faktoren lesen und ausrechnen. Die Bauwand der Spielecke steht. Als Nächstes zählen Mira und Ben die Plättchen in der Dose und bündeln sie.

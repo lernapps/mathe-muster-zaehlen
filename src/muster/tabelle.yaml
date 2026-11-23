@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Für das Fest in der Spielecke sucht Mira ein Outfit. Sie hat 3 Shirts (rot, blau, gelb) und 2 Hosen (schwarz,
+          Für das Fest zur Eröffnung der Spielecke sucht Mira ein Outfit. Sie hat 3 Shirts (rot, blau, gelb) und 2 Hosen (schwarz,
           grün). Ein Outfit besteht aus einem Shirt und einer Hose.
       - type: number
         id: outfits-sechs
@@ -118,6 +118,7 @@ blocks:
         text: Mira kann 12 Outfits zusammenstellen. Sie hat 4 Shirts. Wie viele Hosen hat sie?
         answer: 3
         tolerance: 0
+        hint: Welche Zahl mal 4 ergibt 12? Probiere aus.
         explanation: Gesucht ist die Zahl, die mal 4 die 12 ergibt. Weil 4 · 3 = 12 ist, hat Mira 3 Hosen.
         mistakes:
           - answer: 8

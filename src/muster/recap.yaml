@@ -7,8 +7,8 @@ recap:
 blocks:
   - type: text
     text: |
-      Mira und Ben richten die Spielecke ihrer Klasse ein. Dafür legen sie viele Plättchen aus. Bevor du mit ihnen
-      legst, prüfe dich selbst. Antworte im Kopf.
+      Mira (11) und Ben (10) richten die Spielecke ihrer Klasse ein und planen ein Fest zur Eröffnung. Dafür legen sie
+      viele Plättchen aus. Bevor du mit ihnen legst, prüfe dich selbst. Antworte im Kopf.
   - type: text
     text: |
       **Natürliche Zahlen im Stellenwertsystem:** Ich kann natürliche Zahlen im Stellenwertsystem lesen, schreiben und
@@ -20,4 +20,4 @@ blocks:
       vorteilhaftes Rechnen nutzen. Was ergibt 3 + 4 · 2? Punkt vor Strich: erst 4 · 2 = 8, dann 3 + 8 = 11. Und
       (3 + 4) · 2? Die Klammer zuerst: 7 · 2 = 14.
   - type: text
-    text: Wenn dir etwas davon schwerfällt, schau auf der Lernlandkarte nach (Link oben). Sonst geht es mit den Plättchen los.
+    text: "Wenn dir etwas davon schwerfällt, schau auf der Lernlandkarte nach (Link oben). Sonst geht es los: Zuerst legen Mira und Ben Muster aus Plättchen."

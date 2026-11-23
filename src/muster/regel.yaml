@@ -37,11 +37,10 @@ blocks:
         text: |
           Jedes Bild hat ein Anfangsplättchen und so viele Spalten aus 3 Plättchen, wie seine Nummer sagt. Bild 3 hat
           3 Spalten, Bild 10 hat 10 Spalten. Die Regel in Worten heißt: Rechne 3 mal die Nummer des Bildes und
-          addiere 1.
+          addiere 1. Jedes Bild bringt 3 Plättchen mehr, darum wird die Nummer mit 3 malgenommen.
       - type: text
         text: |
-          Die Nummer des Bildes ändert sich, darum bekommt sie einen Platzhalter. Du kannst ein Kästchen schreiben,
-          oder den Buchstaben $n$. Der Platzhalter $n$ steht für die Nummer des Bildes. Du setzt eine Zahl ein und
+          Die Nummer des Bildes ändert sich, darum bekommt sie einen Platzhalter. Du schreibst einen Buchstaben, zum Beispiel $n$. Der Platzhalter $n$ steht für die Nummer des Bildes. Du setzt eine Zahl ein und
           rechnest aus. Eine Rechnung mit Platzhalter heißt Term, hier $3 \cdot n + 1$.
       - type: example
         title: Bild 100
@@ -65,16 +64,16 @@ blocks:
         id: regel-waehlen
         text: Eine Folge hat die Glieder 5, 9, 13, 17 (Bild 1 bis Bild 4). Welche Regel in Worten passt?
         options:
-          - text: Rechne 4 mal die Nummer des Bildes und addiere 1.
+          - text: Rechne 4 mal die Nummer des Bildes und addiere 1
             correct: true
             info: Für Bild 1 gilt 4 · 1 + 1 = 5, für Bild 4 gilt 4 · 4 + 1 = 17.
-          - text: Addiere 4 zur Nummer des Bildes.
+          - text: Addiere 4 zur Nummer des Bildes
             correct: false
             info: Bild 2 ergäbe 6, nicht 9.
-          - text: Rechne 5 mal die Nummer des Bildes.
+          - text: Rechne 5 mal die Nummer des Bildes
             correct: false
             info: Bild 2 ergäbe 10, nicht 9.
-          - text: Rechne 4 mal die Nummer des Bildes.
+          - text: Rechne 4 mal die Nummer des Bildes
             correct: false
             info: Bild 1 ergäbe 4, nicht 5.
         explanation: Der Abstand 4 ist der Faktor, das erste Glied zeigt das Dazukommende.
@@ -107,7 +106,7 @@ blocks:
           a: { int: [2, 6] }
           c: { int: [1, 5] }
           n: { int: [5, 20] }
-        where: ["a * n != a + n + c"]
+        where: ["a * n != a + n + c and a != c"]
         task:
           text: "Zu einem Muster gehört die Regel: Rechne {{a}} mal die Nummer des Bildes und addiere {{c}}. Wie viele Plättchen hat Bild {{n}}?"
         answer: { value: "a * n + c", compare: { number: { format: integer } } }
@@ -135,6 +134,7 @@ blocks:
         text: Zur Wandreihe gehört die Regel 3 mal die Nummer des Bildes plus 1. Welches Bild hat 31 Plättchen? Gib die Nummer an.
         answer: 10
         tolerance: 0
+        hint: Gehe die Regel rückwärts. Was kommt zuletzt dazu?
         explanation: Ziehe 1 ab, das sind 30. Dann teilst du durch 3 und erhältst 10. Probe 10 · 3 + 1 = 31.
         mistakes:
           - answer: 31

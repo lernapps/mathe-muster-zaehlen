@@ -46,7 +46,7 @@ blocks:
         title: Ein Frühstück in drei Stufen
         blocks:
           - type: text
-            text: Zum Frühstück gibt es 2 Brote, 3 Aufstriche und 2 Getränke. Du wählst ein Brot, einen Aufstrich und ein Getränk. Das sind 2 · 3 · 2 = 12 Möglichkeiten.
+            text: Beim Fest in der Spielecke gibt es ein Frühstück mit 2 Broten, 3 Aufstrichen und 2 Getränken. Du wählst ein Brot, einen Aufstrich und ein Getränk. Das sind 2 · 3 · 2 = 12 Möglichkeiten.
   - type: section
     id: merke
     title: Keine Stufe vergessen
@@ -68,7 +68,7 @@ blocks:
           c: { int: [2, 3] }
         where: ["a * b != a + b + c"]
         task:
-          text: "Zum Frühstück gibt es {{a}} Brote, {{b}} Aufstriche und {{c}} Getränke. Du wählst von jedem eines. Wie viele Möglichkeiten gibt es?"
+          text: "Beim Fest gibt es zum Frühstück {{a}} Brote, {{b}} Aufstriche und {{c}} Getränke. Du wählst von jedem eines. Wie viele Möglichkeiten gibt es?"
         answer: { value: "a * b * c", compare: { number: { format: integer } } }
         mistakes:
           - value: "a * b"
@@ -106,6 +106,7 @@ blocks:
         text: Ein Baum hat drei Stufen. Die erste Stufe hat 2 Äste, die dritte hat 4 Äste. Es gibt insgesamt 24 Wege. Wie viele Äste hat die zweite Stufe?
         answer: 3
         tolerance: 0
+        hint: Rechne zuerst die beiden bekannten Stufen malnehmen.
         explanation: Die erste und die dritte Stufe geben 2 · 4 = 8. Weil 8 · 3 = 24 ist, hat die zweite Stufe 3 Äste.
         mistakes:
           - answer: 12
@@ -126,5 +127,5 @@ blocks:
       - type: text
         text: |
           Rückblick auf das Kapitel: Du hast Muster fortgesetzt und ihre Regel mit einem Platzhalter beschrieben. Du
-          hast Potenzen als gleiche Faktoren gelesen und Zehnerpotenzen geschrieben. Und du hast Möglichkeiten gezählt.
+          hast Quadrat- und Kubikzahlen gelegt, Potenzen als gleiche Faktoren gelesen und Zehnerpotenzen geschrieben. Und du hast Möglichkeiten gezählt.
           Die Spielecke ist fertig, das Fest kann beginnen.
