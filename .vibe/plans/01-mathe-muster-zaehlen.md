@@ -235,6 +235,8 @@ page, which a link. -->
 
 **Recap, Selbsttest als Komponente `Kurztest` (Vorlage des Orchestrators):** Die Selbsttests sind jetzt `Kurztest`-Blöcke (vier im Stellenwert-Teil und im Vorrang-Teil: 2 + 2, je mit Rückmeldung samt Grund, Tastatur, `nojs`-Text mit Lösung), `src/components/Kurztest.{ts,vue,test.ts}` unverändert aus `/tmp/epic/docs/mathe-epic/components/`; `lernapps check` grün. Lernenden-Prüfer (nur diese Recap-Seite, 360/1280 px, Tastatur): Beide Voraussetzungen „ja“ (Vorrang „schwächer“: Kommutativ-/Assoziativgesetz und „links nach rechts“ erklärt, nicht getestet; keine Klammer-Testfrage); Rückmeldungen mit Grund, kein Vorabverrat, kein Querscrollen. Ein Wort im Kopf geändert (Zehnerpotenzen → Zehner, Hunderter, Tausender), **danach nicht erneut geprüft**. Offen: Klammer-Testfrage, Test zu Komm./Assoziativgesetz (je Baustein höchstens zwei Kurztests, regeln.md §7).
 
+**Kurztest bei 360 px:** `Kurztest.vue` durch die korrigierte Vorlage ersetzt (`.kurztest` mit `min-width: 0; max-width: 100%; box-sizing: border-box; overflow-wrap: anywhere`, `.kurztest-option` mit `padding: 0.6rem 0; line-height: 1.4`); Script, `.ts` und Test unverändert. `lernapps check` grün (nur Hinweise), kein Überstand bei 360 px in Playwright.
+
 **Offen (nicht geprüft):** Bildschirmleser; Hessischer Lehrplan; Prüfung der letzten Änderungen durch einen neuen Lernenden-Durchgang (nur `lernapps check` und Build liefen); das Plattformverhalten bei `{{answer}}` mit Tausenderpunkt ist ein Fund, kein behobener Fehler.
 
 ## Code
