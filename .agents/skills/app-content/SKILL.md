@@ -93,7 +93,8 @@ der Musterlösung; kein `mistake` darf für gezogene Werte dieselbe Zahl wie die
 2. Ordner `src/<kapitel>/` mit `chapter.yaml`, Kapitel in `src/app.yaml` unter `chapters` eintragen.
 3. Pro Kompetenz eine Seite nach Abschnitts-ids oben, Bild als SVG mit `alt`, mindestens vier Übungen aus den Mustern.
 4. Voraussetzungen von außerhalb in einer Sammel-Wiederholung (`recap`) am Kapitelanfang.
-5. `npx vp check --fix`, `npx vp build`, `npx --no -- lernapps check`, committen.
+5. 1 bis 3 ihrer Übungen in `selfAssessment` (`src/muster/chapter.yaml`) aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt: je Seite eine `generated` oder `number`-Übung, die ohne die Seite verständlich ist.
+6. `npx vp check --fix`, `npx vp build`, `npx --no -- lernapps check`, committen.
 
 ## Rules learned from mistakes
 

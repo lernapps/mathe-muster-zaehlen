@@ -30,6 +30,7 @@ Kinder der Stufe 5–6 legen Plättchenmuster, setzen sie fort und beschreiben d
 ## Key decisions
 
 - Archetyp `explainer` (Format 2, `strand: mathematik/arithmetik`): Seiten erklären, Übungen dazwischen; Issue verlangt es. Kein Spiel, keine Zeitnahme nötig.
+- Selbsteinschätzung im Kapitel `muster` (12 Aufgaben, 3 Schritte mit je 4, je Seite 2 ohne Seitenkontext verständliche `generated`/`number`/`single-choice`-Aufgaben; Recap ausgenommen), nach Skill.
 - Kein `scope` in `src/app.yaml` (guess): die App hat keine `open-task` und folgt keinem fremden Material, nur der Karte.
 - Matching-Seiten ohne `$…$` (Unicode-Hochzahlen wie 2³): der Runtime-Test der Seite ohne JavaScript vergleicht sonst den Quelltext mit dem gesetzten Text (Fund fürs Plattform-Team, nicht selbst behoben).
 - Der Auftrag (Issue #386, vom Orchestrator geliefert) ersetzt das Interview: Goal, Learners, Content, Amount stehen dort. Languages, Look, Terms, Finding (guess), siehe Answers.
@@ -281,7 +282,7 @@ page, which a link. -->
 
 ### Tasks
 
-- [ ] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
+- [x] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
       decisions" why the app has none. Commit.
 - [ ] Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
       every click only the creator can make, in one message.
