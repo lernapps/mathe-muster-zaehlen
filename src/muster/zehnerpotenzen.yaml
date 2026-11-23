@@ -13,8 +13,8 @@ blocks:
           Plättchen in der Spalte links davon. Die Zahl bleibt dabei gleich. Die Spalten heißen wie in der Stellenwerttafel: E für Einer, Z für Zehner, H für Hunderter, T für Tausender.
       - type: figure
         image: images/buendeln.svg
-        alt: Links liegen 10 Plättchen mit dem Buchstaben E in zwei Reihen zu je 5. Ein Pfeil mit dem Wort bündeln zeigt nach rechts auf ein einzelnes Plättchen mit dem Buchstaben Z.
-        caption: Zehn Plättchen in der Spalte E werden zu einem Plättchen in der Spalte Z.
+        alt: Links liegen 10 Plättchen mit dem Buchstaben E in zwei Reihen zu je 5, von einem gestrichelten Rahmen umgeben. Ein Pfeil mit dem Wort bündeln zeigt nach rechts auf ein einzelnes Plättchen mit dem Buchstaben Z.
+        caption: Der gestrichelte Rahmen fasst zehn Plättchen der Spalte E zusammen. Beim Bündeln werden sie zu einem Plättchen in der Spalte Z.
         source: eigene Zeichnung
         licence: CC-BY-4.0
       - type: number
@@ -28,9 +28,6 @@ blocks:
             message: Du hast 10 + 10 gerechnet. Zehn Plättchen mit dem Wert 10 sind 10 · 10 wert.
           - answer: 10
             message: Das ist der Wert eines Zehners. Das neue Plättchen steht eine Spalte weiter links.
-        links:
-          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
   - type: section
     id: darstellung
     title: Jede Spalte ist zehnmal so viel
@@ -119,17 +116,11 @@ blocks:
             message: Du hast alle Ziffern gezählt, auch die 1. Zähle nur die Nullen hinter der 1.
           - answer: 1
             message: Die 1 ist keine Null. Zähle die Nullen hinter der 1.
-        links:
-          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
       - type: ordering
         id: zehnerpotenzen-ordnen
         text: Ordne die Zehnerpotenzen von der kleinsten zur größten Zahl.
         items: ["10²", "10³", "10⁴", "10⁵"]
         explanation: Mit jedem Exponenten mehr kommt eine Null hinzu und die Zahl wird zehnmal so groß.
-        links:
-          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
       - type: number
         id: kisten
         text: In der Spielecke stehen 10 Kisten. In jeder Kiste liegen 10 Beutel, in jedem Beutel 10 Plättchen. Wie viele Plättchen sind das insgesamt?
@@ -141,9 +132,6 @@ blocks:
             message: "Du hast 10 + 10 + 10 gerechnet. Kisten, Beutel und Plättchen: Du nimmst die drei Zahlen mal."
           - answer: 100
             message: Das sind nur 10 Kisten mal 10 Beutel. Jeder Beutel hat noch 10 Plättchen.
-        links:
-          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
   - type: section
     id: weiter
     title: Das kannst du jetzt

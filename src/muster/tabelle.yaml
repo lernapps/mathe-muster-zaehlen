@@ -10,7 +10,7 @@ blocks:
       - type: text
         text: |
           Für das Fest zur Eröffnung der Spielecke sucht Mira ein Outfit. Sie hat 3 Shirts (rot, blau, gelb) und 2 Hosen (schwarz,
-          grün). Ein Outfit besteht aus einem Shirt und einer Hose.
+          grün). Ein Outfit besteht aus einem Shirt und einer Hose. Lege für jedes Outfit ein Plättchen: eine Zeile je Shirt, eine Spalte je Hose. Das ist das Rechteckmodell.
       - type: number
         id: outfits-sechs
         text: Wie viele verschiedene Outfits kann Mira zusammenstellen? Probiere es auf Papier.
@@ -22,17 +22,13 @@ blocks:
             message: Du hast 3 + 2 gerechnet. Jedes Shirt lässt sich mit jeder Hose kombinieren, nicht nur mit einer.
           - answer: 3
             message: Das sind nur die Shirts. Zu jedem Shirt gibt es noch Hosen.
-        links:
-          - title: Zählprinzip (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
   - type: section
     id: darstellung
-    title: Das Plättchenfeld, das Rechteckmodell
+    title: Das Plättchenfeld
     blocks:
       - type: text
         text: |
-          Lege für jedes Outfit ein Plättchen. Jede Zeile gehört zu einem Shirt, jede Spalte zu einer Hose. Das ist das
-          Rechteckmodell.
+          So sieht das Plättchenfeld aus, wenn du es legst.
       - type: figure
         image: images/plaettchenfeld-outfits.svg
         alt: Ein Plättchenfeld mit 3 Zeilen und 2 Spalten. Die Zeilen sind mit Shirt 1 bis Shirt 3 beschriftet, die Spalten mit Hose 1 und Hose 2. Auf jedem Kreuzungspunkt liegt ein Plättchen.
@@ -80,9 +76,6 @@ blocks:
             correct: false
             info: Die Zahl der Shirts ist 3, nicht 2.
         explanation: Das Plättchenfeld hat 3 Zeilen mit je 2 Plättchen.
-        links:
-          - title: Zählprinzip (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
       - type: generated
         id: outfits-ueben
         given:
@@ -110,9 +103,6 @@ blocks:
         mistakes:
           - answer: 9
             message: Du hast 5 + 4 gerechnet. Zeilen und Spalten kreuzen sich, darum wird malgenommen.
-        links:
-          - title: Zählprinzip (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
       - type: number
         id: hosen-gesucht
         text: Ben kann 12 Outfits zusammenstellen. Er hat 4 Shirts. Wie viele Hosen hat er?
@@ -125,17 +115,11 @@ blocks:
             message: "Du hast 12 − 4 gerechnet. Die 12 Outfits sind ein Produkt: Shirts mal Hosen."
           - answer: 48
             message: Du hast 12 · 4 gerechnet. Die 12 Outfits sind schon das Produkt aus Shirts und Hosen.
-        links:
-          - title: Zählprinzip (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
       - type: true-false
         id: fuenf-outfits
         text: "Mit 3 Shirts und 2 Hosen gibt es 5 Outfits, weil 3 + 2 = 5 ist."
         answer: false
         explanation: Es gibt 3 · 2 = 6 Outfits. Jedes Shirt wird mit beiden Hosen kombiniert.
-        links:
-          - title: Zählprinzip (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
   - type: section
     id: weiter
     title: Das kannst du jetzt

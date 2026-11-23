@@ -28,9 +28,6 @@ blocks:
             message: Das sind die Outfits mit 2 Hosen. Die dritte Hose gibt jedem Shirt einen weiteren Ast.
           - answer: 8
             message: Du hast 6 + 2 gerechnet. Die neue Hose passt zu jedem der 3 Shirts, nicht nur zu zweien.
-        links:
-          - title: Zählprinzip (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
   - type: section
     id: darstellung
     title: Stufe für Stufe malnehmen
@@ -90,17 +87,11 @@ blocks:
             message: Du hast 3 + 4 gerechnet. An jedem Ast hängen 4 weitere, darum wird malgenommen.
           - answer: 4
             message: Das sind die Äste an einem einzigen Ast. Es gibt 3 Äste mit je 4.
-        links:
-          - title: Zählprinzip (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
       - type: true-false
         id: enden-zaehlen
         text: "Du kannst die Möglichkeiten eines Baums bestimmen, indem du seine Enden zählst."
         answer: true
         explanation: Jeder Weg von der Wurzel zu einem Ende ist eine Möglichkeit, und jedes Ende gehört zu genau einem Weg.
-        links:
-          - title: Zählprinzip (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
       - type: number
         id: mittlere-stufe
         text: Ein Baum hat drei Stufen. Die erste Stufe hat 2 Äste, die dritte hat 4 Äste. Es gibt insgesamt 24 Wege. Wie viele Äste hat die zweite Stufe?
@@ -113,9 +104,6 @@ blocks:
             message: "Du hast 24 : 2 gerechnet. Auch die dritte Stufe mit 4 Ästen gehört zur Rechnung."
           - answer: 6
             message: "Du hast 24 : 4 gerechnet. Auch die erste Stufe mit 2 Ästen gehört zur Rechnung."
-        links:
-          - title: Zählprinzip (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/zaehlprinzip/"
   - type: section
     id: weiter
     title: Das kannst du jetzt

@@ -26,9 +26,6 @@ blocks:
             message: Du hast 10 Spalten mit je 3 gezählt. Das Anfangsplättchen fehlt noch.
           - answer: 13
             message: Das sind die Plättchen von Bild 4. Setze die Folge bis Bild 10 fort.
-        links:
-          - title: Zahlenfolgen und Muster (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
   - type: section
     id: darstellung
     title: Eine Regel mit Platzhalter
@@ -77,9 +74,6 @@ blocks:
             correct: false
             info: Bild 2 ergäbe 10, nicht 9.
         explanation: Mal 4, danach plus 1.
-        links:
-          - title: Zahlenfolgen und Muster (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
       - type: single-choice
         id: term-waehlen
         text: Welcher Term beschreibt die Folge 5, 9, 13, 17, wenn $n$ die Nummer des Bildes ist?
@@ -97,9 +91,6 @@ blocks:
             correct: false
             info: Für n = 1 ergibt der Term 4, nicht 5.
         explanation: Vor n steht der Abstand 4, danach kommt 1 dazu.
-        links:
-          - title: Zahlenfolgen und Muster (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
       - type: generated
         id: bild-ausrechnen
         given:
@@ -126,9 +117,6 @@ blocks:
         text: "Mira rechnet für Bild 50 der Wandreihe: 3 · 50 + 1 = 151 Plättchen. Stimmt das?"
         answer: true
         explanation: Für Bild 50 ist das 150 + 1 = 151.
-        links:
-          - title: Zahlenfolgen und Muster (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
       - type: number
         id: welches-bild
         text: Zur Wandreihe gehört die Regel 3 mal die Nummer des Bildes plus 1. Welches Bild hat 40 Plättchen? Gib die Nummer an.
@@ -141,9 +129,6 @@ blocks:
             message: Das ist die Anzahl der Plättchen. Gefragt ist die Nummer des Bildes.
           - answer: 12
             message: Mache die Probe. Bild 12 hat 3 · 12 + 1 = 37 Plättchen, nicht 40.
-        links:
-          - title: Zahlenfolgen und Muster (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
   - type: section
     id: weiter
     title: Das kannst du jetzt

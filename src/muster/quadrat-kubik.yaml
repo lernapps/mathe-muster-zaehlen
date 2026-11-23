@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Ben legt für die Spielecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht.
+          Ben legt für die Spielecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht. Die Plättchen eines Rechtecks zählst du als Anzahl der Reihen mal Anzahl der Plättchen je Reihe.
       - type: figure
         image: images/quadrat-vier.svg
         alt: Ein Quadrat aus Plättchen mit 4 Reihen. In jeder Reihe liegen 4 Plättchen.
@@ -27,9 +27,6 @@ blocks:
             message: Du hast 4 + 4 gerechnet. Es sind 4 Reihen mit je 4 Plättchen. Rechne 4 · 4.
           - answer: 4
             message: Das ist nur eine Reihe. Das Quadrat hat 4 Reihen.
-        links:
-          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
   - type: section
     id: darstellung
     title: Gleiche Faktoren kurz schreiben
@@ -87,9 +84,6 @@ blocks:
             correct: false
             info: Das wäre 12. Der Exponent steht klein oben und sagt, wie oft 6 als Faktor vorkommt.
         explanation: Die Plättchen sind 6 · 6. Die Basis 6 kommt zweimal als Faktor vor, kurz 6².
-        links:
-          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
       - type: generated
         id: potenz-berechnen
         given:
@@ -127,17 +121,11 @@ blocks:
         distractors:
           - 3 · 4
         explanation: Der Exponent sagt, wie viele gleiche Faktoren es sind. Die Basis ist der Faktor selbst.
-        links:
-          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
       - type: true-false
         id: zwei-hoch-fuenf
         text: "Ben rechnet: $2^5 = 2 \\cdot 5 = 10$. Stimmt das?"
         answer: false
         explanation: $2^5$ ist 2 · 2 · 2 · 2 · 2 = 32, denn fünf Faktoren 2 werden malgenommen.
-        links:
-          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
       - type: number
         id: wuerfel-vier
         text: Mira legt einen Würfel mit Kante 4. Er hat 4 Lagen, jede Lage ist ein Quadrat aus 4 mal 4 Plättchen. Wie viele Plättchen braucht sie?
@@ -151,9 +139,6 @@ blocks:
             message: Du hast 4 · 3 gerechnet. Rechne 4 · 4 · 4.
           - answer: 8
             message: Du hast 4 + 4 gerechnet. Rechne Lagen mal Plättchen einer Lage.
-        links:
-          - title: Potenzen und Zehnerpotenzen (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/potenzen/"
   - type: section
     id: weiter
     title: Das kannst du jetzt

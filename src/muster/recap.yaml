@@ -50,44 +50,49 @@ blocks:
             id: test-stellenwert-wert
             component: Kurztest
             props:
-              question: "Welchen Wert hat die Ziffer 7 in der Zahl 7305?"
+              question: "Welchen Wert hat die Ziffer 7 in der Zahl 40 705?"
               options:
                 - { text: "7", correct: false, info: "Das ist die Ziffer selbst, nicht ihr Wert an dieser Stelle." }
                 - {
-                    text: "700",
+                    text: "70",
                     correct: false,
-                    info: "700 wäre der Wert bei den Hundertern. Die 7 steht aber ganz links, bei den Tausendern.",
+                    info: "70 wäre der Wert bei den Zehnern. Dort steht aber die 0, die 7 steht bei den Hundertern.",
                   }
-                - { text: "7000", correct: true, info: "Die 7 steht bei den Tausendern, also 7 · 1000 = 7000." }
+                - { text: "700", correct: true, info: "Die 7 steht bei den Hundertern, also 7 · 100 = 700." }
+                - {
+                    text: "7000",
+                    correct: false,
+                    info: "7000 wäre der Wert bei den Tausendern. Dort steht aber die 0.",
+                  }
               right: Richtig.
               wrong: Nicht richtig.
             nojs: |
-              Kurztest: Welchen Wert hat die Ziffer 7 in der Zahl 7305? Antwort: 7000. Die 7 steht bei den Tausendern, also 7 · 1000. Die Antwort 7 wäre die Ziffer selbst, 700 der Wert bei den Hundertern.
+              Kurztest: Welchen Wert hat die Ziffer 7 in der Zahl 40 705? Antwort: 700. Die 7 steht bei den Hundertern, also 7 · 100. 7 ist die Ziffer selbst, 70 und 7000 wären die Werte bei den Zehnern und den Tausendern, wo aber die 0 steht.
           - type: vue-component
             id: test-stellenwert-schreiben
             component: Kurztest
             props:
-              question: "Welche Zahl sind 3 Tausender, 0 Hunderter, 5 Zehner und 2 Einer?"
+              question: "Welche Zahl sind 5 Zehntausender, 0 Tausender, 3 Hunderter, 0 Zehner und 8 Einer?"
               options:
                 - {
-                    text: "352",
+                    text: "5 308",
                     correct: false,
-                    info: "Hier fehlt die Null. Ohne sie rutschen die Ziffern an die falschen Stellen.",
+                    info: "Diese Zahl hat nur vier Stellen. Mit 5 Zehntausendern braucht die Zahl fünf Stellen.",
                   }
                 - {
-                    text: "3052",
+                    text: "50 308",
                     correct: true,
-                    info: "Die Null hält die Hunderterstelle frei: 3 Tausender, 0 Hunderter, 5 Zehner, 2 Einer.",
+                    info: "Die Nullen halten die Tausender- und die Zehnerstelle frei: 5 Zehntausender, 0 Tausender, 3 Hunderter, 0 Zehner, 8 Einer.",
                   }
                 - {
-                    text: "3502",
+                    text: "50 380",
                     correct: false,
-                    info: "Hier stehen die 5 bei den Hundertern und die 0 bei den Zehnern. Die Reihenfolge ist vertauscht.",
+                    info: "Hier steht die 8 bei den Zehnern und die 0 bei den Einern. Die Reihenfolge ist vertauscht.",
                   }
               right: Richtig.
               wrong: Nicht richtig.
             nojs: |
-              Kurztest: Welche Zahl sind 3 Tausender, 0 Hunderter, 5 Zehner und 2 Einer? Antwort: 3052. Die Null hält die Hunderterstelle frei. 352 hat keine Null, 3502 hat Hunderter und Zehner vertauscht.
+              Kurztest: Welche Zahl sind 5 Zehntausender, 0 Tausender, 3 Hunderter, 0 Zehner und 8 Einer? Antwort: 50 308. Die Nullen halten die Tausender- und die Zehnerstelle frei. 5 308 hat nur vier Stellen, 50 380 hat Zehner und Einer vertauscht.
           - type: text
             text: Nicht sicher? Lies den Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/).
   - type: section
@@ -124,19 +129,27 @@ blocks:
             id: test-vorrang-punkt
             component: Kurztest
             props:
-              question: "Was ergibt 5 + 3 · 4?"
+              question: "Was ergibt 20 − 3 · 4 + 2?"
               options:
                 - {
-                    text: "32",
+                    text: "70",
                     correct: false,
-                    info: "Das ist (5 + 3) · 4. Ohne Klammer gilt Punkt vor Strich, also wird erst 3 · 4 gerechnet.",
+                    info: "Du hast von links nach rechts gerechnet: 20 − 3 = 17, 17 · 4 = 68, 68 + 2 = 70. Es gilt aber Punkt vor Strich.",
                   }
-                - { text: "17", correct: true, info: "Punkt vor Strich: erst 3 · 4 = 12, dann 5 + 12 = 17." }
-                - { text: "12", correct: false, info: "Das ist nur 3 · 4. Danach kommt noch + 5." }
+                - {
+                    text: "10",
+                    correct: true,
+                    info: "Punkt vor Strich: erst 3 · 4 = 12. Dann von links nach rechts 20 − 12 = 8 und 8 + 2 = 10.",
+                  }
+                - {
+                    text: "6",
+                    correct: false,
+                    info: "Du hast 3 · 4 + 2 = 14 zusammengefasst. Plus und minus rechnest du aber von links nach rechts: erst 20 − 12, dann + 2.",
+                  }
               right: Richtig.
               wrong: Nicht richtig.
             nojs: |
-              Kurztest: Was ergibt 5 + 3 · 4? Antwort: 17. Punkt vor Strich: erst 3 · 4 = 12, dann 5 + 12 = 17. 32 wäre (5 + 3) · 4, 12 nur 3 · 4.
+              Kurztest: Was ergibt 20 − 3 · 4 + 2? Antwort: 10. Punkt vor Strich: erst 3 · 4 = 12, dann 20 − 12 = 8 und 8 + 2 = 10. 70 rechnet nur von links nach rechts, 6 fasst 3 · 4 + 2 falsch zusammen.
           - type: vue-component
             id: test-vorrang-verteilen
             component: Kurztest
@@ -171,6 +184,6 @@ blocks:
       - type: text
         text: |
           - natürliche Zahlen im Stellenwertsystem lesen, schreiben und darstellen kannst, zum Beispiel sagst, was die 4 in 2407 wert ist,
-          - Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst, zum Beispiel 5 + 3 · 4 richtig rechnest und 6 · 102 geschickt.
+          - Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst, zum Beispiel 20 − 3 · 4 + 2 richtig rechnest und 6 · 102 geschickt.
 
           Dann geht es los. Zuerst legen Mira und Ben Muster aus Plättchen.

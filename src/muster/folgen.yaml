@@ -30,9 +30,6 @@ blocks:
             message: Von Bild 3 zu Bild 4 kommt eine Spalte aus 3 Plättchen dazu, nicht 4.
           - answer: 10
             message: Das sind die Plättchen von Bild 3. Du sollst Bild 4 bestimmen.
-        links:
-          - title: Zahlenfolgen und Muster (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
   - type: section
     id: darstellung
     title: Aus Bildern wird eine Zahlenfolge
@@ -71,17 +68,11 @@ blocks:
         mistakes:
           - answer: 20
             message: Du hast 3 addiert. Rechne den Abstand zwischen zwei Gliedern aus, hier 9 − 5.
-        links:
-          - title: Zahlenfolgen und Muster (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
       - type: ordering
         id: folge-sechs
         text: Bringe die Zahlen von klein nach groß in die Reihenfolge einer Folge mit dem Abstand 6.
         items: ["3", "9", "15", "21"]
         explanation: Von 3 zu 9 sind es 6 mehr, von 9 zu 15 wieder 6 und von 15 zu 21 auch.
-        links:
-          - title: Zahlenfolgen und Muster (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
       - type: generated
         id: viertes-glied
         given:
@@ -105,9 +96,6 @@ blocks:
         text: "Bei der Folge 3, 7, 11, 16 wird jedes Glied um dieselbe Zahl größer."
         answer: false
         explanation: Die Abstände sind 4, 4 und 5. Der letzte Abstand ist anders. Mit demselben Abstand 4 käme nach 11 die Zahl 15.
-        links:
-          - title: Zahlenfolgen und Muster (Lernlandkarte)
-            url: "https://lernapps.net/apps/map/mathematik/c/muster-zahlenfolgen/"
   - type: section
     id: weiter
     title: Das kannst du jetzt
