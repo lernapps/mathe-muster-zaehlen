@@ -29,9 +29,11 @@
 </ul>
 <h2>Wo das Kind gerade ist</h2>
 <ul>
+<li>Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. <code>?uebung=recap-stellenwert</code>. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt <code>uebung=</code> die Aufgabe und <code>abschnitt=</code> ihren Abschnitt.</li>
 <li>Steht in der Nachricht „Die App sagt: …“, hat die App das zur Eingabe des Kindes gemeldet. Setz dort an, ohne es zu wiederholen.</li>
 <li>Eine Zeile wie „…, Nr. 16: richtig im 2. Versuch.“ kommt von „Zurück“ in der App: Aufgabe, Nummer und wie weit das Kind damit kam.</li>
 <li>„Ich habe auf … geübt:“ kommt von „Zurück zum Tutor“: diese Seite mit den Nummern, dann je geübter Aufgabe, wie es lief, bei einer falschen mit Eingabe und Meldung der App. Setz bei den falschen an, eine nach der anderen.</li>
+<li>Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne <code>tutor/</code> und ohne <code>?…</code>, mit der Nummer und <code>via=tutor</code>, z. B. <code>…/muster/recap/?via=tutor#recap-stellenwert</code>. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. <code>https://</code>). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“</li>
 </ul>
 <h2>Besondere Anforderungen</h2>
 <p>Nennt die Adresse dieser Seite <code>bedarf=</code>, gilt jeder Abschnitt, den sie nennt, mehrere durch Komma getrennt. Er geht dem oben Gesagten vor; widersprechen sich zwei, gilt der strengere. Ohne <code>bedarf=</code> gilt keiner.</p>
@@ -51,7 +53,7 @@
 viele Plättchen aus. Mit Stellenwerten bündelst du Plättchen zu Zehnern, Hundertern und Tausendern, mit den Rechenregeln
 beschreibst du Muster. Teste dich in beiden Teilen: erst im Kopf rechnen, dann die Lösung lesen.</p>
 <h3>Natürliche Zahlen im Stellenwertsystem</h3>
-<p>Jede <strong>Ziffer</strong> einer Zahl hat einen <strong>Stellenwert</strong>. Die Stellen heißen Einer (E), Zehner (Z), Hunderter (H)
+<p>Wenn du wissen willst, wie groß eine Zahl ist, schaust du auf die Stelle jeder Ziffer. Jede <strong>Ziffer</strong> einer Zahl hat einen <strong>Stellenwert</strong>. Die Stellen heißen Einer (E), Zehner (Z), Hunderter (H)
 und Tausender (T). Weiter links folgen Zehntausender, Hunderttausender und Millionen. Die
 <strong>Stellenwerttafel</strong> zeigt sie nebeneinander.</p>
 <ul>
@@ -70,11 +72,12 @@ und Tausender (T). Weiter links folgen Zehntausender, Hunderttausender und Milli
 <p><strong>Beispiel: 2407 gelesen</strong></p>
 <p>2407 sind 2 Tausender, 4 Hunderter, 0 Zehner und 7 Einer. Die Null hält den Platz der Zehner frei.</p>
 <h4>Kannst du das?</h4>
-<p>Interaktiv: Kurztest: Welchen Wert hat die Ziffer 7 in der Zahl 40 705? Antwort: 700. Die 7 steht bei den Hundertern, also 7 · 100. 7 ist die Ziffer selbst, 70 und 7000 wären die Werte bei den Zehnern und den Tausendern, wo aber die 0 steht.</p>
-<p>Interaktiv: Kurztest: Welche Zahl sind 5 Zehntausender, 0 Tausender, 3 Hunderter, 0 Zehner und 8 Einer? Antwort: 50 308. Die Nullen halten die Tausender- und die Zehnerstelle frei. 5 308 hat nur vier Stellen, 50 380 hat Zehner und Einer vertauscht.</p>
+<ul>
+<li>Aufgabe <code>recap-stellenwert</code> (unten)</li>
+</ul>
 <p>Nicht sicher? Lies den Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der <a href="https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/">Lernlandkarte</a>.</p>
 <h3>Vorrangregeln und Rechengesetze</h3>
-<p>Eine <strong>Summe</strong> ist das Ergebnis einer Addition, ihre Zahlen heißen Summanden. Ein <strong>Produkt</strong> ist das
+<p>Wenn eine Rechnung mehrere Rechenzeichen hat, musst du wissen, was zuerst kommt, und wenn du geschickt rechnen willst, helfen dir Rechengesetze. Eine <strong>Summe</strong> ist das Ergebnis einer Addition, ihre Zahlen heißen Summanden. Ein <strong>Produkt</strong> ist das
 Ergebnis einer Multiplikation, ihre Zahlen heißen Faktoren. Beim Rechnen mit mehreren Rechenzeichen gilt
 eine feste Reihenfolge, und drei Rechengesetze helfen dir, geschickt zu rechnen.</p>
 <ul>
@@ -90,8 +93,9 @@ eine feste Reihenfolge, und drei Rechengesetze helfen dir, geschickt zu rechnen.
 <p><strong>Beispiel: Mit Klammer und Punkt vor Strich</strong></p>
 <p>2 + 3 · (7 − 4): Die Klammer zuerst, 7 − 4 = 3. Dann Punkt vor Strich, 3 · 3 = 9. Zuletzt 2 + 9 = 11.</p>
 <h4>Kannst du das?</h4>
-<p>Interaktiv: Kurztest: Was ergibt 20 − 3 · 4 + 2? Antwort: 10. Punkt vor Strich: erst 3 · 4 = 12, dann 20 − 12 = 8 und 8 + 2 = 10. 70 rechnet nur von links nach rechts, 6 fasst 3 · 4 + 2 falsch zusammen.</p>
-<p>Interaktiv: Kurztest: Wie rechnest du 6 · 102 mit dem Distributivgesetz? Antwort: 6 · 100 + 6 · 2 = 600 + 12 = 612. Die Rechnung 6 + 102 = 108 ist eine Addition, 6 · 100 · 2 = 1200 verteilt falsch.</p>
+<ul>
+<li>Aufgabe <code>recap-vorrang</code> (unten)</li>
+</ul>
 <p>Nicht sicher? Lies den Baustein „Vorrangregeln und Rechengesetze“ auf der <a href="https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/">Lernlandkarte</a>.</p>
 <h3>Du bist bereit, wenn du ...</h3>
 <ul>
@@ -99,6 +103,35 @@ eine feste Reihenfolge, und drei Rechengesetze helfen dir, geschickt zu rechnen.
 <li>Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst, zum Beispiel 20 − 3 · 4 + 2 richtig rechnest und 6 · 102 geschickt.</li>
 </ul>
 <p>Dann geht es los. Zuerst legen Mira und Ben Muster aus Plättchen.</p>
+<h3>Aufgabe recap-stellenwert</h3>
+<ul>
+<li>Aufgabe: Welchen Wert hat die Ziffer 7 in der Zahl 40 705? Schreibe die Zahl ohne Lücke.</li>
+<li>Antwortformat: eine Zahl eintippen</li>
+<li>Lösung: 700</li>
+<li>Erklärung: Die 7 steht bei den Hundertern, also 7 · 100 = 700.</li>
+<li>Tipp der App: An welcher Stelle steht die 7? Zähle von rechts, Einer, Zehner, Hunderter.</li>
+<li>Typische Fehler und was die App sagt:<ul>
+<li>7: Das ist die Ziffer selbst, nicht ihr Wert an dieser Stelle.</li>
+<li>70: 70 wäre der Wert bei den Zehnern. Dort steht aber die 0, die 7 steht bei den Hundertern.</li>
+<li>7000: 7000 wäre der Wert bei den Tausendern. Dort steht aber die 0.</li>
+</ul>
+</li>
+<li>Link: <a href="../?via=tutor#recap-stellenwert">../?via=tutor#recap-stellenwert</a></li>
+</ul>
+<h3>Aufgabe recap-vorrang</h3>
+<ul>
+<li>Aufgabe: Berechne 20 − 3 · 4 + 2.</li>
+<li>Antwortformat: eine Zahl eintippen</li>
+<li>Lösung: 10</li>
+<li>Erklärung: Punkt vor Strich, erst 3 · 4 = 12. Dann von links nach rechts 20 − 12 = 8 und 8 + 2 = 10.</li>
+<li>Tipp der App: Welche Rechnung kommt zuerst, minus oder mal?</li>
+<li>Typische Fehler und was die App sagt:<ul>
+<li>70: Du hast von links nach rechts gerechnet: 20 − 3 = 17, 17 · 4 = 68, 68 + 2 = 70. Es gilt aber Punkt vor Strich.</li>
+<li>6: Du hast 3 · 4 + 2 = 14 zusammengefasst. Plus und minus rechnest du aber von links nach rechts, erst 20 − 12, dann + 2.</li>
+</ul>
+</li>
+<li>Link: <a href="../?via=tutor#recap-vorrang">../?via=tutor#recap-vorrang</a></li>
+</ul>
 </main>
 </body>
 </html>

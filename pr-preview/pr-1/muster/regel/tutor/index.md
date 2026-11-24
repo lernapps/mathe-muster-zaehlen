@@ -51,7 +51,7 @@ Bild: Drei Plättchenbilder nebeneinander. Bild 1 hat ein hohles Anfangsplättch
 
 ### Eine Regel mit Platzhalter
 
-Jedes Bild hat ein Anfangsplättchen und so viele Spalten aus 3 Plättchen, wie seine Nummer sagt. Bild 3 hat
+Wenn du jedes Bild ausrechnen willst, ohne alle zu legen, brauchst du eine Regel, die für alle Bilder gilt. Jedes Bild hat ein Anfangsplättchen und so viele Spalten aus 3 Plättchen, wie seine Nummer sagt. Bild 3 hat
 3 Spalten, Bild 10 hat 10 Spalten. Die Regel in Worten heißt: Rechne 3 mal die Nummer des Bildes und
 addiere 1. Jedes Bild bringt 3 Plättchen mehr, darum wird die Nummer mit 3 malgenommen.
 

@@ -43,7 +43,7 @@ Du zählst Möglichkeiten mit einem Baumdiagramm, auch wenn es mehr als zwei Aus
 
 ### Vom Feld zum Baum
 
-Dieselben Outfits wie auf der Seite davor, jetzt als Baum. Er beginnt links an der Wurzel. Jeder Ast ist eine
+Bei mehr als zwei Auswahlen wird ein Feld unübersichtlich, ein Baum zeigt sie Stufe für Stufe. Dieselben Outfits wie auf der Seite davor, jetzt als Baum. Er beginnt links an der Wurzel. Jeder Ast ist eine
 Auswahl, jeder Weg von links bis zu einem Ende ist ein Outfit.
 
 Bild: Ein Baumdiagramm von links nach rechts. Von der Wurzel gehen 3 Äste zu Shirt 1, Shirt 2 und Shirt 3. Von jedem Shirt gehen 2 Äste zu Hose 1 und Hose 2. Bildunterschrift: Der Baum hat zwei Stufen. In der ersten wird das Shirt gewählt, in der zweiten die Hose.
@@ -52,10 +52,10 @@ Bild: Ein Baumdiagramm von links nach rechts. Von der Wurzel gehen 3 Äste zu Sh
 
 ### Stufe für Stufe malnehmen
 
-- **Baumdiagramm**: Ein Baumdiagramm zeigt Auswahlen Stufe für Stufe. Jede Stufe hat Äste für die Möglichkeiten, jeder Weg von der Wurzel bis zu einem Ende ist eine Möglichkeit insgesamt.
-
-Bei zwei Stufen sagt das Zählprinzip: erste Stufe mal zweite Stufe. Bei drei Stufen nimmst du alle drei
+Wenn du wissen willst, wie viele Möglichkeiten es bei mehreren Stufen gibt, zeichnest du den Baum oder rechnest mit den Zahlen der Stufen. Bei zwei Stufen sagt das Zählprinzip: erste Stufe mal zweite Stufe. Bei drei Stufen nimmst du alle drei
 Zahlen mal. Den Baum kannst du dir dann vorstellen, ohne ihn ganz zu zeichnen.
+
+- **Baumdiagramm**: Ein Baumdiagramm zeigt Auswahlen Stufe für Stufe. Jede Stufe hat Äste für die Möglichkeiten, jeder Weg von der Wurzel bis zu einem Ende ist eine Möglichkeit insgesamt.
 
 **Beispiel: Ein Frühstück in drei Stufen**
 

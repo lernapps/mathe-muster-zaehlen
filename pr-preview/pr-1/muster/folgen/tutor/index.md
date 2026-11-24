@@ -43,7 +43,7 @@ Du zählst die Plättchen in einer Reihe von Bildern, setzt die Folge fort und s
 
 ### Das nächste Bild vorhersagen
 
-Mira und Ben legen für die Wand der Spielecke eine Reihe von Bildern. Jedes Bild hat ein Plättchen am Anfang
+Wenn du ein Muster fortsetzen willst, musst du erkennen, was von Bild zu Bild passiert. Mira und Ben legen für die Wand der Spielecke eine Reihe von Bildern. Jedes Bild hat ein Plättchen am Anfang
 (hohler Kreis) und dahinter Spalten aus je 3 Plättchen.
 
 Bild: Drei Plättchenbilder nebeneinander. Bild 1 hat ein hohles Anfangsplättchen und eine Spalte aus 3 Plättchen. Bild 2 hat zwei Spalten, Bild 3 hat drei Spalten. Bildunterschrift: Zähle die Plättchen jedes Bildes. Was ändert sich von Bild zu Bild?
@@ -52,7 +52,7 @@ Bild: Drei Plättchenbilder nebeneinander. Bild 1 hat ein hohles Anfangsplättch
 
 ### Aus Bildern wird eine Zahlenfolge
 
-Schreibst du die Anzahl der Plättchen jedes Bildes hintereinander, entsteht eine Zahlenfolge: 4, 7, 10 und
+Wenn du Muster genau vergleichen willst, zählst du die Plättchen jedes Bildes. Schreibst du die Anzahlen hintereinander, entsteht eine Zahlenfolge: 4, 7, 10 und
 so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.
 
 - **Zahlenfolge**: Eine Zahlenfolge ist eine Reihe von Zahlen in fester Reihenfolge. Jede Zahl ist ein Folgenglied. Bei der Wandreihe gehört Bild 1 zum ersten Glied, Bild 2 zum zweiten und so weiter.

@@ -43,7 +43,7 @@ Du legst Quadrate und Würfel aus Plättchen und liest die Potenz als wiederholt
 
 ### Zuerst zählen
 
-Ben legt für die Spielecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht. Die Plättchen eines Rechtecks zählst du als Anzahl der Reihen mal Anzahl der Plättchen je Reihe.
+Wenn du viele Plättchen in Reihen legst, willst du schnell wissen, wie viele es sind. Ben legt für die Spielecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht. Die Plättchen eines Rechtecks zählst du als Anzahl der Reihen mal Anzahl der Plättchen je Reihe.
 
 Bild: Ein Quadrat aus Plättchen mit 4 Reihen. In jeder Reihe liegen 4 Plättchen. Bildunterschrift: Zähle die Plättchen einer Reihe und die Reihen.
 
@@ -51,7 +51,7 @@ Bild: Ein Quadrat aus Plättchen mit 4 Reihen. In jeder Reihe liegen 4 Plättche
 
 ### Gleiche Faktoren kurz schreiben
 
-Faktoren sind die Zahlen, die du malnimmst. Das Ergebnis heißt Produkt. Bei 4 · 4 sind beide Faktoren gleich. Statt 4 · 4 schreibst du
+Wenn derselbe Faktor mehrmals vorkommt, wird die Rechnung lang, und dafür gibt es eine Kurzschreibweise. Bei 4 · 4 sind beide Faktoren gleich. Statt 4 · 4 schreibst du
 kurz $4^2$ und sprichst „4 hoch 2“. Die Zahl 16 = 4 · 4 heißt Quadratzahl.
 
 - **Potenz**: Eine Potenz ist ein Produkt aus gleichen Faktoren, zum Beispiel $4^2 = 4 \cdot 4$. Die untere Zahl heißt Basis, die kleine obere Zahl Exponent. Der Exponent sagt, wie oft die Basis als Faktor vorkommt.

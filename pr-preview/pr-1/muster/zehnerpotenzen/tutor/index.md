@@ -43,8 +43,8 @@ Du bündelst Plättchen zu Zehnern, Hundertern und Tausendern und schreibst gro�
 
 ### Zehn zu einem bündeln
 
-Mira und Ben zählen die Plättchen in der Dose. Sie bündeln immer zehn Plättchen einer Spalte zu einem
-Plättchen in der Spalte links davon. Die Zahl bleibt dabei gleich. Die Spalten heißen wie in der Stellenwerttafel: E für Einer, Z für Zehner, H für Hunderter, T für Tausender.
+Wenn du sehr viele Plättchen zählen willst, bündelst du immer zehn zu einem. Mira und Ben zählen so die Plättchen in der Dose. Sie bündeln immer zehn Plättchen einer Spalte zu einem
+Plättchen in der Spalte links davon. Die Zahl bleibt dabei gleich.
 
 Bild: Links liegen 10 Plättchen mit dem Buchstaben E in zwei Reihen zu je 5, von einem gestrichelten Rahmen umgeben. Ein Pfeil mit dem Wort bündeln zeigt nach rechts auf ein einzelnes Plättchen mit dem Buchstaben Z. Bildunterschrift: Der gestrichelte Rahmen fasst zehn Plättchen der Spalte E zusammen. Beim Bündeln werden sie zu einem Plättchen in der Spalte Z.
 
@@ -52,7 +52,7 @@ Bild: Links liegen 10 Plättchen mit dem Buchstaben E in zwei Reihen zu je 5, vo
 
 ### Jede Spalte ist zehnmal so viel
 
-Jede Spalte ist zehnmal so viel wert wie die Spalte rechts davon. Links von T geht es mit Zehntausendern, Hunderttausendern und Millionen genauso weiter. Ein Plättchen in der Spalte H ist 10 · 10
+Wenn du sehr große Zahlen kurz schreiben willst, helfen dir Zehnerpotenzen. Jede Spalte ist zehnmal so viel wert wie die Spalte rechts davon. Ein Plättchen in der Spalte H ist 10 · 10
 wert, in der Spalte T ist es 10 · 10 · 10 wert. Das sind Zehnerpotenzen: Die Basis ist 10, der Exponent
 sagt, wie oft die 10 als Faktor vorkommt.
 

@@ -43,7 +43,7 @@ Du zählst Möglichkeiten mit einem Plättchenfeld und einer Tabelle und findest
 
 ### Outfits zählen
 
-Für das Fest zur Eröffnung der Spielecke sucht Mira ein Outfit. Sie hat 3 Shirts (rot, blau, gelb) und 2 Hosen (schwarz,
+Wenn du wissen willst, wie viele Möglichkeiten es gibt, zählst du systematisch. Für das Fest zur Eröffnung der Spielecke sucht Mira ein Outfit. Sie hat 3 Shirts (rot, blau, gelb) und 2 Hosen (schwarz,
 grün). Ein Outfit besteht aus einem Shirt und einer Hose. Zeichne für jedes Outfit ein Plättchen: eine Zeile je Shirt, eine Spalte je Hose. Das ist das Rechteckmodell, und seine Plättchen zählst du als Anzahl der Zeilen mal Anzahl der Plättchen je Zeile.
 
 - Aufgabe `outfits-sechs` (unten)
