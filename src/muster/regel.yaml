@@ -5,7 +5,7 @@ competencies: [muster-zahlenfolgen]
 blocks:
   - type: section
     id: einstieg
-    title: Bild 10 ohne alle Bilder
+    title: Wie findest du Bild 10, ohne alle Bilder zu legen?
     blocks:
       - type: text
         text: Ben möchte wissen, wie viele Plättchen Bild 10 der Wandreihe hat. Er hat nicht genug Platz, alle Bilder zu legen.

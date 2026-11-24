@@ -36,7 +36,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Wenn du Muster genau vergleichen willst, zählst du die Plättchen jedes Bildes. Schreibst du die Anzahlen hintereinander, entsteht eine Zahlenfolge: 4, 7, 10 und
+          Du zählst die Plättchen jedes Bildes. Schreibst du die Anzahlen hintereinander, entsteht eine Zahlenfolge: 4, 7, 10 und
           so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.
       - type: definition
         term: Zahlenfolge
@@ -54,7 +54,7 @@ blocks:
         title: Merke
         blocks:
           - type: text
-            text: Wenn jedes Glied um dieselbe Zahl größer wird, addierst du diese Zahl immer wieder. Bei 4, 7, 10 ist es jedes Mal plus 3.
+            text: Dann addierst du diese Zahl immer wieder. Bei 4, 7, 10 ist es jedes Mal plus 3.
   - type: section
     id: uebung
     title: Übung

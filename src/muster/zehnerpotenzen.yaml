@@ -34,7 +34,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Wenn du sehr große Zahlen kurz schreiben willst, helfen dir Zehnerpotenzen. Jede Spalte ist zehnmal so viel wert wie die Spalte rechts davon. Ein Plättchen in der Spalte H ist 10 · 10
+          Dafür bündelst du weiter: Jede Spalte ist zehnmal so viel wert wie die Spalte rechts davon. Ein Plättchen in der Spalte H ist 10 · 10
           wert, in der Spalte T ist es 10 · 10 · 10 wert. Das sind Zehnerpotenzen: Die Basis ist 10, der Exponent
           sagt, wie oft die 10 als Faktor vorkommt.
       - type: table
@@ -59,7 +59,7 @@ blocks:
             text: "Der Exponent 5 zeigt, dass fünf Faktoren 10 vorkommen. Er zeigt auch, dass hinter der 1 fünf Nullen stehen. Mit Zehnerpotenzen schreibst du große Zahlen kurz: 5000 = 5 · 1000 = 5 · 10³."
   - type: section
     id: merke
-    title: Wie liest du den Exponenten?
+    title: Ist 10³ gleich 30?
     blocks:
       - type: note
         title: Merke

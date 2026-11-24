@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Bei mehr als zwei Auswahlen wird ein Feld unübersichtlich, ein Baum zeigt sie Stufe für Stufe. Dieselben Outfits wie auf der Seite davor, jetzt als Baum. Er beginnt links an der Wurzel. Jeder Ast ist eine
+          Dann wird ein Feld unübersichtlich, und ein Baum ist besser. Dieselben Outfits wie auf der Seite davor, jetzt als Baum. Er beginnt links an der Wurzel. Jeder Ast ist eine
           Auswahl, jeder Weg von links bis zu einem Ende ist ein Outfit.
       - type: figure
         image: images/baum-outfits.svg
@@ -43,10 +43,10 @@ blocks:
         title: Ein Frühstück in drei Stufen
         blocks:
           - type: text
-            text: Wenn du das Zählprinzip mit drei Stufen ausprobieren willst, rechne ein Frühstück. Beim Fest in der Spielecke gibt es ein Frühstück mit 2 Broten, 3 Aufstrichen und 2 Getränken. Du wählst ein Brot, einen Aufstrich und ein Getränk. Das sind 2 · 3 · 2 = 12 Möglichkeiten.
+            text: Probiere das Zählprinzip mit drei Stufen aus, mit einem Frühstück. Beim Fest in der Spielecke gibt es ein Frühstück mit 2 Broten, 3 Aufstrichen und 2 Getränken. Du wählst ein Brot, einen Aufstrich und ein Getränk. Das sind 2 · 3 · 2 = 12 Möglichkeiten.
   - type: section
     id: merke
-    title: Welche Stufe vergisst man leicht?
+    title: Was tust du bei jeder Stufe?
     blocks:
       - type: note
         title: Merke
