@@ -52,7 +52,7 @@ Bild: Links liegen 10 Plättchen mit dem Buchstaben E in zwei Reihen zu je 5, vo
 
 ### Wie schreibst du große Zahlen kurz?
 
-Wenn du sehr große Zahlen kurz schreiben willst, helfen dir Zehnerpotenzen. Jede Spalte ist zehnmal so viel wert wie die Spalte rechts davon. Ein Plättchen in der Spalte H ist 10 · 10
+Dafür bündelst du weiter: Jede Spalte ist zehnmal so viel wert wie die Spalte rechts davon. Ein Plättchen in der Spalte H ist 10 · 10
 wert, in der Spalte T ist es 10 · 10 · 10 wert. Das sind Zehnerpotenzen: Die Basis ist 10, der Exponent
 sagt, wie oft die 10 als Faktor vorkommt.
 
@@ -74,7 +74,7 @@ $10^5 = 10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 = 100 000$
 
 Der Exponent 5 zeigt, dass fünf Faktoren 10 vorkommen. Er zeigt auch, dass hinter der 1 fünf Nullen stehen. Mit Zehnerpotenzen schreibst du große Zahlen kurz: 5000 = 5 · 1000 = 5 · 10³.
 
-### Wie liest du den Exponenten?
+### Ist 10³ gleich 30?
 
 **Merke: Merke**
 

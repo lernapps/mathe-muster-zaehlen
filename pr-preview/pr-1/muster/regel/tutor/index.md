@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Du beschreibst ein Muster mit einer Regel, in der die Nummer des Bildes als Platzhalter steht, und rechnest damit jedes Bild aus.
 
-### Bild 10 ohne alle Bilder
+### Wie findest du Bild 10, ohne alle Bilder zu legen?
 
 Ben möchte wissen, wie viele Plättchen Bild 10 der Wandreihe hat. Er hat nicht genug Platz, alle Bilder zu legen.
 

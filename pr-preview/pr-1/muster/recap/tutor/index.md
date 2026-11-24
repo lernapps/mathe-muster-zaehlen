@@ -45,8 +45,8 @@ Das brauchst du für dieses Kapitel: Stellenwerte und Vorrangregeln mit Rechenge
 
 ### Das brauchst du für dieses Kapitel
 
-Mira (11) und Ben (10) richten die Spielecke ihrer Klasse ein und planen ein Fest. Mit Stellenwerten
-bündelst du ihre Plättchen zu Zehnerpotenzen, mit den Rechengesetzen beschreibst du Muster.
+Mira (11) und Ben (10) richten die Spielecke ihrer Klasse ein und planen ein Fest. Dafür brauchst du
+Stellenwerte und die Rechenregeln.
 
 ### Natürliche Zahlen im Stellenwertsystem
 
@@ -60,7 +60,7 @@ Die Zahl 2407: T Tausender, H Hunderter, Z Zehner, E Einer:
 
 - **Stellenwert**: Der Stellenwert sagt, wie viel eine Ziffer an ihrer Stelle zählt. In 2407 steht die 4 bei den Hundertern, ihr Wert ist 4 · 100 = 400.
 
-- **Stellenwerttafel**: Die Stellenwerttafel gibt jeder Stelle eine Spalte, Einer (E), Zehner (Z), Hunderter (H), Tausender (T). Jede Stelle ist zehnmal so viel wert wie die rechts davon.
+- **Stellenwerttafel**: Die Stellenwerttafel gibt jeder Stelle eine Spalte: E für Einer, Z für Zehner, H für Hunderter und T für Tausender. Jede Stelle ist zehnmal so viel wert wie die rechts davon.
 
 ### Vorrangregeln und Rechengesetze
 
@@ -68,11 +68,11 @@ Wenn eine Rechnung mehrere Rechenzeichen hat, musst du wissen, was zuerst kommt,
 
 - **Vorrangregel**: Klammern zuerst, dann mal und geteilt vor plus und minus (Punkt vor Strich), sonst von links nach rechts. Beispiel 3 + 4 · 2 = 11, aber (3 + 4) · 2 = 14.
 
-- **Kommutativgesetz**: Beim Addieren und Multiplizieren darfst du die Zahlen tauschen, beim Subtrahieren nicht. Beispiel 4 · 25 = 25 · 4 = 100.
+- **Kommutativgesetz**: Beim Addieren und Multiplizieren darfst du die Zahlen tauschen, beim Subtrahieren und Dividieren nicht. Beispiel 4 · 25 = 25 · 4 = 100.
 
 - **Assoziativgesetz**: Beim Addieren und Multiplizieren darfst du die Klammern anders setzen. Beispiel (2 · 5) · 10 = 2 · (5 · 10) = 100.
 
-- **Distributivgesetz**: Ein Faktor vor einer Klammer wird mit jedem Summanden multipliziert. Beispiel 3 · (10 + 2) = 3 · 10 + 3 · 2 = 36.
+- **Distributivgesetz**: Ein Faktor vor einer Klammer wird mit jedem Summanden multipliziert. So rechnest du im Kopf leichter. Beispiel 3 · (10 + 2) = 3 · 10 + 3 · 2 = 36.
 
 ### Kannst du das?
 
@@ -95,6 +95,7 @@ Nicht sicher? Lies die Bausteine „Natürliche Zahlen im Stellenwertsystem“ u
 - Erklärung: Mit dem Distributivgesetz ist 6 · 102 = 6 · 100 + 6 · 2 = 600 + 12 = 612.
 - Tipp der App: Zerlege 102 in 100 und 2.
 - Typische Fehler und was die App sagt:
+  - 600: Du hast nur 6 · 100 gerechnet. Es fehlt noch 6 · 2.
   - 108: Du hast 6 + 102 gerechnet. Bei 6 · 102 wird multipliziert.
   - 1200: Du hast 6 · 100 · 2 gerechnet. Der Faktor 6 wird einzeln mit 100 und mit 2 multipliziert, und die Ergebnisse werden addiert.
 - Link: [../?via=tutor#recap-verteilen](../?via=tutor#recap-verteilen)
@@ -108,5 +109,6 @@ Nicht sicher? Lies die Bausteine „Natürliche Zahlen im Stellenwertsystem“ u
 - Tipp der App: Rechne zuerst die Produkte aus, dann addierst du.
 - Typische Fehler und was die App sagt:
   - 475: Du hast nur die Ziffern 4, 7 und 5 hintereinander geschrieben. Die Faktoren 10000 und 100 bestimmen die Stellen.
+  - 47005: Du hast 7 · 1000 gerechnet. Die 7 steht bei den Hundertern, also 7 · 100 = 700.
   - 40075: Die 7 steht bei den Hundertern, nicht bei den Zehnern. 7 · 100 ist 700.
 - Link: [../?via=tutor#recap-stellenwert-vorrang](../?via=tutor#recap-stellenwert-vorrang)

@@ -43,7 +43,7 @@ Du zählst Möglichkeiten mit einem Baumdiagramm, auch wenn es mehr als zwei Aus
 
 ### Was tust du bei mehr als zwei Auswahlen?
 
-Bei mehr als zwei Auswahlen wird ein Feld unübersichtlich, ein Baum zeigt sie Stufe für Stufe. Dieselben Outfits wie auf der Seite davor, jetzt als Baum. Er beginnt links an der Wurzel. Jeder Ast ist eine
+Dann wird ein Feld unübersichtlich, und ein Baum ist besser. Dieselben Outfits wie auf der Seite davor, jetzt als Baum. Er beginnt links an der Wurzel. Jeder Ast ist eine
 Auswahl, jeder Weg von links bis zu einem Ende ist ein Outfit.
 
 Bild: Ein Baumdiagramm von links nach rechts. Von der Wurzel gehen 3 Äste zu Shirt 1, Shirt 2 und Shirt 3. Von jedem Shirt gehen 2 Äste zu Hose 1 und Hose 2. Bildunterschrift: Der Baum hat zwei Stufen. In der ersten wird das Shirt gewählt, in der zweiten die Hose.
@@ -59,9 +59,9 @@ Zahlen mal. Den Baum kannst du dir dann vorstellen, ohne ihn ganz zu zeichnen.
 
 **Beispiel: Ein Frühstück in drei Stufen**
 
-Wenn du das Zählprinzip mit drei Stufen ausprobieren willst, rechne ein Frühstück. Beim Fest in der Spielecke gibt es ein Frühstück mit 2 Broten, 3 Aufstrichen und 2 Getränken. Du wählst ein Brot, einen Aufstrich und ein Getränk. Das sind 2 · 3 · 2 = 12 Möglichkeiten.
+Probiere das Zählprinzip mit drei Stufen aus, mit einem Frühstück. Beim Fest in der Spielecke gibt es ein Frühstück mit 2 Broten, 3 Aufstrichen und 2 Getränken. Du wählst ein Brot, einen Aufstrich und ein Getränk. Das sind 2 · 3 · 2 = 12 Möglichkeiten.
 
-### Welche Stufe vergisst man leicht?
+### Was tust du bei jeder Stufe?
 
 **Merke: Merke**
 

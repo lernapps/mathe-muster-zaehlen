@@ -51,7 +51,7 @@ Bild: Ein Quadrat aus Plättchen mit 4 Reihen. In jeder Reihe liegen 4 Plättche
 
 ### Wie schreibst du gleiche Faktoren kurz?
 
-Wenn derselbe Faktor mehrmals vorkommt, wird die Rechnung lang, und dafür gibt es eine Kurzschreibweise. Bei 4 · 4 sind beide Faktoren gleich. Statt 4 · 4 schreibst du
+Wenn du dieselbe Zahl mehrmals malnimmst (ein Faktor, der mehrmals vorkommt), wird die Rechnung lang, und dafür gibt es eine Kurzschreibweise. Bei 4 · 4 sind beide Faktoren gleich. Statt 4 · 4 schreibst du
 kurz $4^2$ und sprichst „4 hoch 2“. Die Zahl 16 = 4 · 4 heißt Quadratzahl.
 
 - **Potenz**: Eine Potenz ist ein Produkt aus gleichen Faktoren, zum Beispiel $4^2 = 4 \cdot 4$. Die untere Zahl heißt Basis, die kleine obere Zahl Exponent. Der Exponent sagt, wie oft die Basis als Faktor vorkommt.
@@ -60,13 +60,13 @@ Bild: Drei Lagen aus Plättchen nebeneinander gezeichnet, Lage 1, Lage 2 und Lag
 
 Stapelst du die drei Lagen übereinander, entsteht ein Würfel. Eine Lage hat 3 · 3 Plättchen, und es gibt
 3 Lagen. Du rechnest also 3 · 3 · 3 = $3^3$. Der Exponent 3 zählt hier die Faktoren. Die Zahl heißt
-Kubikzahl.
+Kubikzahl, denn die Plättchen bilden einen Würfel.
 
 **Beispiel: Ein Würfel mit Kante 3**
 
 $3^3 = 3 \cdot 3 \cdot 3 = 9 \cdot 3 = 27$
 
-### Was verwechseln viele?
+### Ist 3⁴ dasselbe wie 3 · 4?
 
 **Merke: Merke**
 

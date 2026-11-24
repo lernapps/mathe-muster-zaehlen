@@ -52,7 +52,7 @@ Bild: Drei Plättchenbilder nebeneinander. Bild 1 hat ein hohles Anfangsplättch
 
 ### Wie vergleichst du Muster genau?
 
-Wenn du Muster genau vergleichen willst, zählst du die Plättchen jedes Bildes. Schreibst du die Anzahlen hintereinander, entsteht eine Zahlenfolge: 4, 7, 10 und
+Du zählst die Plättchen jedes Bildes. Schreibst du die Anzahlen hintereinander, entsteht eine Zahlenfolge: 4, 7, 10 und
 so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.
 
 - **Zahlenfolge**: Eine Zahlenfolge ist eine Reihe von Zahlen in fester Reihenfolge. Jede Zahl ist ein Folgenglied. Bei der Wandreihe gehört Bild 1 zum ersten Glied, Bild 2 zum zweiten und so weiter.
@@ -65,7 +65,7 @@ Damit du eine Folge fortsetzen kannst, suchst du den Abstand. Von 4 zu 7 sind es
 
 **Merke: Merke**
 
-Wenn jedes Glied um dieselbe Zahl größer wird, addierst du diese Zahl immer wieder. Bei 4, 7, 10 ist es jedes Mal plus 3.
+Dann addierst du diese Zahl immer wieder. Bei 4, 7, 10 ist es jedes Mal plus 3.
 
 ### Übung
 
