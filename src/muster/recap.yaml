@@ -1,0 +1,95 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+description: "Das brauchst du für dieses Kapitel: Stellenwerte und Vorrangregeln mit Rechengesetzen, kurz erklärt, mit zwei Übungen."
+recap:
+  - mathematik/natuerliche-zahlen
+  - mathematik/grundrechenarten-rechengesetze
+blocks:
+  - type: section
+    id: kopf
+    title: Das brauchst du für dieses Kapitel
+    blocks:
+      - type: text
+        text: |
+          Mira (11) und Ben (10) richten die Spielecke ihrer Klasse ein und planen ein Fest. Dafür brauchst du
+          Stellenwerte und die Rechenregeln.
+  - type: section
+    id: stellenwert
+    title: Natürliche Zahlen im Stellenwertsystem
+    blocks:
+      - type: text
+        text: Wenn du wissen willst, wie groß eine Zahl ist, schaust du auf die Stelle jeder Ziffer.
+      - type: table
+        caption: "Die Zahl 2407: T Tausender, H Hunderter, Z Zehner, E Einer"
+        header: ["T", "H", "Z", "E"]
+        rows:
+          - ["2", "4", "0", "7"]
+      - type: definition
+        term: Ziffer
+        explanation: Ziffern sind die Zeichen 0 bis 9, aus denen Zahlen bestehen. Die Zahl 2407 hat die Ziffern 2, 4, 0 und 7.
+      - type: definition
+        term: Stellenwert
+        explanation: Der Stellenwert sagt, wie viel eine Ziffer an ihrer Stelle zählt. In 2407 steht die 4 bei den Hundertern, ihr Wert ist 4 · 100 = 400.
+      - type: definition
+        term: Stellenwerttafel
+        explanation: "Die Stellenwerttafel gibt jeder Stelle eine Spalte: E für Einer, Z für Zehner, H für Hunderter und T für Tausender. Jede Stelle ist zehnmal so viel wert wie die rechts davon."
+  - type: section
+    id: vorrang
+    title: Vorrangregeln und Rechengesetze
+    blocks:
+      - type: text
+        text: Wenn eine Rechnung mehrere Rechenzeichen hat, musst du wissen, was zuerst kommt, und mit Rechengesetzen rechnest du geschickt.
+      - type: definition
+        term: Vorrangregel
+        explanation: Klammern zuerst, dann mal und geteilt vor plus und minus (Punkt vor Strich), sonst von links nach rechts. Beispiel 3 + 4 · 2 = 11, aber (3 + 4) · 2 = 14.
+      - type: definition
+        term: Kommutativgesetz
+        explanation: Beim Addieren und Multiplizieren darfst du die Zahlen tauschen, beim Subtrahieren und Dividieren nicht. Beispiel 4 · 25 = 25 · 4 = 100.
+      - type: definition
+        term: Assoziativgesetz
+        explanation: Beim Addieren und Multiplizieren darfst du die Klammern anders setzen. Beispiel (2 · 5) · 10 = 2 · (5 · 10) = 100.
+      - type: definition
+        term: Distributivgesetz
+        explanation: Ein Faktor vor einer Klammer wird mit jedem Summanden multipliziert. So rechnest du im Kopf leichter. Beispiel 3 · (10 + 2) = 3 · 10 + 3 · 2 = 36.
+  - type: section
+    id: uebung
+    title: Kannst du das?
+    blocks:
+      - type: number
+        id: recap-verteilen
+        text: Berechne vorteilhaft 6 · 102.
+        answer: 612
+        tolerance: 0
+        hint: Zerlege 102 in 100 und 2.
+        explanation: Mit dem Distributivgesetz ist 6 · 102 = 6 · 100 + 6 · 2 = 600 + 12 = 612.
+        mistakes:
+          - answer: 600
+            message: Du hast nur 6 · 100 gerechnet. Es fehlt noch 6 · 2.
+          - answer: 108
+            message: Du hast 6 + 102 gerechnet. Bei 6 · 102 wird multipliziert.
+          - answer: 1200
+            message: Du hast 6 · 100 · 2 gerechnet. Der Faktor 6 wird einzeln mit 100 und mit 2 multipliziert, und die Ergebnisse werden addiert.
+      - type: number
+        id: recap-stellenwert-vorrang
+        text: Welche Zahl ist 4 · 10000 + 7 · 100 + 5? Schreibe sie ohne Lücke.
+        answer: 40705
+        tolerance: 0
+        hint: Rechne zuerst die Produkte aus, dann addierst du.
+        explanation: Punkt vor Strich, 4 · 10000 = 40000 und 7 · 100 = 700. Dann 40000 + 700 + 5 = 40705, also 4 Zehntausender, 7 Hunderter, 0 Zehner und 5 Einer.
+        mistakes:
+          - answer: 475
+            message: Du hast nur die Ziffern 4, 7 und 5 hintereinander geschrieben. Die Faktoren 10000 und 100 bestimmen die Stellen.
+          - answer: 47005
+            message: Du hast 7 · 1000 gerechnet. Die 7 steht bei den Hundertern, also 7 · 100 = 700.
+          - answer: 40075
+            message: Die 7 steht bei den Hundertern, nicht bei den Zehnern. 7 · 100 ist 700.
+  - type: section
+    id: bereit
+    title: Du bist bereit, wenn du ...
+    blocks:
+      - type: text
+        text: |
+          - natürliche Zahlen im Stellenwertsystem lesen, schreiben und darstellen kannst, zum Beispiel 4 · 10000 + 7 · 100 + 5,
+          - Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst, zum Beispiel 6 · 102.
+
+          Nicht sicher? Lies die Bausteine „Natürliche Zahlen im Stellenwertsystem“ und „Vorrangregeln und Rechengesetze“ auf der Lernlandkarte: [Stellenwert](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/), [Rechengesetze](https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/). Sonst geht es los mit den Plättchen.

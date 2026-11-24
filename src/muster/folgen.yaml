@@ -1,0 +1,111 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Muster fortsetzen
+description: Du zählst die Plättchen in einer Reihe von Bildern, setzt die Folge fort und sagst, was sich jedes Mal ändert.
+competencies: [muster-zahlenfolgen]
+blocks:
+  - type: section
+    id: einstieg
+    title: Das nächste Bild vorhersagen
+    blocks:
+      - type: text
+        text: |
+          Wenn du ein Muster fortsetzen willst, musst du erkennen, was von Bild zu Bild passiert. Mira und Ben legen für die Wand der Spielecke eine Reihe von Bildern. Jedes Bild hat ein Plättchen am Anfang
+          (hohler Kreis) und dahinter Spalten aus je 3 Plättchen.
+      - type: figure
+        image: images/folge-wand.svg
+        alt: Drei Plättchenbilder nebeneinander. Bild 1 hat ein hohles Anfangsplättchen und eine Spalte aus 3 Plättchen. Bild 2 hat zwei Spalten, Bild 3 hat drei Spalten.
+        caption: Zähle die Plättchen jedes Bildes. Was ändert sich von Bild zu Bild?
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: number
+        id: bild-vier
+        text: Mira legt Bild 4 nach demselben Muster. Wie viele Plättchen hat es?
+        answer: 13
+        tolerance: 0
+        explanation: Bild 1 hat 4 Plättchen, Bild 2 hat 7, Bild 3 hat 10. Jedes neue Bild hat 3 Plättchen mehr, also hat Bild 4 genau 10 + 3 = 13.
+        mistakes:
+          - answer: 12
+            message: Du hast 4 Spalten mit je 3 Plättchen gezählt. Das Anfangsplättchen fehlt noch.
+          - answer: 14
+            message: Von Bild 3 zu Bild 4 kommt eine Spalte aus 3 Plättchen dazu, nicht 4.
+          - answer: 10
+            message: Das sind die Plättchen von Bild 3. Du sollst Bild 4 bestimmen.
+  - type: section
+    id: darstellung
+    title: Wie vergleichst du Muster genau?
+    blocks:
+      - type: text
+        text: |
+          Du zählst die Plättchen jedes Bildes. Schreibst du die Anzahlen hintereinander, entsteht eine Zahlenfolge: 4, 7, 10 und
+          so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.
+      - type: definition
+        term: Zahlenfolge
+        explanation: Eine Zahlenfolge ist eine Reihe von Zahlen in fester Reihenfolge. Jede Zahl ist ein Folgenglied. Bei der Wandreihe gehört Bild 1 zum ersten Glied, Bild 2 zum zweiten und so weiter.
+      - type: example
+        title: Der Abstand zwischen den Gliedern
+        blocks:
+          - type: text
+            text: Damit du eine Folge fortsetzen kannst, suchst du den Abstand. Von 4 zu 7 sind es 3 mehr, von 7 zu 10 wieder 3 mehr. Der Abstand bleibt gleich. Mit diesem Abstand setzt du die Folge fort.
+  - type: section
+    id: merke
+    title: Was tust du, wenn jedes Glied gleich wächst?
+    blocks:
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: Dann addierst du diese Zahl immer wieder. Bei 4, 7, 10 ist es jedes Mal plus 3.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: number
+        id: folge-fuenf
+        text: "Setze die Folge fort: 5, 9, 13, 17, ... Welche Zahl kommt als Nächstes?"
+        answer: 21
+        tolerance: 0
+        explanation: Der Abstand ist 4, denn 9 − 5 = 4 und 13 − 9 = 4. Also 17 + 4 = 21.
+        mistakes:
+          - answer: 20
+            message: Du hast 3 addiert. Rechne den Abstand zwischen zwei Gliedern aus, hier 9 − 5.
+      - type: number
+        id: luecke-in-folge
+        text: "In der Folge 7, 13, __, 25, 31 fehlt eine Zahl. Welche?"
+        answer: 19
+        tolerance: 0
+        hint: Wie viel kommt von einem Glied zum nächsten dazu?
+        explanation: Der Abstand ist 13 − 7 = 6. Auf 13 folgt also 13 + 6 = 19, und 19 + 6 = 25 stimmt.
+        mistakes:
+          - answer: 18
+            message: Du hast 13 + 5 gerechnet. Der Abstand ist aber 13 − 7 = 6.
+          - answer: 20
+            message: Du hast 7 addiert, den Anfangswert. Der Abstand ist 13 − 7 = 6.
+      - type: generated
+        id: viertes-glied
+        given:
+          s: { int: [1, 20] }
+          d: { int: [2, 9] }
+        where: ["s != d"]
+        task:
+          text: "Eine Folge beginnt mit {{s}} und wird bei jedem Schritt um {{d}} größer. Wie heißt das vierte Glied?"
+        answer: { value: "s + 3 * d", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "s + 4 * d"
+            message: "Du hast einen Schritt zu viel gemacht. Vom ersten zum vierten Glied sind es 3 Schritte."
+          - value: "3 * d"
+            message: "Du hast den Startwert {{s}} vergessen. Das erste Glied ist {{s}}."
+        hint: "Das erste Glied ist {{s}}. Wie viele Schritte brauchst du bis zum vierten Glied?"
+        steps:
+          - "Das erste Glied ist {{s}}. Bis zum vierten Glied gehst du drei Schritte um je {{d}}."
+          - "Das vierte Glied ist {{answer}}."
+      - type: true-false
+        id: gleicher-abstand
+        text: "Bei der Folge 3, 7, 11, 16 wird jedes Glied um dieselbe Zahl größer."
+        answer: false
+        explanation: Die Abstände sind 4, 4 und 5. Der letzte Abstand ist anders. Mit demselben Abstand 4 käme nach 11 die Zahl 15.
+  - type: section
+    id: weiter
+    title: Das kannst du jetzt
+    blocks:
+      - type: text
+        text: Du kannst eine Folge fortsetzen, wenn du den Abstand findest. Für Bild 10 oder Bild 100 willst du nicht alle Bilder legen. Dafür suchen Mira und Ben auf der nächsten Seite eine Regel.

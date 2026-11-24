@@ -1,0 +1,147 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Quadrat- und Kubikzahlen
+description: Du legst Quadrate und Würfel aus Plättchen und liest die Potenz als wiederholtes Malnehmen.
+competencies: [potenzen]
+blocks:
+  - type: section
+    id: einstieg
+    title: Wie viele Plättchen liegen im Quadrat?
+    blocks:
+      - type: text
+        text: |
+          Wenn du viele Plättchen in Reihen legst, willst du schnell wissen, wie viele es sind. Ben legt für die Spielecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht. Die Plättchen eines Rechtecks zählst du als Anzahl der Reihen mal Anzahl der Plättchen je Reihe.
+      - type: figure
+        image: images/quadrat-vier.svg
+        alt: Ein Quadrat aus Plättchen mit 4 Reihen. In jeder Reihe liegen 4 Plättchen.
+        caption: Zähle die Plättchen einer Reihe und die Reihen.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: number
+        id: quadrat-vier-zaehlen
+        text: Wie viele Plättchen hat Bens Quadrat insgesamt?
+        answer: 16
+        tolerance: 0
+        explanation: 4 Reihen mit je 4 Plättchen sind 4 · 4 = 16 Plättchen. So rechnest du schneller als beim Abzählen.
+        mistakes:
+          - answer: 8
+            message: Du hast 4 + 4 gerechnet. Es sind 4 Reihen mit je 4 Plättchen. Rechne 4 · 4.
+          - answer: 4
+            message: Das ist nur eine Reihe. Das Quadrat hat 4 Reihen.
+  - type: section
+    id: darstellung
+    title: Wie schreibst du gleiche Faktoren kurz?
+    blocks:
+      - type: text
+        text: |
+          Wenn du dieselbe Zahl mehrmals malnimmst (ein Faktor, der mehrmals vorkommt), wird die Rechnung lang, und dafür gibt es eine Kurzschreibweise. Bei 4 · 4 sind beide Faktoren gleich. Statt 4 · 4 schreibst du
+          kurz $4^2$ und sprichst „4 hoch 2“. Die Zahl 16 = 4 · 4 heißt Quadratzahl.
+      - type: definition
+        term: Potenz
+        explanation: Eine Potenz ist ein Produkt aus gleichen Faktoren, zum Beispiel $4^2 = 4 \cdot 4$. Die untere Zahl heißt Basis, die kleine obere Zahl Exponent. Der Exponent sagt, wie oft die Basis als Faktor vorkommt.
+      - type: figure
+        image: images/wuerfel-drei-lagen.svg
+        alt: Drei Lagen aus Plättchen nebeneinander gezeichnet, Lage 1, Lage 2 und Lage 3. Jede Lage hat 3 Reihen mit je 3 Plättchen.
+        caption: Eine Lage ist ein Quadrat aus 3 mal 3 Plättchen. Im Würfel liegen drei Lagen übereinander, hier sind sie nebeneinander gezeichnet.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: |
+          Stapelst du die drei Lagen übereinander, entsteht ein Würfel. Eine Lage hat 3 · 3 Plättchen, und es gibt
+          3 Lagen. Du rechnest also 3 · 3 · 3 = $3^3$. Der Exponent 3 zählt hier die Faktoren. Die Zahl heißt
+          Kubikzahl, denn die Plättchen bilden einen Würfel.
+      - type: example
+        title: Ein Würfel mit Kante 3
+        blocks:
+          - type: formula
+            formula: '3^3 = 3 \cdot 3 \cdot 3 = 9 \cdot 3 = 27'
+  - type: section
+    id: merke
+    title: Ist 3⁴ dasselbe wie 3 · 4?
+    blocks:
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: Der Exponent sagt nicht, womit du malnimmst. $3^4$ heißt 3 · 3 · 3 · 3 = 81 und nicht 3 · 4 = 12.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: quadrat-sechs-schreiben
+        text: Mira legt ein Quadrat mit 6 Reihen. In jeder Reihe liegen 6 Plättchen. Wie schreibst du die Anzahl kurz?
+        options:
+          - text: 2⁶
+            correct: false
+            info: Das ist 2 · 2 · 2 · 2 · 2 · 2. Hier wurden Basis und Exponent vertauscht.
+          - text: 6²
+            correct: true
+            info: 6 · 6 hat zwei gleiche Faktoren, also Basis 6 und Exponent 2.
+          - text: 6 + 6
+            correct: false
+            info: Das ist 12. Bei Reihen mal Plättchen wird malgenommen, nicht addiert.
+          - text: 6 · 2
+            correct: false
+            info: Das wäre 12. Der Exponent steht klein oben und sagt, wie oft 6 als Faktor vorkommt.
+        explanation: Die Plättchen sind 6 · 6. Die Basis 6 kommt zweimal als Faktor vor, kurz 6².
+      - type: generated
+        id: potenz-berechnen
+        given:
+          b: { int: [3, 6] }
+          e: { int: [2, 4] }
+        where: ["b != e and not (b == 4 and e == 2)"]
+        task:
+          text: "Berechne ${{b}}^{{{e}}}$."
+        answer: { value: "pow(b, e)", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "b * e"
+            message: "Du hast {{b}} · {{e}} gerechnet. Der Exponent {{e}} sagt, wie oft die Basis {{b}} als Faktor vorkommt."
+          - value: "b + e"
+            message: "Du hast {{b}} + {{e}} gerechnet. Eine Potenz ist ein Produkt aus gleichen Faktoren."
+          - value: "pow(e, b)"
+            message: "Du hast Basis und Exponent vertauscht. Die Basis ist die untere Zahl."
+          - value: "pow(b, e - 1)"
+            message: "Ein Faktor fehlt: {{b}} kommt {{e}}-mal vor."
+        hint: "Schreibe die Potenz als Produkt gleicher Faktoren. Wie viele Faktoren sind es?"
+        steps:
+          - "Die Basis {{b}} wird {{e}}-mal als Faktor geschrieben und malgenommen."
+          - "Rechne das Produkt von links nach rechts aus: Das Ergebnis ist {{answer}}."
+      - type: matching
+        id: potenz-und-faktoren
+        text: Ordne jeder Potenz das passende Produkt zu. Ein Produkt passt zu keiner Potenz.
+        pairs:
+          - left: Die Potenz 2³
+            right: 2 · 2 · 2
+          - left: Die Potenz 5²
+            right: 5 · 5
+          - left: Die Potenz 3⁴
+            right: 3 · 3 · 3 · 3
+          - left: Die Potenz 10²
+            right: 10 · 10
+        distractors:
+          - 3 · 4
+        explanation: Der Exponent sagt, wie viele gleiche Faktoren es sind. Die Basis ist der Faktor selbst.
+      - type: true-false
+        id: zwei-hoch-fuenf
+        text: "Ben rechnet: $2^5 = 2 \\cdot 5 = 10$. Stimmt das?"
+        answer: false
+        explanation: $2^5$ ist 2 · 2 · 2 · 2 · 2 = 32, denn fünf Faktoren 2 werden malgenommen.
+      - type: number
+        id: wuerfel-vier
+        text: Mira legt einen Würfel mit Kante 4. Er hat 4 Lagen, jede Lage ist ein Quadrat aus 4 mal 4 Plättchen. Wie viele Plättchen braucht sie?
+        answer: 64
+        tolerance: 0
+        explanation: Eine Lage hat 4 · 4 = 16 Plättchen, vier Lagen sind 16 · 4 = 64, also $4^3$.
+        mistakes:
+          - answer: 16
+            message: Das ist nur eine Lage. Der Würfel hat 4 Lagen übereinander.
+          - answer: 12
+            message: Du hast 4 · 3 gerechnet. Rechne 4 · 4 · 4.
+          - answer: 8
+            message: Du hast 4 + 4 gerechnet. Rechne Lagen mal Plättchen einer Lage.
+  - type: section
+    id: weiter
+    title: Das kannst du jetzt
+    blocks:
+      - type: text
+        text: Du kannst eine Potenz als Produkt gleicher Faktoren lesen und ausrechnen. Die Quadrate und Würfel für die Spielecke sind gelegt. Als Nächstes zählen Mira und Ben die Plättchen in ihrer Dose und bündeln sie.

@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+format: 2
+strand: mathematik/arithmetik
+title: Muster und Zählen
+intro: Mit Plättchen legst du Muster, Quadrate und Würfel. So verstehst du Zahlenfolgen, Potenzen und das Zählen von Möglichkeiten.
+languages: [de]
+chapters: [muster]

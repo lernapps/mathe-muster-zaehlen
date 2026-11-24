@@ -1,0 +1,128 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Zählen mit der Tabelle
+description: Du zählst Möglichkeiten mit einem Plättchenfeld und einer Tabelle und findest das Zählprinzip.
+competencies: [zaehlprinzip]
+blocks:
+  - type: section
+    id: einstieg
+    title: Wie viele Outfits gibt es?
+    blocks:
+      - type: text
+        text: |
+          Wenn du wissen willst, wie viele Möglichkeiten es gibt, zählst du systematisch. Für das Fest zur Eröffnung der Spielecke sucht Mira ein Outfit. Sie hat 3 Shirts (rot, blau, gelb) und 2 Hosen (schwarz,
+          grün). Ein Outfit besteht aus einem Shirt und einer Hose. Zeichne für jedes Outfit ein Plättchen: eine Zeile je Shirt, eine Spalte je Hose. Das ist das Rechteckmodell, und seine Plättchen zählst du als Anzahl der Zeilen mal Anzahl der Plättchen je Zeile.
+      - type: number
+        id: outfits-sechs
+        text: Wie viele verschiedene Outfits kann Mira zusammenstellen? Probiere es auf Papier.
+        answer: 6
+        tolerance: 0
+        explanation: Zum roten Shirt passen 2 Hosen, zum blauen auch und zum gelben auch. Das sind 2 + 2 + 2 = 6 Outfits.
+        mistakes:
+          - answer: 5
+            message: Du hast 3 + 2 gerechnet. Jedes Shirt lässt sich mit jeder Hose kombinieren, nicht nur mit einer.
+          - answer: 3
+            message: Das sind nur die Shirts. Zu jedem Shirt gibt es noch Hosen.
+  - type: section
+    id: darstellung
+    title: Wie siehst du alle Outfits auf einen Blick?
+    blocks:
+      - type: text
+        text: |
+          Damit du alle Outfits auf einen Blick siehst, legst du ein Plättchenfeld.
+      - type: figure
+        image: images/plaettchenfeld-outfits.svg
+        alt: Ein Plättchenfeld mit 3 Zeilen und 2 Spalten. Die Zeilen sind mit Shirt 1 bis Shirt 3 beschriftet, die Spalten mit Hose 1 und Hose 2. Auf jedem Kreuzungspunkt liegt ein Plättchen.
+        caption: Jedes Plättchen ist ein Outfit aus dem Shirt seiner Zeile und der Hose seiner Spalte.
+        source: eigene Zeichnung
+        licence: CC-BY-4.0
+      - type: text
+        text: |
+          Das Feld hat 3 Zeilen mit je 2 Plättchen, also 3 · 2 = 6 Plättchen. Das ist das Zählprinzip: Du nimmst die
+          Zahl der Möglichkeiten der ersten Auswahl mal die Zahl der zweiten, egal was du zuerst gewählt hast.
+      - type: table
+        caption: Damit du jedes Outfit benennen kannst, hilft eine Tabelle. Dieselben Outfits als Tabelle
+        header: ["Shirt", "Hose 1", "Hose 2"]
+        rows:
+          - ["Shirt 1", "Shirt 1 mit Hose 1", "Shirt 1 mit Hose 2"]
+          - ["Shirt 2", "Shirt 2 mit Hose 1", "Shirt 2 mit Hose 2"]
+          - ["Shirt 3", "Shirt 3 mit Hose 1", "Shirt 3 mit Hose 2"]
+  - type: section
+    id: merke
+    title: Warum mal und nicht plus?
+    blocks:
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: Jede Auswahl der ersten Stufe lässt sich mit jeder Auswahl der zweiten Stufe verbinden. Darum nimmst du die Zahlen mal und addierst sie nicht.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: rechnung-waehlen
+        text: Mira hat 3 Shirts und 2 Hosen. Welche Rechnung gibt die Zahl der Outfits?
+        options:
+          - text: 3 + 2
+            correct: false
+            info: Das zählt nur die Kleidungsstücke, nicht die Kombinationen.
+          - text: 3 · 3
+            correct: false
+            info: Die Zahl der Hosen ist 2, nicht 3.
+          - text: 3 · 2
+            correct: true
+            info: Jedes der 3 Shirts lässt sich mit jeder der 2 Hosen verbinden.
+          - text: 2 · 2
+            correct: false
+            info: Die Zahl der Shirts ist 3, nicht 2.
+        explanation: Das Plättchenfeld hat 3 Zeilen mit je 2 Plättchen.
+      - type: generated
+        id: outfits-ueben
+        given:
+          a: { int: [2, 6] }
+          b: { int: [2, 5] }
+        where: ["a != b and a + b != a * (b - 1)"]
+        task:
+          text: "Ben hat {{a}} Shirts und {{b}} Hosen. Wie viele verschiedene Outfits kann er zusammenstellen?"
+        answer: { value: "a * b", compare: { number: { format: integer } } }
+        mistakes:
+          - value: "a + b"
+            message: "Du hast {{a}} + {{b}} gerechnet. Jedes Shirt passt zu jeder Hose, darum wird malgenommen."
+          - value: "a * (b - 1)"
+            message: "Du hast eine Hose nicht mitgezählt. Es gibt {{b}} Hosen, nicht {{b}} − 1."
+        hint: "Denke an das Plättchenfeld: Wie viele Zeilen und wie viele Spalten hat es?"
+        steps:
+          - "Das Feld hat {{a}} Zeilen für die Shirts und {{b}} Spalten für die Hosen."
+          - "Das sind {{a}} · {{b}} = {{answer}} Outfits."
+      - type: number
+        id: tabelle-fuenf-vier
+        text: Eine Tabelle hat 5 Zeilen und 4 Spalten. In jedem Feld steht eine Möglichkeit. Wie viele Möglichkeiten sind es?
+        answer: 20
+        tolerance: 0
+        explanation: 5 Zeilen mit je 4 Feldern sind 5 · 4 = 20 Möglichkeiten.
+        mistakes:
+          - answer: 9
+            message: Du hast 5 + 4 gerechnet. Zeilen und Spalten kreuzen sich, darum wird malgenommen.
+      - type: number
+        id: hosen-gesucht
+        text: Ben kann 12 Outfits zusammenstellen. Er hat 4 Shirts. Wie viele Hosen hat er?
+        answer: 3
+        tolerance: 0
+        hint: Welche Zahl mal 4 ergibt 12? Probiere aus.
+        explanation: Gesucht ist die Zahl, die mal 4 die 12 ergibt. Weil 4 · 3 = 12 ist, hat Ben 3 Hosen.
+        mistakes:
+          - answer: 8
+            message: "Du hast 12 − 4 gerechnet. Die 12 Outfits sind ein Produkt: Shirts mal Hosen."
+          - answer: 48
+            message: Du hast 12 · 4 gerechnet. Die 12 Outfits sind schon das Produkt aus Shirts und Hosen.
+      - type: true-false
+        id: fuenf-outfits
+        text: "Mit 3 Shirts und 2 Hosen gibt es 5 Outfits, weil 3 + 2 = 5 ist."
+        answer: false
+        explanation: Es gibt 3 · 2 = 6 Outfits. Jedes Shirt wird mit beiden Hosen kombiniert.
+  - type: section
+    id: weiter
+    title: Das kannst du jetzt
+    blocks:
+      - type: text
+        text: Du kannst Möglichkeiten mit dem Plättchenfeld und mit der Rechnung Zahl mal Zahl zählen. Wenn es mehr als zwei Auswahlen gibt, wird das Feld unübersichtlich. Dafür zeichnen Mira und Ben auf der nächsten Seite einen Baum.
