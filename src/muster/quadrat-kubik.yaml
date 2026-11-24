@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Ben legt für die Spielecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht. Die Plättchen eines Rechtecks zählst du als Anzahl der Reihen mal Anzahl der Plättchen je Reihe.
+          Wenn du viele Plättchen in Reihen legst, willst du schnell wissen, wie viele es sind. Ben legt für die Spielecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht. Die Plättchen eines Rechtecks zählst du als Anzahl der Reihen mal Anzahl der Plättchen je Reihe.
       - type: figure
         image: images/quadrat-vier.svg
         alt: Ein Quadrat aus Plättchen mit 4 Reihen. In jeder Reihe liegen 4 Plättchen.
@@ -33,7 +33,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Faktoren sind die Zahlen, die du malnimmst. Das Ergebnis heißt Produkt. Bei 4 · 4 sind beide Faktoren gleich. Statt 4 · 4 schreibst du
+          Wenn derselbe Faktor mehrmals vorkommt, wird die Rechnung lang, und dafür gibt es eine Kurzschreibweise. Bei 4 · 4 sind beide Faktoren gleich. Statt 4 · 4 schreibst du
           kurz $4^2$ und sprichst „4 hoch 2“. Die Zahl 16 = 4 · 4 heißt Quadratzahl.
       - type: definition
         term: Potenz

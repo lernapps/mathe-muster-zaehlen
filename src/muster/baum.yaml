@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Dieselben Outfits wie auf der Seite davor, jetzt als Baum. Er beginnt links an der Wurzel. Jeder Ast ist eine
+          Bei mehr als zwei Auswahlen wird ein Feld unübersichtlich, ein Baum zeigt sie Stufe für Stufe. Dieselben Outfits wie auf der Seite davor, jetzt als Baum. Er beginnt links an der Wurzel. Jeder Ast ist eine
           Auswahl, jeder Weg von links bis zu einem Ende ist ein Outfit.
       - type: figure
         image: images/baum-outfits.svg
@@ -32,13 +32,13 @@ blocks:
     id: darstellung
     title: Stufe für Stufe malnehmen
     blocks:
+      - type: text
+        text: |
+          Wenn du wissen willst, wie viele Möglichkeiten es bei mehreren Stufen gibt, zeichnest du den Baum oder rechnest mit den Zahlen der Stufen. Bei zwei Stufen sagt das Zählprinzip: erste Stufe mal zweite Stufe. Bei drei Stufen nimmst du alle drei
+          Zahlen mal. Den Baum kannst du dir dann vorstellen, ohne ihn ganz zu zeichnen.
       - type: definition
         term: Baumdiagramm
         explanation: Ein Baumdiagramm zeigt Auswahlen Stufe für Stufe. Jede Stufe hat Äste für die Möglichkeiten, jeder Weg von der Wurzel bis zu einem Ende ist eine Möglichkeit insgesamt.
-      - type: text
-        text: |
-          Bei zwei Stufen sagt das Zählprinzip: erste Stufe mal zweite Stufe. Bei drei Stufen nimmst du alle drei
-          Zahlen mal. Den Baum kannst du dir dann vorstellen, ohne ihn ganz zu zeichnen.
       - type: example
         title: Ein Frühstück in drei Stufen
         blocks:

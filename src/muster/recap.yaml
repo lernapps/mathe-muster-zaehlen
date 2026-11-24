@@ -20,7 +20,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Jede **Ziffer** einer Zahl hat einen **Stellenwert**. Die Stellen heißen Einer (E), Zehner (Z), Hunderter (H)
+          Wenn du wissen willst, wie groß eine Zahl ist, schaust du auf die Stelle jeder Ziffer. Jede **Ziffer** einer Zahl hat einen **Stellenwert**. Die Stellen heißen Einer (E), Zehner (Z), Hunderter (H)
           und Tausender (T). Weiter links folgen Zehntausender, Hunderttausender und Millionen. Die
           **Stellenwerttafel** zeigt sie nebeneinander.
       - type: definition
@@ -46,53 +46,20 @@ blocks:
         id: selbsttest-stellenwert
         title: Kannst du das?
         blocks:
-          - type: vue-component
-            id: test-stellenwert-wert
-            component: Kurztest
-            props:
-              question: "Welchen Wert hat die Ziffer 7 in der Zahl 40 705?"
-              options:
-                - { text: "7", correct: false, info: "Das ist die Ziffer selbst, nicht ihr Wert an dieser Stelle." }
-                - {
-                    text: "70",
-                    correct: false,
-                    info: "70 wäre der Wert bei den Zehnern. Dort steht aber die 0, die 7 steht bei den Hundertern.",
-                  }
-                - { text: "700", correct: true, info: "Die 7 steht bei den Hundertern, also 7 · 100 = 700." }
-                - {
-                    text: "7000",
-                    correct: false,
-                    info: "7000 wäre der Wert bei den Tausendern. Dort steht aber die 0.",
-                  }
-              right: Richtig.
-              wrong: Nicht richtig.
-            nojs: |
-              Kurztest: Welchen Wert hat die Ziffer 7 in der Zahl 40 705? Antwort: 700. Die 7 steht bei den Hundertern, also 7 · 100. 7 ist die Ziffer selbst, 70 und 7000 wären die Werte bei den Zehnern und den Tausendern, wo aber die 0 steht.
-          - type: vue-component
-            id: test-stellenwert-schreiben
-            component: Kurztest
-            props:
-              question: "Welche Zahl sind 5 Zehntausender, 0 Tausender, 3 Hunderter, 0 Zehner und 8 Einer?"
-              options:
-                - {
-                    text: "5 308",
-                    correct: false,
-                    info: "Diese Zahl hat nur vier Stellen. Mit 5 Zehntausendern braucht die Zahl fünf Stellen.",
-                  }
-                - {
-                    text: "50 308",
-                    correct: true,
-                    info: "Die Nullen halten die Tausender- und die Zehnerstelle frei: 5 Zehntausender, 0 Tausender, 3 Hunderter, 0 Zehner, 8 Einer.",
-                  }
-                - {
-                    text: "50 380",
-                    correct: false,
-                    info: "Hier steht die 8 bei den Zehnern und die 0 bei den Einern. Die Reihenfolge ist vertauscht.",
-                  }
-              right: Richtig.
-              wrong: Nicht richtig.
-            nojs: |
-              Kurztest: Welche Zahl sind 5 Zehntausender, 0 Tausender, 3 Hunderter, 0 Zehner und 8 Einer? Antwort: 50 308. Die Nullen halten die Tausender- und die Zehnerstelle frei. 5 308 hat nur vier Stellen, 50 380 hat Zehner und Einer vertauscht.
+          - type: number
+            id: recap-stellenwert
+            text: "Welchen Wert hat die Ziffer 7 in der Zahl 40 705? Schreibe die Zahl ohne Lücke."
+            answer: 700
+            tolerance: 0
+            hint: An welcher Stelle steht die 7? Zähle von rechts, Einer, Zehner, Hunderter.
+            explanation: Die 7 steht bei den Hundertern, also 7 · 100 = 700.
+            mistakes:
+              - answer: 7
+                message: Das ist die Ziffer selbst, nicht ihr Wert an dieser Stelle.
+              - answer: 70
+                message: 70 wäre der Wert bei den Zehnern. Dort steht aber die 0, die 7 steht bei den Hundertern.
+              - answer: 7000
+                message: 7000 wäre der Wert bei den Tausendern. Dort steht aber die 0.
           - type: text
             text: Nicht sicher? Lies den Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/).
   - type: section
@@ -101,7 +68,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Eine **Summe** ist das Ergebnis einer Addition, ihre Zahlen heißen Summanden. Ein **Produkt** ist das
+          Wenn eine Rechnung mehrere Rechenzeichen hat, musst du wissen, was zuerst kommt, und wenn du geschickt rechnen willst, helfen dir Rechengesetze. Eine **Summe** ist das Ergebnis einer Addition, ihre Zahlen heißen Summanden. Ein **Produkt** ist das
           Ergebnis einer Multiplikation, ihre Zahlen heißen Faktoren. Beim Rechnen mit mehreren Rechenzeichen gilt
           eine feste Reihenfolge, und drei Rechengesetze helfen dir, geschickt zu rechnen.
       - type: definition
@@ -125,56 +92,18 @@ blocks:
         id: selbsttest-vorrang
         title: Kannst du das?
         blocks:
-          - type: vue-component
-            id: test-vorrang-punkt
-            component: Kurztest
-            props:
-              question: "Was ergibt 20 − 3 · 4 + 2?"
-              options:
-                - {
-                    text: "70",
-                    correct: false,
-                    info: "Du hast von links nach rechts gerechnet: 20 − 3 = 17, 17 · 4 = 68, 68 + 2 = 70. Es gilt aber Punkt vor Strich.",
-                  }
-                - {
-                    text: "10",
-                    correct: true,
-                    info: "Punkt vor Strich: erst 3 · 4 = 12. Dann von links nach rechts 20 − 12 = 8 und 8 + 2 = 10.",
-                  }
-                - {
-                    text: "6",
-                    correct: false,
-                    info: "Du hast 3 · 4 + 2 = 14 zusammengefasst. Plus und minus rechnest du aber von links nach rechts: erst 20 − 12, dann + 2.",
-                  }
-              right: Richtig.
-              wrong: Nicht richtig.
-            nojs: |
-              Kurztest: Was ergibt 20 − 3 · 4 + 2? Antwort: 10. Punkt vor Strich: erst 3 · 4 = 12, dann 20 − 12 = 8 und 8 + 2 = 10. 70 rechnet nur von links nach rechts, 6 fasst 3 · 4 + 2 falsch zusammen.
-          - type: vue-component
-            id: test-vorrang-verteilen
-            component: Kurztest
-            props:
-              question: "Wie rechnest du 6 · 102 mit dem Distributivgesetz?"
-              options:
-                - {
-                    text: "6 + 102 = 108",
-                    correct: false,
-                    info: "Das ist eine Addition. Bei 6 · 102 wird malgenommen.",
-                  }
-                - {
-                    text: "6 · 100 + 6 · 2 = 612",
-                    correct: true,
-                    info: "102 = 100 + 2. Der Faktor 6 wird mit beiden Summanden multipliziert: 600 + 12 = 612.",
-                  }
-                - {
-                    text: "6 · 100 · 2 = 1200",
-                    correct: false,
-                    info: "Hier wurde 100 · 2 gerechnet. Es muss 6 · 100 plus 6 · 2 heißen.",
-                  }
-              right: Richtig.
-              wrong: Nicht richtig.
-            nojs: |
-              Kurztest: Wie rechnest du 6 · 102 mit dem Distributivgesetz? Antwort: 6 · 100 + 6 · 2 = 600 + 12 = 612. Die Rechnung 6 + 102 = 108 ist eine Addition, 6 · 100 · 2 = 1200 verteilt falsch.
+          - type: number
+            id: recap-vorrang
+            text: Berechne 20 − 3 · 4 + 2.
+            answer: 10
+            tolerance: 0
+            hint: Welche Rechnung kommt zuerst, minus oder mal?
+            explanation: Punkt vor Strich, erst 3 · 4 = 12. Dann von links nach rechts 20 − 12 = 8 und 8 + 2 = 10.
+            mistakes:
+              - answer: 70
+                message: "Du hast von links nach rechts gerechnet: 20 − 3 = 17, 17 · 4 = 68, 68 + 2 = 70. Es gilt aber Punkt vor Strich."
+              - answer: 6
+                message: Du hast 3 · 4 + 2 = 14 zusammengefasst. Plus und minus rechnest du aber von links nach rechts, erst 20 − 12, dann + 2.
           - type: text
             text: Nicht sicher? Lies den Baustein „Vorrangregeln und Rechengesetze“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/).
   - type: section

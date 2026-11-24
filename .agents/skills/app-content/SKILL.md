@@ -20,7 +20,7 @@ Regeln des Epics: `docs/mathe-epic/regeln.md` (Schreibweisen, Aufgaben, Quellen)
 
 Kapitel `muster` „Muster aus Plättchen“ (Seiten in dieser Reihenfolge):
 
-- `muster/recap` (recap `mathematik/natuerliche-zahlen`, `mathematik/grundrechenarten-rechengesetze`), nach regeln.md §7 gebaut: Kopf, je ein Abschnitt je Baustein in der Reihenfolge der `requires` (`stellenwert`, `vorrang`), Fachbegriffe als `definition` mit Zahlenbeispiel (landen im Glossar: Ziffer, Stellenwert, Stellenwerttafel, Vorrangregel, Kommutativ-, Assoziativ-, Distributivgesetz), Beispielkasten, Unterabschnitt „Kannst du das?“ mit zwei Aufgaben und aufgedeckter Lösung samt Fehlerhinweisen, Satz mit Kartenseite, Schluss „Du bist bereit, wenn du …“. Der Block `recap` erlaubt keine Aufgaben (Build verbietet sie), darum stehen die Selbsttests als `note`-Boxen mit Lösung im selben Kasten; die Lösung lässt sich nicht einklappen.
+- `muster/recap` (recap `mathematik/natuerliche-zahlen`, `mathematik/grundrechenarten-rechengesetze`), nach regeln.md §7 gebaut: Kopf, je ein Abschnitt je Baustein in der Reihenfolge der `requires` (`stellenwert`, `vorrang`), jeder beginnt mit dem Anlass, Fachbegriffe als `definition` mit Zahlenbeispiel (landen im Glossar: Ziffer, Stellenwert, Stellenwerttafel, Vorrangregel, Kommutativ-, Assoziativ-, Distributivgesetz), Summe und Produkt im Text fett, Beispielkasten, Unterabschnitt „Kannst du das?“ mit einer normalen `number`-Übung je Abschnitt (zusammen höchstens zwei Übungen je Recap-Seite, mit Rückmeldung und Hinweis), Satz mit Kartenseite, Schluss „Du bist bereit, wenn du …“. Keine eigene Komponente (die kopierte `Kurztest` ist entfernt).
 - `muster-zahlenfolgen` – „Ich kann Zahlenfolgen fortsetzen und die Regel mit Worten und mit einem Term beschreiben.“
   Seiten `muster/folgen` (Folgenglied, Abstand, Wandreihe aus Plättchenbildern) und `muster/regel` (Regel in Worten, Platzhalter n, Wort „Term“, Aufgaben `regel-waehlen`, `term-waehlen`, `bild-ausrechnen`, `welches-bild`).
 - `potenzen` – „Ich kann Potenzen mit natürlichen Exponenten berechnen und Zehnerpotenzen zum Darstellen großer Zahlen
@@ -97,6 +97,11 @@ der Musterlösung; kein `mistake` darf für gezogene Werte dieselbe Zahl wie die
 6. `npx vp check --fix`, `npx vp build`, `npx --no -- lernapps check`, committen.
 
 ## Rules learned from mistakes
+
+- Wiederholungen stehen nur auf der Recap-Seite (regeln.md §9.7): keine Auffrischungstexte zu Faktor, Produkt oder Stellenwerten auf den Inhaltsseiten.
+- Jede Seite und jeder Abschnitt beginnt mit dem Anlass („Wenn du … willst, …“), erst danach kommt das Verfahren (regeln.md §9.8).
+- Keine eigenen Komponenten in dieser App (§9.9: Buttons nur mit sichtbarer Wirkung und im Stil der Laufzeit); Recap-Übungen sind normale Blöcke.
+- `lernapps update` macht `.claude/skills/lernapps-*` zu Symlinks; sind die Dateien noch im Index, scheitert der Pre-commit-Hook (`git stash` meldet „beyond a symbolic link“). Erst die Dateien aus dem Index nehmen (`git rm --cached`), committen, dann Symlinks anlegen und in einem zweiten Commit hinzufügen.
 
 - Keine Wikipedia- oder anderen externen `links:` an Aufgaben (regeln.md §4, „Nachschlagen ist keine Quelle“); das Werkzeug verlangt einen Link, also zeigt er auf die Kartenseite des Bausteins (`https://lernapps.net/apps/map/mathematik/c/<baustein>/`). Fehler stammte aus der ersten Musterseite.
 - Keine Zahl ≥ 1000 aus `{{answer}}` in `steps` von `generated`: die Plattform setzt dort einen Tausenderpunkt (verstößt gegen regeln.md §2). Beschreibe die Zahl in Worten.

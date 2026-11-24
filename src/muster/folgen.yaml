@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Mira und Ben legen für die Wand der Spielecke eine Reihe von Bildern. Jedes Bild hat ein Plättchen am Anfang
+          Wenn du ein Muster fortsetzen willst, musst du erkennen, was von Bild zu Bild passiert. Mira und Ben legen für die Wand der Spielecke eine Reihe von Bildern. Jedes Bild hat ein Plättchen am Anfang
           (hohler Kreis) und dahinter Spalten aus je 3 Plättchen.
       - type: figure
         image: images/folge-wand.svg
@@ -36,7 +36,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Schreibst du die Anzahl der Plättchen jedes Bildes hintereinander, entsteht eine Zahlenfolge: 4, 7, 10 und
+          Wenn du Muster genau vergleichen willst, zählst du die Plättchen jedes Bildes. Schreibst du die Anzahlen hintereinander, entsteht eine Zahlenfolge: 4, 7, 10 und
           so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.
       - type: definition
         term: Zahlenfolge
