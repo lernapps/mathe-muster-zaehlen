@@ -102,7 +102,7 @@ Nicht sicher? Lies den Baustein „Vorrangregeln und Rechengesetze“ auf der [L
 ### Du bist bereit, wenn du ...
 
 - natürliche Zahlen im Stellenwertsystem lesen, schreiben und darstellen kannst, zum Beispiel sagst, was die 4 in 2407 wert ist,
-- Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst, zum Beispiel 20 − 3 · 4 + 2 richtig rechnest und 6 · 102 geschickt.
+- Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst, zum Beispiel 20 − 3 · 4 + 2 richtig rechnest.
 
 Dann geht es los. Zuerst legen Mira und Ben Muster aus Plättchen.
 

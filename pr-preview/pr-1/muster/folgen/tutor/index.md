@@ -59,7 +59,7 @@ so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.
 
 **Beispiel: Der Abstand zwischen den Gliedern**
 
-Von 4 zu 7 sind es 3 mehr, von 7 zu 10 wieder 3 mehr. Der Abstand bleibt gleich. Mit diesem Abstand setzt du die Folge fort.
+Damit du eine Folge fortsetzen kannst, suchst du den Abstand. Von 4 zu 7 sind es 3 mehr, von 7 zu 10 wieder 3 mehr. Der Abstand bleibt gleich. Mit diesem Abstand setzt du die Folge fort.
 
 ### Immer wieder dasselbe addieren
 

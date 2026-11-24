@@ -56,7 +56,7 @@ Wenn du sehr große Zahlen kurz schreiben willst, helfen dir Zehnerpotenzen. Jed
 wert, in der Spalte T ist es 10 · 10 · 10 wert. Das sind Zehnerpotenzen: Die Basis ist 10, der Exponent
 sagt, wie oft die 10 als Faktor vorkommt.
 
-Stellenwerttafel und Zehnerpotenzen:
+Damit du große Zahlen schnell liest, zeigt die Tabelle Wert und Potenz jeder Spalte:
 - Spalte | Wert und Potenz
 - Z (Zehner) | 10 = 10¹
 - H (Hunderter) | 100 = 10²
