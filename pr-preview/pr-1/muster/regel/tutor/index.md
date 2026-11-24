@@ -49,7 +49,7 @@ Bild: Drei Plättchenbilder nebeneinander. Bild 1 hat ein hohles Anfangsplättch
 
 - Aufgabe `bild-zehn` (unten)
 
-### Eine Regel mit Platzhalter
+### Wie rechnest du jedes Bild aus?
 
 Wenn du jedes Bild ausrechnen willst, ohne alle zu legen, brauchst du eine Regel, die für alle Bilder gilt. Jedes Bild hat ein Anfangsplättchen und so viele Spalten aus 3 Plättchen, wie seine Nummer sagt. Bild 3 hat
 3 Spalten, Bild 10 hat 10 Spalten. Die Regel in Worten heißt: Rechne 3 mal die Nummer des Bildes und
@@ -62,7 +62,7 @@ rechnest aus. Eine Rechnung mit Platzhalter heißt Term, hier $3 \cdot n + 1$.
 
 Für Bild 100 setzt du 100 ein. Dann rechnest du 3 · 100 + 1 = 301. Bild 100 hat 301 Plättchen.
 
-### Nummer und Anzahl
+### Welche Zahl setzt du in die Regel ein?
 
 **Merke: Merke**
 

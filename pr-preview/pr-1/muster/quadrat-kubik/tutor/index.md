@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Du legst Quadrate und Würfel aus Plättchen und liest die Potenz als wiederholtes Malnehmen.
 
-### Zuerst zählen
+### Wie viele Plättchen liegen im Quadrat?
 
 Wenn du viele Plättchen in Reihen legst, willst du schnell wissen, wie viele es sind. Ben legt für die Spielecke ein Quadrat aus Plättchen. Die Reihen liegen waagerecht, die Spalten senkrecht. Die Plättchen eines Rechtecks zählst du als Anzahl der Reihen mal Anzahl der Plättchen je Reihe.
 
@@ -49,7 +49,7 @@ Bild: Ein Quadrat aus Plättchen mit 4 Reihen. In jeder Reihe liegen 4 Plättche
 
 - Aufgabe `quadrat-vier-zaehlen` (unten)
 
-### Gleiche Faktoren kurz schreiben
+### Wie schreibst du gleiche Faktoren kurz?
 
 Wenn derselbe Faktor mehrmals vorkommt, wird die Rechnung lang, und dafür gibt es eine Kurzschreibweise. Bei 4 · 4 sind beide Faktoren gleich. Statt 4 · 4 schreibst du
 kurz $4^2$ und sprichst „4 hoch 2“. Die Zahl 16 = 4 · 4 heißt Quadratzahl.
@@ -66,7 +66,7 @@ Kubikzahl.
 
 $3^3 = 3 \cdot 3 \cdot 3 = 9 \cdot 3 = 27$
 
-### Das verwechseln viele
+### Was verwechseln viele?
 
 **Merke: Merke**
 

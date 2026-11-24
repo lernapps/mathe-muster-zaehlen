@@ -20,11 +20,11 @@ Eltern und Lehrkräfte sehen hier, was der Tutor bekommt. [Zur Seite](../)
 
 ## Wo das Kind gerade ist
 
-- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?uebung=recap-stellenwert`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
+- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?uebung=recap-verteilen`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
 - Steht in der Nachricht „Die App sagt: …“, hat die App das zur Eingabe des Kindes gemeldet. Setz dort an, ohne es zu wiederholen.
 - Eine Zeile wie „…, Nr. 16: richtig im 2. Versuch.“ kommt von „Zurück“ in der App: Aufgabe, Nummer und wie weit das Kind damit kam.
 - „Ich habe auf … geübt:“ kommt von „Zurück zum Tutor“: diese Seite mit den Nummern, dann je geübter Aufgabe, wie es lief, bei einer falschen mit Eingabe und Meldung der App. Setz bei den falschen an, eine nach der anderen.
-- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/muster/recap/?via=tutor#recap-stellenwert`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
+- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/muster/recap/?via=tutor#recap-verteilen`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
 
 ## Besondere Anforderungen
 
@@ -41,92 +41,72 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat höchstens zwei Aufgaben zur Kontrolle. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/, https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/
 
-Das brauchst du für dieses Kapitel: Stellenwerte und Vorrangregeln mit Rechengesetzen, mit Begriffen, Beispielen und einem Selbsttest.
+Das brauchst du für dieses Kapitel: Stellenwerte und Vorrangregeln mit Rechengesetzen, kurz erklärt, mit zwei Übungen.
 
 ### Das brauchst du für dieses Kapitel
 
-Mira (11) und Ben (10) richten die Spielecke ihrer Klasse ein und planen ein Fest zur Eröffnung. Dafür legen sie
-viele Plättchen aus. Mit Stellenwerten bündelst du Plättchen zu Zehnern, Hundertern und Tausendern, mit den Rechenregeln
-beschreibst du Muster. Teste dich in beiden Teilen: erst im Kopf rechnen, dann die Lösung lesen.
+Mira (11) und Ben (10) richten die Spielecke ihrer Klasse ein und planen ein Fest. Mit Stellenwerten
+bündelst du ihre Plättchen zu Zehnerpotenzen, mit den Rechengesetzen beschreibst du Muster.
 
 ### Natürliche Zahlen im Stellenwertsystem
 
-Wenn du wissen willst, wie groß eine Zahl ist, schaust du auf die Stelle jeder Ziffer. Jede **Ziffer** einer Zahl hat einen **Stellenwert**. Die Stellen heißen Einer (E), Zehner (Z), Hunderter (H)
-und Tausender (T). Weiter links folgen Zehntausender, Hunderttausender und Millionen. Die
-**Stellenwerttafel** zeigt sie nebeneinander.
+Wenn du wissen willst, wie groß eine Zahl ist, schaust du auf die Stelle jeder Ziffer.
 
-- **Ziffer**: Ziffern sind die Zeichen 0 bis 9, aus denen Zahlen bestehen. Die Zahl 2407 hat die Ziffern 2, 4, 0 und 7.
-
-- **Stellenwert**: Der Stellenwert sagt, wie viel eine Ziffer an ihrer Stelle zählt. Jede Stelle ist zehnmal so viel wert wie die Stelle rechts davon. In 2407 steht die Ziffer 4 bei den Hundertern, ihr Wert ist 4 · 100 = 400.
-
-- **Stellenwerttafel**: Die Stellenwerttafel gibt jeder Stelle einer Zahl eine Spalte. Von links nach rechts stehen T, H, Z, E, und 2407 steht darin als 2, 4, 0, 7.
-
-Die Zahl 2407 in der Stellenwerttafel: T Tausender, H Hunderter, Z Zehner, E Einer:
+Die Zahl 2407: T Tausender, H Hunderter, Z Zehner, E Einer:
 - T | H | Z | E
 - 2 | 4 | 0 | 7
 
-**Beispiel: 2407 gelesen**
+- **Ziffer**: Ziffern sind die Zeichen 0 bis 9, aus denen Zahlen bestehen. Die Zahl 2407 hat die Ziffern 2, 4, 0 und 7.
 
-2407 sind 2 Tausender, 4 Hunderter, 0 Zehner und 7 Einer. Die Null hält den Platz der Zehner frei.
+- **Stellenwert**: Der Stellenwert sagt, wie viel eine Ziffer an ihrer Stelle zählt. In 2407 steht die 4 bei den Hundertern, ihr Wert ist 4 · 100 = 400.
 
-#### Kannst du das?
-
-- Aufgabe `recap-stellenwert` (unten)
-
-Nicht sicher? Lies den Baustein „Natürliche Zahlen im Stellenwertsystem“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/).
+- **Stellenwerttafel**: Die Stellenwerttafel gibt jeder Stelle eine Spalte, Einer (E), Zehner (Z), Hunderter (H), Tausender (T). Jede Stelle ist zehnmal so viel wert wie die rechts davon.
 
 ### Vorrangregeln und Rechengesetze
 
-Wenn eine Rechnung mehrere Rechenzeichen hat, musst du wissen, was zuerst kommt, und wenn du geschickt rechnen willst, helfen dir Rechengesetze. Eine **Summe** ist das Ergebnis einer Addition, ihre Zahlen heißen Summanden. Ein **Produkt** ist das
-Ergebnis einer Multiplikation, ihre Zahlen heißen Faktoren. Beim Rechnen mit mehreren Rechenzeichen gilt
-eine feste Reihenfolge, und drei Rechengesetze helfen dir, geschickt zu rechnen.
+Wenn eine Rechnung mehrere Rechenzeichen hat, musst du wissen, was zuerst kommt, und mit Rechengesetzen rechnest du geschickt.
 
-- **Vorrangregel**: Klammern werden zuerst gerechnet, danach mal (·) und geteilt (:) vor plus und minus, das heißt Punkt vor Strich. Gleichrangige Rechenzeichen rechnest du von links nach rechts. Beispiel 3 + 4 · 2 = 3 + 8 = 11, aber (3 + 4) · 2 = 7 · 2 = 14, und 20 − 5 − 3 = 15 − 3 = 12.
+- **Vorrangregel**: Klammern zuerst, dann mal und geteilt vor plus und minus (Punkt vor Strich), sonst von links nach rechts. Beispiel 3 + 4 · 2 = 11, aber (3 + 4) · 2 = 14.
 
-- **Kommutativgesetz**: Beim Addieren und beim Multiplizieren darfst du die Zahlen tauschen, beim Subtrahieren und Dividieren nicht. Beispiele 7 + 5 = 5 + 7 = 12 und 4 · 25 = 25 · 4 = 100, aber 8 − 3 = 5, während 3 − 8 keine natürliche Zahl ist.
+- **Kommutativgesetz**: Beim Addieren und Multiplizieren darfst du die Zahlen tauschen, beim Subtrahieren nicht. Beispiel 4 · 25 = 25 · 4 = 100.
 
-- **Assoziativgesetz**: Beim Addieren und beim Multiplizieren darfst du die Klammern anders setzen, die Reihenfolge der Zahlen bleibt. Beispiel (2 · 5) · 10 = 2 · (5 · 10) = 100.
+- **Assoziativgesetz**: Beim Addieren und Multiplizieren darfst du die Klammern anders setzen. Beispiel (2 · 5) · 10 = 2 · (5 · 10) = 100.
 
-- **Distributivgesetz**: Ein Faktor vor einer Klammer wird mit jedem Summanden in der Klammer malgenommen. Beispiel 3 · (10 + 2) = 3 · 12 = 36 und 3 · 10 + 3 · 2 = 30 + 6 = 36.
+- **Distributivgesetz**: Ein Faktor vor einer Klammer wird mit jedem Summanden multipliziert. Beispiel 3 · (10 + 2) = 3 · 10 + 3 · 2 = 36.
 
-**Beispiel: Mit Klammer und Punkt vor Strich**
+### Kannst du das?
 
-2 + 3 · (7 − 4): Die Klammer zuerst, 7 − 4 = 3. Dann Punkt vor Strich, 3 · 3 = 9. Zuletzt 2 + 9 = 11.
+- Aufgabe `recap-verteilen` (unten)
 
-#### Kannst du das?
-
-- Aufgabe `recap-vorrang` (unten)
-
-Nicht sicher? Lies den Baustein „Vorrangregeln und Rechengesetze“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/).
+- Aufgabe `recap-stellenwert-vorrang` (unten)
 
 ### Du bist bereit, wenn du ...
 
-- natürliche Zahlen im Stellenwertsystem lesen, schreiben und darstellen kannst, zum Beispiel sagst, was die 4 in 2407 wert ist,
-- Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst, zum Beispiel 20 − 3 · 4 + 2 richtig rechnest.
+- natürliche Zahlen im Stellenwertsystem lesen, schreiben und darstellen kannst, zum Beispiel 4 · 10000 + 7 · 100 + 5,
+- Klammern und Vorrangregeln beachten und Rechengesetze für vorteilhaftes Rechnen nutzen kannst, zum Beispiel 6 · 102.
 
-Dann geht es los. Zuerst legen Mira und Ben Muster aus Plättchen.
+Nicht sicher? Lies die Bausteine „Natürliche Zahlen im Stellenwertsystem“ und „Vorrangregeln und Rechengesetze“ auf der Lernlandkarte: [Stellenwert](https://lernapps.net/apps/map/mathematik/c/natuerliche-zahlen/), [Rechengesetze](https://lernapps.net/apps/map/mathematik/c/grundrechenarten-rechengesetze/). Sonst geht es los mit den Plättchen.
 
-### Aufgabe recap-stellenwert
+### Aufgabe recap-verteilen
 
-- Aufgabe: Welchen Wert hat die Ziffer 7 in der Zahl 40 705? Schreibe die Zahl ohne Lücke.
+- Aufgabe: Berechne vorteilhaft 6 · 102.
 - Antwortformat: eine Zahl eintippen
-- Lösung: 700
-- Erklärung: Die 7 steht bei den Hundertern, also 7 · 100 = 700.
-- Tipp der App: An welcher Stelle steht die 7? Zähle von rechts, Einer, Zehner, Hunderter.
+- Lösung: 612
+- Erklärung: Mit dem Distributivgesetz ist 6 · 102 = 6 · 100 + 6 · 2 = 600 + 12 = 612.
+- Tipp der App: Zerlege 102 in 100 und 2.
 - Typische Fehler und was die App sagt:
-  - 7: Das ist die Ziffer selbst, nicht ihr Wert an dieser Stelle.
-  - 70: 70 wäre der Wert bei den Zehnern. Dort steht aber die 0, die 7 steht bei den Hundertern.
-  - 7000: 7000 wäre der Wert bei den Tausendern. Dort steht aber die 0.
-- Link: [../?via=tutor#recap-stellenwert](../?via=tutor#recap-stellenwert)
+  - 108: Du hast 6 + 102 gerechnet. Bei 6 · 102 wird multipliziert.
+  - 1200: Du hast 6 · 100 · 2 gerechnet. Der Faktor 6 wird einzeln mit 100 und mit 2 multipliziert, und die Ergebnisse werden addiert.
+- Link: [../?via=tutor#recap-verteilen](../?via=tutor#recap-verteilen)
 
-### Aufgabe recap-vorrang
+### Aufgabe recap-stellenwert-vorrang
 
-- Aufgabe: Berechne 20 − 3 · 4 + 2.
+- Aufgabe: Welche Zahl ist 4 · 10000 + 7 · 100 + 5? Schreibe sie ohne Lücke.
 - Antwortformat: eine Zahl eintippen
-- Lösung: 10
-- Erklärung: Punkt vor Strich, erst 3 · 4 = 12. Dann von links nach rechts 20 − 12 = 8 und 8 + 2 = 10.
-- Tipp der App: Welche Rechnung kommt zuerst, minus oder mal?
+- Lösung: 40 705
+- Erklärung: Punkt vor Strich, 4 · 10000 = 40000 und 7 · 100 = 700. Dann 40000 + 700 + 5 = 40705, also 4 Zehntausender, 7 Hunderter, 0 Zehner und 5 Einer.
+- Tipp der App: Rechne zuerst die Produkte aus, dann addierst du.
 - Typische Fehler und was die App sagt:
-  - 70: Du hast von links nach rechts gerechnet: 20 − 3 = 17, 17 · 4 = 68, 68 + 2 = 70. Es gilt aber Punkt vor Strich.
-  - 6: Du hast 3 · 4 + 2 = 14 zusammengefasst. Plus und minus rechnest du aber von links nach rechts, erst 20 − 12, dann + 2.
-- Link: [../?via=tutor#recap-vorrang](../?via=tutor#recap-vorrang)
+  - 475: Du hast nur die Ziffern 4, 7 und 5 hintereinander geschrieben. Die Faktoren 10000 und 100 bestimmen die Stellen.
+  - 40075: Die 7 steht bei den Hundertern, nicht bei den Zehnern. 7 · 100 ist 700.
+- Link: [../?via=tutor#recap-stellenwert-vorrang](../?via=tutor#recap-stellenwert-vorrang)

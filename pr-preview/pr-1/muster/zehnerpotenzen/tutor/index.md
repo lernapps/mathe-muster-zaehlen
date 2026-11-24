@@ -41,7 +41,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Du bündelst Plättchen zu Zehnern, Hundertern und Tausendern und schreibst große Zahlen als Zehnerpotenz.
 
-### Zehn zu einem bündeln
+### Wie zählst du sehr viele Plättchen?
 
 Wenn du sehr viele Plättchen zählen willst, bündelst du immer zehn zu einem. Mira und Ben zählen so die Plättchen in der Dose. Sie bündeln immer zehn Plättchen einer Spalte zu einem
 Plättchen in der Spalte links davon. Die Zahl bleibt dabei gleich.
@@ -50,7 +50,7 @@ Bild: Links liegen 10 Plättchen mit dem Buchstaben E in zwei Reihen zu je 5, vo
 
 - Aufgabe `zehn-zehner` (unten)
 
-### Jede Spalte ist zehnmal so viel
+### Wie schreibst du große Zahlen kurz?
 
 Wenn du sehr große Zahlen kurz schreiben willst, helfen dir Zehnerpotenzen. Jede Spalte ist zehnmal so viel wert wie die Spalte rechts davon. Ein Plättchen in der Spalte H ist 10 · 10
 wert, in der Spalte T ist es 10 · 10 · 10 wert. Das sind Zehnerpotenzen: Die Basis ist 10, der Exponent
@@ -74,7 +74,7 @@ $10^5 = 10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 = 100 000$
 
 Der Exponent 5 zeigt, dass fünf Faktoren 10 vorkommen. Er zeigt auch, dass hinter der 1 fünf Nullen stehen. Mit Zehnerpotenzen schreibst du große Zahlen kurz: 5000 = 5 · 1000 = 5 · 10³.
 
-### Der Exponent zählt Nullen
+### Wie liest du den Exponenten?
 
 **Merke: Merke**
 

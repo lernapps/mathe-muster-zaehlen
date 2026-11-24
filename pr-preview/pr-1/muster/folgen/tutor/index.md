@@ -50,7 +50,7 @@ Bild: Drei Plättchenbilder nebeneinander. Bild 1 hat ein hohles Anfangsplättch
 
 - Aufgabe `bild-vier` (unten)
 
-### Aus Bildern wird eine Zahlenfolge
+### Wie vergleichst du Muster genau?
 
 Wenn du Muster genau vergleichen willst, zählst du die Plättchen jedes Bildes. Schreibst du die Anzahlen hintereinander, entsteht eine Zahlenfolge: 4, 7, 10 und
 so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.
@@ -61,7 +61,7 @@ so weiter. Jede Zahl der Folge heißt Folgenglied. Das Glied zu Bild 3 ist 10.
 
 Damit du eine Folge fortsetzen kannst, suchst du den Abstand. Von 4 zu 7 sind es 3 mehr, von 7 zu 10 wieder 3 mehr. Der Abstand bleibt gleich. Mit diesem Abstand setzt du die Folge fort.
 
-### Immer wieder dasselbe addieren
+### Was tust du, wenn jedes Glied gleich wächst?
 
 **Merke: Merke**
 
