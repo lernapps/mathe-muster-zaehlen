@@ -28,7 +28,7 @@ blocks:
             message: Das sind die Plättchen von Bild 4. Setze die Folge bis Bild 10 fort.
   - type: section
     id: darstellung
-    title: Eine Regel mit Platzhalter
+    title: Wie rechnest du jedes Bild aus?
     blocks:
       - type: text
         text: |
@@ -46,7 +46,7 @@ blocks:
             text: Für Bild 100 setzt du 100 ein. Dann rechnest du 3 · 100 + 1 = 301. Bild 100 hat 301 Plättchen.
   - type: section
     id: merke
-    title: Nummer und Anzahl
+    title: Welche Zahl setzt du in die Regel ein?
     blocks:
       - type: note
         title: Merke

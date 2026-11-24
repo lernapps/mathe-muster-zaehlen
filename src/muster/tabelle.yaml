@@ -5,7 +5,7 @@ competencies: [zaehlprinzip]
 blocks:
   - type: section
     id: einstieg
-    title: Outfits zählen
+    title: Wie viele Outfits gibt es?
     blocks:
       - type: text
         text: |
@@ -24,7 +24,7 @@ blocks:
             message: Das sind nur die Shirts. Zu jedem Shirt gibt es noch Hosen.
   - type: section
     id: darstellung
-    title: Das Plättchenfeld
+    title: Wie siehst du alle Outfits auf einen Blick?
     blocks:
       - type: text
         text: |
@@ -48,7 +48,7 @@ blocks:
           - ["Shirt 3", "Shirt 3 mit Hose 1", "Shirt 3 mit Hose 2"]
   - type: section
     id: merke
-    title: Mal, nicht plus
+    title: Warum mal und nicht plus?
     blocks:
       - type: note
         title: Merke

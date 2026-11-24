@@ -5,7 +5,7 @@ competencies: [potenzen]
 blocks:
   - type: section
     id: einstieg
-    title: Zuerst zählen
+    title: Wie viele Plättchen liegen im Quadrat?
     blocks:
       - type: text
         text: |
@@ -29,7 +29,7 @@ blocks:
             message: Das ist nur eine Reihe. Das Quadrat hat 4 Reihen.
   - type: section
     id: darstellung
-    title: Gleiche Faktoren kurz schreiben
+    title: Wie schreibst du gleiche Faktoren kurz?
     blocks:
       - type: text
         text: |
@@ -56,7 +56,7 @@ blocks:
             formula: '3^3 = 3 \cdot 3 \cdot 3 = 9 \cdot 3 = 27'
   - type: section
     id: merke
-    title: Das verwechseln viele
+    title: Was verwechseln viele?
     blocks:
       - type: note
         title: Merke

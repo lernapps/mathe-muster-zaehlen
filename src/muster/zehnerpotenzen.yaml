@@ -5,7 +5,7 @@ competencies: [potenzen]
 blocks:
   - type: section
     id: einstieg
-    title: Zehn zu einem bündeln
+    title: Wie zählst du sehr viele Plättchen?
     blocks:
       - type: text
         text: |
@@ -30,7 +30,7 @@ blocks:
             message: Das ist der Wert eines Zehners. Das neue Plättchen steht eine Spalte weiter links.
   - type: section
     id: darstellung
-    title: Jede Spalte ist zehnmal so viel
+    title: Wie schreibst du große Zahlen kurz?
     blocks:
       - type: text
         text: |
@@ -59,7 +59,7 @@ blocks:
             text: "Der Exponent 5 zeigt, dass fünf Faktoren 10 vorkommen. Er zeigt auch, dass hinter der 1 fünf Nullen stehen. Mit Zehnerpotenzen schreibst du große Zahlen kurz: 5000 = 5 · 1000 = 5 · 10³."
   - type: section
     id: merke
-    title: Der Exponent zählt Nullen
+    title: Wie liest du den Exponenten?
     blocks:
       - type: note
         title: Merke

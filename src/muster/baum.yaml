@@ -5,7 +5,7 @@ competencies: [zaehlprinzip]
 blocks:
   - type: section
     id: einstieg
-    title: Vom Feld zum Baum
+    title: Was tust du bei mehr als zwei Auswahlen?
     blocks:
       - type: text
         text: |
@@ -30,7 +30,7 @@ blocks:
             message: Du hast 6 + 2 gerechnet. Die neue Hose passt zu jedem der 3 Shirts, nicht nur zu zweien.
   - type: section
     id: darstellung
-    title: Stufe für Stufe malnehmen
+    title: Wie zählst du mit mehreren Stufen?
     blocks:
       - type: text
         text: |
@@ -46,7 +46,7 @@ blocks:
             text: Wenn du das Zählprinzip mit drei Stufen ausprobieren willst, rechne ein Frühstück. Beim Fest in der Spielecke gibt es ein Frühstück mit 2 Broten, 3 Aufstrichen und 2 Getränken. Du wählst ein Brot, einen Aufstrich und ein Getränk. Das sind 2 · 3 · 2 = 12 Möglichkeiten.
   - type: section
     id: merke
-    title: Keine Stufe vergessen
+    title: Welche Stufe vergisst man leicht?
     blocks:
       - type: note
         title: Merke
