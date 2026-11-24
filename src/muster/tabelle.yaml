@@ -28,7 +28,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          So sieht das Plättchenfeld aus, wenn du es legst.
+          Damit du alle Outfits auf einen Blick siehst, legst du ein Plättchenfeld.
       - type: figure
         image: images/plaettchenfeld-outfits.svg
         alt: Ein Plättchenfeld mit 3 Zeilen und 2 Spalten. Die Zeilen sind mit Shirt 1 bis Shirt 3 beschriftet, die Spalten mit Hose 1 und Hose 2. Auf jedem Kreuzungspunkt liegt ein Plättchen.
@@ -40,7 +40,7 @@ blocks:
           Das Feld hat 3 Zeilen mit je 2 Plättchen, also 3 · 2 = 6 Plättchen. Das ist das Zählprinzip: Du nimmst die
           Zahl der Möglichkeiten der ersten Auswahl mal die Zahl der zweiten, egal was du zuerst gewählt hast.
       - type: table
-        caption: Dieselben Outfits als Tabelle
+        caption: Damit du jedes Outfit benennen kannst, hilft eine Tabelle. Dieselben Outfits als Tabelle
         header: ["Shirt", "Hose 1", "Hose 2"]
         rows:
           - ["Shirt 1", "Shirt 1 mit Hose 1", "Shirt 1 mit Hose 2"]

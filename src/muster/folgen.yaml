@@ -45,7 +45,7 @@ blocks:
         title: Der Abstand zwischen den Gliedern
         blocks:
           - type: text
-            text: Von 4 zu 7 sind es 3 mehr, von 7 zu 10 wieder 3 mehr. Der Abstand bleibt gleich. Mit diesem Abstand setzt du die Folge fort.
+            text: Damit du eine Folge fortsetzen kannst, suchst du den Abstand. Von 4 zu 7 sind es 3 mehr, von 7 zu 10 wieder 3 mehr. Der Abstand bleibt gleich. Mit diesem Abstand setzt du die Folge fort.
   - type: section
     id: merke
     title: Immer wieder dasselbe addieren

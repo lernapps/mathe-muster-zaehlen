@@ -38,7 +38,7 @@ blocks:
           wert, in der Spalte T ist es 10 · 10 · 10 wert. Das sind Zehnerpotenzen: Die Basis ist 10, der Exponent
           sagt, wie oft die 10 als Faktor vorkommt.
       - type: table
-        caption: Stellenwerttafel und Zehnerpotenzen
+        caption: Damit du große Zahlen schnell liest, zeigt die Tabelle Wert und Potenz jeder Spalte
         header: ["Spalte", "Wert und Potenz"]
         rows:
           - ["Z (Zehner)", "10 = 10¹"]
